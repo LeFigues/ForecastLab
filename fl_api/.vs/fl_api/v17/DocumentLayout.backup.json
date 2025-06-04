@@ -74,24 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UniversityApiClient.cs",
-              "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Services\\UniversityApiClient.cs",
-              "RelativeDocumentMoniker": "University\\Services\\UniversityApiClient.cs",
-              "ToolTip": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Services\\UniversityApiClient.cs",
-              "RelativeToolTip": "University\\Services\\UniversityApiClient.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAwwHIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T23:39:08.019Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -103,8 +90,7 @@
               "RelativeToolTip": "fl_api\\Controllers\\LabsAPIController.cs",
               "ViewState": "AgIAAJEAAAAAAAAAAAAIwKQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:06:09.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:06:09.783Z"
             },
             {
               "$type": "Document",
@@ -116,8 +102,7 @@
               "RelativeToolTip": "University\\Interfaces\\IUniversityApiClient.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T23:39:01.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T23:39:01.882Z"
             },
             {
               "$type": "Document",
@@ -129,8 +114,7 @@
               "RelativeToolTip": "University\\Models\\MovimientoInventario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:01:30.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:01:30.836Z"
             },
             {
               "$type": "Document",
@@ -140,10 +124,22 @@
               "RelativeDocumentMoniker": "fl_api\\appsettings.json",
               "ToolTip": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\appsettings.json",
               "RelativeToolTip": "fl_api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-06-04T01:08:29.667Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UniversityApiClient.cs",
+              "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Services\\UniversityApiClient.cs",
+              "RelativeDocumentMoniker": "University\\Services\\UniversityApiClient.cs",
+              "ToolTip": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Services\\UniversityApiClient.cs",
+              "RelativeToolTip": "University\\Services\\UniversityApiClient.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAwwHIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T23:39:08.019Z"
             },
             {
               "$type": "Document",
@@ -155,8 +151,7 @@
               "RelativeToolTip": "University\\Models\\MovimientoInventarioResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:50:38.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:50:38.319Z"
             },
             {
               "$type": "Document",
@@ -168,8 +163,7 @@
               "RelativeToolTip": "fl_api\\Interfaces\\ILabsApiClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:48:32.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:48:32.765Z"
             },
             {
               "$type": "Document",
@@ -181,8 +175,7 @@
               "RelativeToolTip": "University\\Models\\Docente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:02:16.062Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:02:16.062Z"
             },
             {
               "$type": "Document",
@@ -194,8 +187,7 @@
               "RelativeToolTip": "PyAnalyze\\GuideAnalyze.py",
               "ViewState": "AgIAAFcAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-06-04T02:35:44.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:35:44.851Z"
             },
             {
               "$type": "Document",
@@ -207,8 +199,7 @@
               "RelativeToolTip": "University\\Models\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:41:31.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:41:31.767Z"
             },
             {
               "$type": "Document",
@@ -220,8 +211,7 @@
               "RelativeToolTip": "University\\Models\\Encargado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:41:41.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:41:41.39Z"
             },
             {
               "$type": "Document",
@@ -233,8 +223,7 @@
               "RelativeToolTip": "University\\Models\\InsumoPorPractica.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:59:01.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:59:01.158Z"
             },
             {
               "$type": "Document",
@@ -246,8 +235,7 @@
               "RelativeToolTip": "fl_front\\Pages\\ForecastInsumosRiesgo.razor",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEMAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T02:28:33.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:28:33.538Z"
             },
             {
               "$type": "Document",
@@ -259,8 +247,7 @@
               "RelativeToolTip": "University\\Models\\Alerta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:58:57.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:58:57.447Z"
             },
             {
               "$type": "Document",
@@ -272,8 +259,7 @@
               "RelativeToolTip": "University\\Models\\Insumo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:57:09.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:57:09.036Z"
             },
             {
               "$type": "Document",
@@ -285,8 +271,7 @@
               "RelativeToolTip": "fl_front\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:05:55.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:05:55.229Z"
             }
           ]
         }
