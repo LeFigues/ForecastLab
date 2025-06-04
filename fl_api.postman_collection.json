@@ -1,0 +1,916 @@
+{
+  "info": {
+    "name": "fl_api Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Get Health",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/health",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "health"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analyze",
+      "item": [
+        {
+          "name": "Analyze Python",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/analyze/python/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "analyze",
+                "python",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Analyze Python + OpenAI",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/analyze/python-openai/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "analyze",
+                "python-openai",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Analyze OpenAI Only",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/analyze/openai/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "analyze",
+                "openai",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Forecast",
+      "item": [
+        {
+          "name": "Create Forecast",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/forecast",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Forecast Insumos Por Practica",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/insumos-por-practica",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "insumos-por-practica"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Forecast Insumos Historico",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/insumos-historico",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "insumos-historico"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Forecast Practicas Uso",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/practicas-uso",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "practicas-uso"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Forecast Insumos Riesgo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/insumos-riesgo",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "insumos-riesgo"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Historico Insumos Mongo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/insumos-historico/historico",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "insumos-historico",
+                "historico"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Historico Practicas Mongo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/practicas-uso/historico",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "practicas-uso",
+                "historico"
+              ]
+            }
+          }
+        },
+        {
+          "name": "AI Risk Summary",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/forecast/insumos-riesgo/ai",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "forecast",
+                "insumos-riesgo",
+                "ai"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Planning",
+      "item": [
+        {
+          "name": "List Planning",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/planning",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "planning"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Planning by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/planning/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "planning",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Planning",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/planning/:documentId",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "planning",
+                ":documentId"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Planning",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/planning/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "planning",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete Planning",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{base_url}}/api/planning/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "planning",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prompt",
+      "item": [
+        {
+          "name": "List Prompts",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/prompt",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "prompt"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Prompt",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/prompt/:key",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "prompt",
+                ":key"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Prompt",
+          "request": {
+            "method": "PUT",
+            "url": {
+              "raw": "{{base_url}}/api/prompt/:key",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "prompt",
+                ":key"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "item": [
+        {
+          "name": "Demand Detail",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/reports/demand-detail",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "reports",
+                "demand-detail"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Demand Summary",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/reports/demand-summary",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "reports",
+                "demand-summary"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Demand Simulation",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/reports/demand-simulation",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "reports",
+                "demand-simulation"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Demand History",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/reports/demand-history",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "reports",
+                "demand-history"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Documents",
+      "item": [
+        {
+          "name": "Upload PDF",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/documents/send-pdf",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "documents",
+                "send-pdf"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Document",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/documents/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "documents",
+                ":id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Classification",
+      "item": [
+        {
+          "name": "Classify Document",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{base_url}}/api/classification",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "classification"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "LabsAPI",
+      "item": [
+        {
+          "name": "Get Insumos",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/insumos",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "insumos"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Insumo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/insumos/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "insumos",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Alertas",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/alertas",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "alertas"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Docentes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/docentes",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "docentes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Docente",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/docentes/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "docentes",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Solicitudes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/solicitudes",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "solicitudes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Carreras",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/carreras",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "carreras"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Carrera",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/carreras/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "carreras",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Semestres",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/semestres",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "semestres"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Semestre",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/semestres/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "semestres",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Materias",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/materias",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "materias"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Materia",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/materias/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "materias",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Solicitudes Uso",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/solicitudes-uso",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "solicitudes-uso"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Solicitud Uso",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/solicitudes-uso/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "solicitudes-uso",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Practicas",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/practicas",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "practicas"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Practica",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/practicas/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "practicas",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Laboratorios",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/laboratorios",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "laboratorios"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Laboratorio",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/laboratorios/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "laboratorios",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Movimientos Inventario",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/movimientos-inventario",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "movimientos-inventario"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Movimiento Inventario",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/movimientos-inventario/:id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "movimientos-inventario",
+                ":id"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Estudiantes",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/tipo/estudiantes",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "tipo",
+                "estudiantes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Docentes by Tipo",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/tipo/docentes",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "tipo",
+                "docentes"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Encargados",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/api/labsapi/tipo/encargados",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "labsapi",
+                "tipo",
+                "encargados"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
