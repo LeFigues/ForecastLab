@@ -3,59 +3,114 @@
 @using fl_front.Models
 @using System.Globalization
 @using fl_front.Services
+@using ApexCharts
+@using ChartType = ApexCharts.ChartType
 
-<h3 class="mb-4 text-center">📊 Predicción de Demanda</h3>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-<div class="row mb-3">
-    <div class="col-md-3">
-        <label class="form-label">Desde</label>
-        <InputDate class="form-control" @bind-Value="from" />
-    </div>
-    <div class="col-md-3">
-        <label class="form-label">Hasta</label>
-        <InputDate class="form-control" @bind-Value="to" />
-    </div>
-    <div class="col-md-3">
-        <label class="form-label">Horizonte</label>
-        <select class="form-select" @bind="horizon">
-            <option value="monthly">Mensual</option>
-            <option value="weekly">Semanal</option>
-            <option value="daily">Diario</option>
-        </select>
-    </div>
-    <div class="col-md-3 d-flex align-items-end">
-        <button class="btn btn-primary w-100" @onclick="GetForecast">Generar Predicción</button>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+<h3 class="text-center text-uppercase text-primary mb-4 fw-bold animate__animated animate__fadeInDown">
+    <span class="d-inline-flex justify-content-center align-items-center me-2"
+          style="width: 55px; height: 55px; border-radius: 50%; background: linear-gradient(135deg, #007bff, #00c6ff); box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 3px solid white;">
+        <i class="bi bi-graph-up-arrow text-white" style="font-size: 1.7rem;"></i>
+    </span>
+    REPORTES DE DEMANDA
+</h3>
+
+
+<div class="card custom-card mb-4 animate__animated animate__fadeInUp">
+    <div class="row g-4">
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Desde</label>
+            <InputDate class="form-control stylish-input" @bind-Value="from" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Hasta</label>
+            <InputDate class="form-control stylish-input" @bind-Value="to" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Horizonte</label>
+            <select class="form-select stylish-input" @bind="horizon">
+                <option value="monthly">Mensual</option>
+                <option value="weekly">Semanal</option>
+                <option value="daily">Diario</option>
+            </select>
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+            <button class="btn btn-primary w-100" @onclick="GetForecast">
+                <i class="bi bi-bar-chart-steps me-1"></i> Generar Predicción
+            </button>
+        </div>
     </div>
 </div>
 
 @if (isLoading)
 {
-    <div class="text-center">
-        <div class="spinner-border text-info" role="status">
-            <span class="visually-hidden">Cargando predicción...</span>
+    <div class="text-center my-5 animate__animated animate__fadeIn">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Cargando...</span>
         </div>
+        <p class="text-muted mt-2">Procesando predicción...</p>
     </div>
 }
 else if (forecastResults.Any())
 {
-    <h5>Resultados:</h5>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Periodo</th>
-                <th>Demanda Pronosticada</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in forecastResults)
-            {
-                <tr>
-                    <td>@item.PeriodStart.ToString("MMMM yyyy", CultureInfo.CreateSpecificCulture("es-ES"))</td>
-                    <td>@item.ForecastedQuantity</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="card custom-card animate__animated animate__fadeIn">
+        <h5 class="mb-3 fw-semibold text-dark"><i class="bi bi-table"></i> Resultados</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle">
+                <thead class="table-primary text-white">
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Demanda Pronosticada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in forecastResults)
+                    {
+                        <tr>
+                            <td>
+                                @{
+                                    var format = horizon switch
+                                    {
+                                        "monthly" => "MMMM yyyy",
+                                        "weekly" => "'Semana' dd MMM",
+                                        "daily" => "dd/MM/yyyy",
+                                        _ => "dd/MM/yyyy"
+                                    };
+                                    var formatted = item.PeriodStart.ToString(format, CultureInfo.CreateSpecificCulture("es-ES"));
+                                }
+                                @formatted
+                            </td>
+                            <td class="fw-bold">@item.ForecastedQuantity</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="mt-5 animate__animated animate__fadeInUp">
+        <h5 class="fw-semibold mb-3"><i class="bi bi-graph-up"></i> Gráfica de Demanda</h5>
+        <div class="card custom-card p-3">
+            <ApexChart TItem="ForecastResult" Height="350" @ref="forecastChart" Options="chartOptions">
+                <ApexPointSeries TItem="ForecastResult"
+                                 Name="Demanda"
+                                 Items="forecastResults"
+                                 XValue="@(item => FormatX(item.PeriodStart))"
+                                 YValue="@(item => item.ForecastedQuantity)" />
+            </ApexChart>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning mt-4 animate__animated animate__fadeIn">
+        <i class="bi bi-exclamation-triangle me-1"></i>
+        No hay datos para mostrar. Por favor selecciona un rango válido y presiona <strong>Generar Predicción</strong>.
+    </div>
 }
 
 @code {
@@ -64,6 +119,28 @@ else if (forecastResults.Any())
     private string horizon = "monthly";
     private bool isLoading = false;
     private List<ForecastResult> forecastResults = new();
+    private ApexChart<ForecastResult>? forecastChart;
+
+    private ApexChartOptions<ForecastResult> chartOptions = new()
+        {
+            Chart = new Chart
+            {
+                Type = ChartType.Line,
+                Toolbar = new Toolbar { Show = true }
+            },
+            Xaxis = new XAxis
+            {
+                Labels = new XAxisLabels { Rotate = -45 },
+                Title = new AxisTitle { Text = "Periodo" }
+            },
+            Yaxis = new List<YAxis>
+        {
+            new YAxis
+            {
+                Title = new AxisTitle { Text = "Demanda" }
+            }
+        }
+        };
 
     private async Task GetForecast()
     {
@@ -79,5 +156,16 @@ else if (forecastResults.Any())
 
         forecastResults = await ForecastService.GetForecastAsync(request);
         isLoading = false;
+    }
+
+    private string FormatX(DateTime date)
+    {
+        return horizon switch
+        {
+            "monthly" => date.ToString("MMM yyyy", CultureInfo.CreateSpecificCulture("es-ES")),
+            "weekly" => "Semana " + CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(date, CalendarWeekRule.FirstDay, DayOfWeek.Monday),
+            "daily" => date.ToString("dd/MM", CultureInfo.CreateSpecificCulture("es-ES")),
+            _ => date.ToString("dd/MM", CultureInfo.CreateSpecificCulture("es-ES"))
+        };
     }
 }

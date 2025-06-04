@@ -6,6 +6,6 @@
 -DGEN_PINVOKE=1
 -emit-llvm
 "-IC:\Repos\forecastlab\ForecastLab\fl_api\fl_front\obj\Release\net9.0\wasm\for-publish"
-"-IC:\Program Files\dotnet\packs\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\9.0.3\runtimes\browser-wasm\native\include\mono-2.0"
-"-IC:\Program Files\dotnet\packs\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\9.0.3\runtimes\browser-wasm\native\include\wasm"
+"-IC:\Program Files\dotnet\packs\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\9.0.0\runtimes\browser-wasm\native\include\mono-2.0"
+"-IC:\Program Files\dotnet\packs\Microsoft.NETCore.App.Runtime.Mono.browser-wasm\9.0.0\runtimes\browser-wasm\native\include\wasm"
 -g
