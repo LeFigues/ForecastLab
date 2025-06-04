@@ -33,5 +33,11 @@ namespace University.Interfaces
         Task<Laboratorio?> GetLaboratorioByIdAsync(int id);
         Task<List<MovimientoInventario>> GetMovimientosInventarioAsync();
         Task<MovimientoInventario?> GetMovimientoInventarioByIdAsync(int id);
+
+
+        Task<List<Student>> GetEstudiantesAsync();
+        Task<List<Docente>> GetDocentesByTipoAsync();      // o GetDocentesAsync() si prefieres un nombre uniforme
+        Task<List<Encargado>> GetEncargadosAsync();
+
     }
 }

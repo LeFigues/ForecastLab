@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj",
+      "projectUniqueName": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj",
       "projectName": "University",
-      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj",
+      "projectPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj",
       "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\obj\\",
+      "outputPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

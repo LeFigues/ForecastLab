@@ -109,20 +109,39 @@ namespace University.Services
             return await _httpClient.GetFromJsonAsync<Laboratorio>($"/laboratorios/{id}");
         }
 
-        private class MovimientoInventarioResponse
-        {
-            public List<MovimientoInventario> Data { get; set; } = new();
-        }
-
         public async Task<List<MovimientoInventario>> GetMovimientosInventarioAsync()
         {
-            var response = await _httpClient.GetFromJsonAsync<MovimientoInventarioResponse>("/movimientos-inventario");
-            return response?.Data ?? new();
+            // Llama a GET /movimientos-inventario y lee el wrapper
+            var response = await _httpClient
+                .GetFromJsonAsync<MovimientoInventarioResponse>("/movimientos-inventario");
+
+            return response?.Data ?? new List<MovimientoInventario>();
         }
 
         public async Task<MovimientoInventario?> GetMovimientoInventarioByIdAsync(int id)
         {
-            return await _httpClient.GetFromJsonAsync<MovimientoInventario>($"/movimientos-inventario/{id}");
+            // Si existe GET /movimientos-inventario/{id} que devuelva el objeto sin wrapper:
+            return await _httpClient
+                .GetFromJsonAsync<MovimientoInventario>($"/movimientos-inventario/{id}");
         }
+
+        public async Task<List<Student>> GetEstudiantesAsync()
+        {
+            return await _httpClient.GetFromJsonAsync<List<Student>>("/tipo/estudiantes")
+                   ?? new List<Student>();
+        }
+
+        public async Task<List<Docente>> GetDocentesByTipoAsync()
+        {
+            return await _httpClient.GetFromJsonAsync<List<Docente>>("/tipo/docentes")
+                   ?? new List<Docente>();
+        }
+
+        public async Task<List<Encargado>> GetEncargadosAsync()
+        {
+            return await _httpClient.GetFromJsonAsync<List<Encargado>>("/tipo/encargados")
+                   ?? new List<Encargado>();
+        }
+
     }
 }

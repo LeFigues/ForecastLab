@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\fl_api.csproj": {}
+    "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\fl_api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\fl_api.csproj": {
+    "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\fl_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\fl_api.csproj",
+        "projectUniqueName": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\fl_api.csproj",
         "projectName": "fl_api",
-        "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\fl_api.csproj",
+        "projectPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\fl_api.csproj",
         "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\obj\\",
+        "outputPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj": {
-                "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj"
+              "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj": {
+                "projectPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj"
               }
             }
           }
@@ -119,14 +119,14 @@
         }
       }
     },
-    "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj": {
+    "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj",
+        "projectUniqueName": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj",
         "projectName": "University",
-        "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj",
+        "projectPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\University.csproj",
         "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\obj\\",
+        "outputPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

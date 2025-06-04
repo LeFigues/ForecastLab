@@ -13,7 +13,7 @@ namespace University.Models
         public int IdMovimiento { get; set; }
 
         [JsonPropertyName("tipo_movimiento")]
-        public string TipoMovimiento { get; set; } = null!;
+        public string TipoMovimiento { get; set; } = string.Empty;
 
         [JsonPropertyName("fecha_entregado")]
         public DateTime FechaEntregado { get; set; }
@@ -25,13 +25,14 @@ namespace University.Models
         public int Cantidad { get; set; }
 
         [JsonPropertyName("responsable")]
-        public string Responsable { get; set; } = null!;
+        public string Responsable { get; set; } = string.Empty;
 
+        // <-- HACEMOS nullable int para no fallar si viene null
         [JsonPropertyName("id_solicitud")]
-        public int IdSolicitud { get; set; }
+        public int? IdSolicitud { get; set; }
 
         [JsonPropertyName("insumo_nombre")]
-        public string InsumoNombre { get; set; } = null!;
+        public string InsumoNombre { get; set; } = string.Empty;
     }
 
 }

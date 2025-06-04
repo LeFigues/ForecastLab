@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>da2b32fa-70c5-4dbc-b7e0-b380b8927bbd</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyAnalyze.py</StartupFile>
+    <StartupFile>GuideAnalyze.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GuideAnalyze.py" />
     <Compile Include="pdf_to_json.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PyAnalyze.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RE-10-LAB-322  IOT Y ROBOTICA  v2.pdf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

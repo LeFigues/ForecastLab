@@ -172,5 +172,35 @@ namespace fl_api.Controllers
                 return NotFound();
             return Ok(movimiento);
         }
+
+        /// <summary>
+        /// GET /api/labsapi/tipo/estudiantes
+        /// </summary>
+        [HttpGet("tipo/estudiantes")]
+        public async Task<ActionResult<List<Student>>> GetEstudiantes()
+        {
+            var data = await _api.GetEstudiantesAsync();
+            return Ok(data);
+        }
+
+        /// <summary>
+        /// GET /api/labsapi/tipo/docentes
+        /// </summary>
+        [HttpGet("tipo/docentes")]
+        public async Task<ActionResult<List<Docente>>> GetDocentesByTipo()
+        {
+            var data = await _api.GetDocentesByTipoAsync();
+            return Ok(data);
+        }
+
+        /// <summary>
+        /// GET /api/labsapi/tipo/encargados
+        /// </summary>
+        [HttpGet("tipo/encargados")]
+        public async Task<ActionResult<List<Encargado>>> GetEncargados()
+        {
+            var data = await _api.GetEncargadosAsync();
+            return Ok(data);
+        }
     }
 }

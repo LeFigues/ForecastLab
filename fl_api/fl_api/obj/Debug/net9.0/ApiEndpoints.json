@@ -762,6 +762,66 @@
     ]
   },
   {
+    "ContainingType": "fl_api.Controllers.LabsApiController",
+    "Method": "GetDocentesByTipo",
+    "RelativePath": "api/LabsApi/tipo/docentes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[University.Models.Docente, University, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabsApiController",
+    "Method": "GetEncargados",
+    "RelativePath": "api/LabsApi/tipo/encargados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[University.Models.Encargado, University, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabsApiController",
+    "Method": "GetEstudiantes",
+    "RelativePath": "api/LabsApi/tipo/estudiantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[University.Models.Student, University, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "fl_api.Controllers.PlanningController",
     "Method": "GetAll",
     "RelativePath": "api/Planning",

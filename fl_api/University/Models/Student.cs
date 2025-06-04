@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace University.Models
 {
-    public class Docente
+    public class Student
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
@@ -21,8 +21,10 @@ namespace University.Models
         [JsonPropertyName("correo")]
         public string Correo { get; set; } = string.Empty;
 
-        [JsonPropertyName("id_carrera")]
-        public int IdCarrera { get; set; }
-    }
+        [JsonPropertyName("facultad")]
+        public string Facultad { get; set; } = string.Empty;
 
+        [JsonPropertyName("id_materia")]
+        public int IdMateria { get; set; }
+    }
 }

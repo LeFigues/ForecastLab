@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "egUbfpZ1yuk=",
+  "dgSpecHash": "SdKXAW68p6M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_front\\fl_front.csproj",
+  "projectFilePath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\fl_front.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\figue\\.nuget\\packages\\blazor-apexcharts\\6.0.0\\blazor-apexcharts.6.0.0.nupkg.sha512",
     "C:\\Users\\figue\\.nuget\\packages\\blazorise\\1.7.6\\blazorise.1.7.6.nupkg.sha512",
