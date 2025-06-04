@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "fl_front",
   "resources": {
-    "hash": "sha256-cu2MfhgdK6fbdxTZnB+tPT3VX8nWa7jDzKf4yBP0UDY=",
+    "hash": "sha256-IO5JEZU/K5vP9PNSHnRN/xCsuMeIMc56FNoj5563mpg=",
     "fingerprinting": {
       "Blazor-ApexCharts.6svvilbkck.wasm": "Blazor-ApexCharts.wasm",
       "Blazorise.Bootstrap.zzph793o0v.wasm": "Blazorise.Bootstrap.wasm",
@@ -10,7 +10,7 @@
       "Blazorise.Icons.FontAwesome.vhmroo7f7a.wasm": "Blazorise.Icons.FontAwesome.wasm",
       "Blazorise.Licensing.5q2r77toij.wasm": "Blazorise.Licensing.wasm",
       "Blazorise.m9nkbb8nyy.wasm": "Blazorise.wasm",
-      "fl_front.t963ysez3m.wasm": "fl_front.wasm",
+      "fl_front.yp12dmkz9q.wasm": "fl_front.wasm",
       "Lambda2Js.s11rboxncj.wasm": "Lambda2Js.wasm",
       "Microsoft.AspNetCore.Components.Forms.1oh8dr5lzm.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.xjmots59bh.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -121,7 +121,7 @@
       "Blazorise.Icons.FontAwesome.vhmroo7f7a.wasm": "sha256-o1LYB/2BWo1g/oZkFm4upyHDPoDeKCakXLy9d4Nfdu4=",
       "Blazorise.Licensing.5q2r77toij.wasm": "sha256-cwZ2JjZXwvbaPnMO5TRbPjB5RCR6BTjFabvKtE/wTnQ=",
       "Blazorise.m9nkbb8nyy.wasm": "sha256-yunXxKyzorhaSz/4ajbPsQMPbbAUGI673nq8XI/6lIQ=",
-      "fl_front.t963ysez3m.wasm": "sha256-f8sb5hs6a6fZIX6uas2AJM8J4NbEQu65FKlQIQC5MtY=",
+      "fl_front.yp12dmkz9q.wasm": "sha256-NrppSmtA+ncsC9UWr7C4p0LAfrv8qv0+6O1Om9ifnag=",
       "Lambda2Js.s11rboxncj.wasm": "sha256-8KaSQQKzkSLxYo0ViQQKmvLoat2EMnYmC4Q2Ft6zU7M=",
       "Microsoft.AspNetCore.Components.Forms.1oh8dr5lzm.wasm": "sha256-cRTk56GF9CMSflO42t4/nUmaj2VGAETeWhvOMhFQ+ds=",
       "Microsoft.AspNetCore.Components.xjmots59bh.wasm": "sha256-LUXt6fQMzY4fwQiA/sOZp3DIdVtyFOA2+KUxTf3TGk4=",
