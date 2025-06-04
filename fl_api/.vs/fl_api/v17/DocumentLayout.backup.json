@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\repos\\forecastlab\\forecastlab\\fl_api\\fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\repos\\forecastlab\\forecastlab\\fl_api\\fl_front\\pages\\forecasthistoricosemestre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecasthistoricosemestre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\repos\\forecastlab\\forecastlab\\fl_api\\fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -74,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +90,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "ForecastHistoricoSemestre.razor",
+              "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\Pages\\ForecastHistoricoSemestre.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\ForecastHistoricoSemestre.razor",
+              "ToolTip": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\Pages\\ForecastHistoricoSemestre.razor",
+              "RelativeToolTip": "fl_front\\Pages\\ForecastHistoricoSemestre.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T10:13:02.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "fl_front\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "fl_front\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T10:08:04.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "LabsAPIController.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\Controllers\\LabsAPIController.cs",
               "RelativeDocumentMoniker": "fl_api\\Controllers\\LabsAPIController.cs",
@@ -94,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "IUniversityApiClient.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Interfaces\\IUniversityApiClient.cs",
               "RelativeDocumentMoniker": "University\\Interfaces\\IUniversityApiClient.cs",
@@ -106,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MovimientoInventario.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\MovimientoInventario.cs",
               "RelativeDocumentMoniker": "University\\Models\\MovimientoInventario.cs",
@@ -118,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\appsettings.json",
               "RelativeDocumentMoniker": "fl_api\\appsettings.json",
@@ -126,12 +160,11 @@
               "RelativeToolTip": "fl_api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-04T01:08:29.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:08:29.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UniversityApiClient.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Services\\UniversityApiClient.cs",
               "RelativeDocumentMoniker": "University\\Services\\UniversityApiClient.cs",
@@ -143,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MovimientoInventarioResponse.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\MovimientoInventarioResponse.cs",
               "RelativeDocumentMoniker": "University\\Models\\MovimientoInventarioResponse.cs",
@@ -155,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ILabsApiClient.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_api\\Interfaces\\ILabsApiClient.cs",
               "RelativeDocumentMoniker": "fl_api\\Interfaces\\ILabsApiClient.cs",
@@ -167,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Docente.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\Docente.cs",
               "RelativeDocumentMoniker": "University\\Models\\Docente.cs",
@@ -179,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "GuideAnalyze.py",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\PyAnalyze\\GuideAnalyze.py",
               "RelativeDocumentMoniker": "PyAnalyze\\GuideAnalyze.py",
@@ -191,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\Student.cs",
               "RelativeDocumentMoniker": "University\\Models\\Student.cs",
@@ -203,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Encargado.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\Encargado.cs",
               "RelativeDocumentMoniker": "University\\Models\\Encargado.cs",
@@ -215,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "InsumoPorPractica.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\InsumoPorPractica.cs",
               "RelativeDocumentMoniker": "University\\Models\\InsumoPorPractica.cs",
@@ -227,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ForecastInsumosRiesgo.razor",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\Pages\\ForecastInsumosRiesgo.razor",
               "RelativeDocumentMoniker": "fl_front\\Pages\\ForecastInsumosRiesgo.razor",
@@ -239,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Alerta.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\Alerta.cs",
               "RelativeDocumentMoniker": "University\\Models\\Alerta.cs",
@@ -251,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Insumo.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\University\\Models\\Insumo.cs",
               "RelativeDocumentMoniker": "University\\Models\\Insumo.cs",
@@ -263,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repos\\forecastlab\\ForecastLab\\fl_api\\fl_front\\Program.cs",
               "RelativeDocumentMoniker": "fl_front\\Program.cs",

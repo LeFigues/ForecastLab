@@ -39,6 +39,7 @@ builder.Services.AddHttpClient<IForecastService, ForecastService>(client =>
     client.BaseAddress = new Uri("https://forecast.labs.underflabs.com/");
 });
 
+builder.Services.AddScoped<IForecastHistoricoService, ForecastHistoricoService>();
 
 builder.Services.AddSingleton<AppState>();
 

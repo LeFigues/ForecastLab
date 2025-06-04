@@ -58,7 +58,7 @@ builder.Services.AddTransient<IClassificationService, ClassificationService>();
 builder.Services.AddTransient<IPdfProcessingService, PdfProcessingService>();
 builder.Services.AddSingleton<IPlanningService, PlanningService>();
 
-
+builder.Services.AddSingleton<IForecastSemestreRepository, ForecastSemestreRepository>();
 builder.Services.AddScoped<IForecastRiesgoRepository, ForecastRiesgoRepository>();
 builder.Services.AddScoped<IForecastHistoricoRepository, ForecastHistoricoRepository>();
 builder.Services.AddScoped<IForecastPracticaRepository, ForecastPracticaRepository>();

@@ -14,19 +14,26 @@ namespace fl_api.Services
         private readonly IForecastRiesgoRepository _repo;
         private readonly IForecastHistoricoRepository _historicoRepo;
         private readonly IForecastPracticaRepository _practicaRepo;
+        private readonly IForecastSemestreRepository _semestreRepo; // Nuevo repositorio
+
+        // Precio unitario de ejemplo; en producción, leer de catálogo o configuración
+        private readonly decimal _precioUnitario = 5.0m;
 
         public ForecastService(
             IUniversityApiClient api,
             IForecastRiesgoRepository riesgoRepo,
             IForecastHistoricoRepository historicoRepo,
-            IForecastPracticaRepository practicaRepo
+            IForecastPracticaRepository practicaRepo,
+            IForecastSemestreRepository semestreRepo // Se agrega aquí
         )
         {
             _api = api;
             _repo = riesgoRepo;
             _historicoRepo = historicoRepo;
             _practicaRepo = practicaRepo;
+            _semestreRepo = semestreRepo;
         }
+
         public Task<List<ForecastPointDto>> ForecastAsync(
             IEnumerable<DailyDemandDto> history,
             string horizon)
@@ -34,11 +41,11 @@ namespace fl_api.Services
             // Función para agrupar en el primer día del mes o semestre
             Func<DateTime, DateTime> periodKey = horizon.ToLower() switch
             {
-                "monthly" => d => new DateTime(d.Year, d.Month, 1),
+                "monthly" => d => new DateTime(d.Date.Year, d.Date.Month, 1),
                 "semestral" => d =>
                 {
-                    var half = (d.Month - 1) / 6;
-                    return new DateTime(d.Year, half * 6 + 1, 1);
+                    var half = (d.Date.Month - 1) / 6;
+                    return new DateTime(d.Date.Year, half * 6 + 1, 1);
                 }
                 ,
                 _ => throw new ArgumentException("Horizon debe ser 'monthly' o 'semestral'")
@@ -147,6 +154,7 @@ namespace fl_api.Services
                 })
                 .ToList();
         }
+
         public async Task<List<ForecastHistoricoDto>> ForecastInsumosHistoricoAsync()
         {
             var movimientos = await _api.GetMovimientosInventarioAsync();
@@ -180,6 +188,7 @@ namespace fl_api.Services
 
             return historial;
         }
+
         public async Task<List<ForecastPracticaDto>> ForecastPracticasUsoAsync()
         {
             var solicitudes = await _api.GetSolicitudesUsoAsync();
@@ -200,6 +209,7 @@ namespace fl_api.Services
                 .OrderByDescending(x => x.Mes)
                 .ThenByDescending(x => x.TotalEstudiantes)
                 .ToList();
+
             var records = resultado.Select(p => new ForecastPracticaRecord
             {
                 PracticaTitulo = p.PracticaTitulo,
@@ -212,6 +222,7 @@ namespace fl_api.Services
             await _practicaRepo.SaveManyAsync(records);
             return resultado;
         }
+
         public async Task<List<ForecastRiesgoDto>> ForecastInsumosEnRiesgoAsync()
         {
             var movimientos = await _api.GetMovimientosInventarioAsync();
@@ -241,7 +252,6 @@ namespace fl_api.Services
 
                 var meses = promedio > 0 ? insumo.StockActual / promedio : 9999; // o 0 si prefieres
 
-
                 string riesgo;
                 if (promedio == 0)
                     riesgo = "Sin uso";
@@ -264,6 +274,7 @@ namespace fl_api.Services
                     Riesgo = riesgo
                 });
             }
+
             var records = resultado.Select(r => new ForecastRiesgoRecord
             {
                 InsumoNombre = r.InsumoNombre,
@@ -281,5 +292,88 @@ namespace fl_api.Services
                 .ToList();
         }
 
+        /// <summary>
+        /// Nuevo método: genera forecast de consumo para cada insumo en los próximos 6 meses,
+        /// calcula unidades a comprar y costo estimado, y guarda en Mongo.
+        /// </summary>
+        public async Task<List<ForecastInsumoSemestreDto>> ForecastInsumosSemestreAsync()
+        {
+            // 1) Traer movimientos e insumos desde la API
+            var movimientos = await _api.GetMovimientosInventarioAsync();
+            var insumos = await _api.GetInsumosAsync();
+
+            var resultado = new List<ForecastInsumoSemestreDto>();
+            var recordsToSave = new List<ForecastSemestreRecord>();
+
+            foreach (var insumo in insumos)
+            {
+                // 2) Filtrar movimientos de tipo "PRESTAMO" para este insumo
+                var movimientosFiltrados = movimientos
+                    .Where(m => m.TipoMovimiento.ToUpper() == "PRESTAMO"
+                                && m.InsumoNombre.Equals(insumo.Nombre, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                // 3) Mapear a DailyDemandDto (cada movimiento como demanda diaria)
+                var historicoDaily = movimientosFiltrados
+                    .Select(m => new DailyDemandDto
+                    {
+                        Date = m.FechaEntregado.Date,
+                        Quantity = m.Cantidad
+                    })
+                    .ToList();
+
+                // 4) Obtener forecast mensual para próximos 6 meses
+                var forecastPoints = await ForecastAsync(historicoDaily, "monthly");
+
+                // Solo nos interesan los primeros 6 puntos (en caso de que algo varíe)
+                var pronosticoSemestre = forecastPoints.Take(6).ToList();
+
+                // 5) Calcular el total pronosticado en el semestre
+                double sumaDouble = pronosticoSemestre.Sum(p => p.ForecastedQuantity);
+                int totalPronosticado = (int)Math.Round(sumaDouble);
+
+                // 6) Stock actual y unidades a comprar
+                int stockActual = insumo.StockActual;
+                int unidadesAComprar = Math.Max(0, totalPronosticado - stockActual);
+
+                // 7) Costo estimado
+                decimal costoEstimado = unidadesAComprar * _precioUnitario;
+
+                // 8) Construir el DTO de salida
+                resultado.Add(new ForecastInsumoSemestreDto
+                {
+                    InsumoNombre = insumo.Nombre,
+                    StockActual = stockActual,
+                    TotalPronosticadoSemestre = totalPronosticado,
+                    UnidadesAComprar = unidadesAComprar,
+                    CostoEstimado = costoEstimado,
+                    PronosticoMensual = pronosticoSemestre
+                });
+
+                // 9) Convertir a ForecastSemestreRecord para guardar en Mongo
+                var record = new ForecastSemestreRecord
+                {
+                    InsumoNombre = insumo.Nombre,
+                    StockActual = stockActual,
+                    TotalPronosticadoSemestre = totalPronosticado,
+                    UnidadesAComprar = unidadesAComprar,
+                    CostoEstimado = costoEstimado,
+                    PronosticoMensual = pronosticoSemestre
+                        .Select(p => new PronosticoMensualItem
+                        {
+                            PeriodStart = p.PeriodStart,
+                            ForecastedQuantity = p.ForecastedQuantity
+                        })
+                        .ToList(),
+                    FechaRegistro = DateTime.UtcNow
+                };
+                recordsToSave.Add(record);
+            }
+
+            // 10) Guardar todo en Mongo
+            await _semestreRepo.SaveManyAsync(recordsToSave);
+
+            return resultado;
+        }
     }
 }

@@ -1,0 +1,73 @@
+﻿@page "/forecast-historico"
+@using fl_front.Dtos
+@using fl_front.Services
+@inject IForecastHistoricoService ForecastHistoricoService
+
+<h3>Histórico de Pronóstico Semestral de Insumos</h3>
+
+@if (listaHistorico == null)
+{
+    <p><em>Cargando datos de pronóstico…</em></p>
+}
+else if (!listaHistorico.Any())
+{
+    <p>No hay registros de pronóstico semestral disponibles.</p>
+}
+else
+{
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Insumo</th>
+                <th>Stock Actual</th>
+                <th>Total Pronost. Semestre</th>
+                <th>Unidades a Comprar</th>
+                <th>Costo Estimado</th>
+                <th>Fecha Registro</th>
+                <th>Pronóstico Mensual</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var hist in listaHistorico)
+            {
+                <tr>
+                    <td>@hist.InsumoNombre</td>
+                    <td>@hist.StockActual</td>
+                    <td>@hist.TotalPronosticadoSemestre</td>
+                    <td>@hist.UnidadesAComprar</td>
+                    <td>@hist.CostoEstimado.ToString("C")</td>
+                    <td>@hist.FechaRegistro.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>
+                        @if (hist.PronosticoMensual != null && hist.PronosticoMensual.Length > 0)
+                        {
+                            <ul class="list-unstyled mb-0">
+                                @foreach (var p in hist.PronosticoMensual)
+                                {
+                                    <li>
+                                        <strong>@p.PeriodStart.ToLocalTime().ToString("yyyy-MM-dd"):</strong>
+                                        @p.ForecastedQuantity
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <em>Sin datos</em>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    // Arreglo que recibe todos los historiales
+    ForecastHistoricoSemestreDto[]? listaHistorico;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Llamamos al servicio para poblar la lista
+        listaHistorico = await ForecastHistoricoService.GetHistoricoSemestreAsync();
+    }
+}

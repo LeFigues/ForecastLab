@@ -3,7 +3,6 @@ using fl_api.Dtos.Forecast;
 using fl_api.Interfaces;
 using fl_api.Models;
 using fl_api.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace fl_api.Controllers
@@ -24,7 +23,7 @@ namespace fl_api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ForecastRequestDto dto)
+        public async Task<IActionResult> Post([FromBody] fl_api.Dtos.ForecastRequestDto dto)
         {
             // 1) Obtén la historia agregada por periodos
             var history = await _reportSvc.GetDemandHistoryAsync(dto.From, dto.To);
@@ -43,27 +42,31 @@ namespace fl_api.Controllers
             var data = await _forecastSvc.ForecastInsumosPorPracticaAsync();
             return Ok(data);
         }
+
         [HttpGet("insumos-historico")]
         public async Task<ActionResult<List<ForecastHistoricoDto>>> GetForecastHistorico()
         {
             var data = await _forecastSvc.ForecastInsumosHistoricoAsync();
             return Ok(data);
         }
+
         [HttpGet("practicas-uso")]
         public async Task<ActionResult<List<ForecastPracticaDto>>> GetForecastPracticasUso()
         {
             var data = await _forecastSvc.ForecastPracticasUsoAsync();
             return Ok(data);
         }
+
         [HttpGet("insumos-riesgo")]
         public async Task<ActionResult<List<ForecastRiesgoDto>>> GetForecastRiesgo()
         {
             var data = await _forecastSvc.ForecastInsumosEnRiesgoAsync();
             return Ok(data);
         }
+
         [HttpGet("insumos-historico/historico")]
         public async Task<ActionResult<List<ForecastHistoricoRecord>>> GetHistoricoInsumosMongo(
-    [FromServices] IForecastHistoricoRepository repo)
+            [FromServices] IForecastHistoricoRepository repo)
         {
             var data = await repo.GetAllAsync();
             return Ok(data);
@@ -79,9 +82,9 @@ namespace fl_api.Controllers
 
         [HttpPost("insumos-riesgo/ai")]
         public async Task<ActionResult<string>> GetRiesgoConIA(
-    [FromBody] ForecastAiRequest request,
-    [FromServices] IOpenAIClient ai,
-    [FromServices] IPromptService prompts)
+            [FromBody] ForecastAiRequest request,
+            [FromServices] IOpenAIClient ai,
+            [FromServices] IPromptService prompts)
         {
             var resumen = string.Join("\n", request.Datos.Select(d =>
                 $"- {d.InsumoNombre}: stock {d.StockActual}, uso promedio {d.UsoMensualPromedio}, meses restantes {d.MesesSobrantes} ({d.Riesgo})"));
@@ -92,15 +95,29 @@ namespace fl_api.Controllers
             var response = await ai.CreateChatCompletionAsync(new ChatCompletionRequest
             {
                 Messages = new List<ChatMessage>
-        {
-            new ChatMessage { Role = "system", Content = "Eres un analista de logística..." },
-            new ChatMessage { Role = "user", Content = input }
-
-        }
+                {
+                    new ChatMessage { Role = "system", Content = "Eres un analista de logística..." },
+                    new ChatMessage { Role = "user", Content = input }
+                }
             });
 
             return Ok(response.GetText());
         }
 
+        [HttpGet("insumos/semestre")]
+        public async Task<IActionResult> GetForecastSemestre()
+        {
+            var resultado = await _forecastSvc.ForecastInsumosSemestreAsync();
+            return Ok(resultado);
+        }
+
+        // NUEVO: obtiene del repositorio Mongo todos los ForecastSemestreRecord guardados
+        [HttpGet("insumos/semestre/historico")]
+        public async Task<ActionResult<List<ForecastSemestreRecord>>> GetHistoricoSemestreMongo(
+            [FromServices] IForecastSemestreRepository repo)
+        {
+            var data = await repo.GetAllAsync();
+            return Ok(data);
+        }
     }
 }

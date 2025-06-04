@@ -199,3 +199,5 @@ C:\Repos\forecastlab\ForecastLab\fl_api\fl_api\obj\Debug\net9.0\refint\fl_api.dl
 C:\Repos\forecastlab\ForecastLab\fl_api\fl_api\obj\Debug\net9.0\fl_api.pdb
 C:\Repos\forecastlab\ForecastLab\fl_api\fl_api\obj\Debug\net9.0\fl_api.genruntimeconfig.cache
 C:\Repos\forecastlab\ForecastLab\fl_api\fl_api\obj\Debug\net9.0\ref\fl_api.dll
+C:\Repos\forecastlab\ForecastLab\fl_api\fl_api\bin\Debug\net9.0\config.json
+C:\Repos\forecastlab\ForecastLab\fl_api\fl_api\bin\Debug\net9.0\fl_api_endpoints.json

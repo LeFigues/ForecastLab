@@ -1,0 +1,849 @@
+{
+  "pages": [
+    {
+      "page_number": 1,
+      "text": "GUIAS DE PRÁCTICA ROBOTICA IOT\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nUNIVERSIDAD\nPRIVADA DEL VALLE\nFACULTAD DE INFORMÁTICA Y\nELECTRÓNICA\nGUÍA PRÁCTICA DE LABORATORIO\nIOT Y ROBOTICA\nTítulo de la Práctica\nPRACTICA Nº 1 LECTURA Y ESCRITURA DE DATOS EN\nSENSORES Y ACTUADORES EMPLEANDO RASPBERRY\nPRACTICA Nº 2 IMPLEMENTAR UNA INFRAESTRUCTURA IOT\nPRACTICA Nº 3 CONTROL DE MOVIMIENTO DE ROBOTS\nPRACTICA Nº 4 ROBOT CON SENSORES Y ACTUADORES",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA ROBOTICA IOT",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ],
+        [
+          [
+            "Título de la Práctica"
+          ],
+          [
+            "PRACTICA Nº 1 LECTURA Y ESCRITURA DE DATOS EN\nSENSORES Y ACTUADORES EMPLEANDO RASPBERRY"
+          ],
+          [
+            "PRACTICA Nº 2 IMPLEMENTAR UNA INFRAESTRUCTURA IOT"
+          ],
+          [
+            "PRACTICA Nº 3 CONTROL DE MOVIMIENTO DE ROBOTS"
+          ],
+          [
+            "PRACTICA Nº 4 ROBOT CON SENSORES Y ACTUADORES"
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 2,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 1\nLECTURA Y ESCRITURA DE DATOS EN SENSORES Y ACTUADORES\nEMPLEANDO RASPBERRY\n1. CONOCIMIENTO TEÓRICO REQUERIDO\nintroducción a placas de desarrollo con módulos wifi.\n2. COMPETENCIAS\no Realiza programación básica de dispositivos electrónicos utilizando\nsensores y actuadores para la adquisición básica de datos, empleando\nplataformas de desarrollo IOT.\no Desarrolla programas informáticos de manejo de dispositivos\nelectrónicos, para resolución de problemas identificados en el contexto\nlaboral, tomando en cuenta la correcta aplicación de las propiedades,\nelementos, estructura de la programación en la nube con Arduino,\nRaspberry, Esp8266 o Nodemcu\n3. MATERIALES, REACTIVOS Y EQUIPOS\nEQUIPOS\nCantidad Unidad Descripción Observaciones\n1 Pza Multímetro Digital\nINSUMOS\nCantidad Unidad Descripción Observaciones\n1 Pza Breadboard\n1 Pza KIT RASPBERRY\n1 Pza ESP8266\n1 Pza SENSOR DTH11\nLa práctica es para 1 grupo\n1 Pza SENSOR DE GAS MQ2 de 2 estudiantes, la\ncapacidad del Laboratorio\nSENSOR DE HUMEDAD\n2 Pza es de 10 grupos\nFC-28\n3 Pza Resistencias de 220 Ω\n3 Pza LEDS\n1 Pza CABLES DE CONEXION\n2",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ],
+        [
+          [
+            "Realiza programación básica de dispositivos electrónicos utilizando"
+          ],
+          [
+            "sensores y actuadores para la adquisición básica de datos, empleando"
+          ],
+          [
+            "plataformas de desarrollo IOT."
+          ],
+          [
+            "Desarrolla programas informáticos de manejo de dispositivos"
+          ],
+          [
+            "electrónicos, para resolución de problemas identificados en el contexto"
+          ],
+          [
+            "laboral, tomando en cuenta la correcta aplicación de las propiedades,"
+          ],
+          [
+            "elementos, estructura de la programación en la nube con Arduino,"
+          ],
+          [
+            "Raspberry, Esp8266 o Nodemcu"
+          ]
+        ],
+        [
+          [
+            "EQUIPOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Multímetro Digital",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INSUMOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Breadboard",
+            "",
+            "",
+            "La práctica es para 1 grupo\nde 2 estudiantes, la\ncapacidad del Laboratorio\nes de 10 grupos"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "KIT RASPBERRY",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "ESP8266",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SENSOR DTH11",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SENSOR DE GAS MQ2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SENSOR DE HUMEDAD\nFC-28",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Resistencias de 220 Ω",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "LEDS",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CABLES DE CONEXION",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 3,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 1\n4. TÉCNICA O PROCEDIMIENTO\nConfigurar sensores en la placa de desarrollo, configurando la conexión wifi\n5. TIEMPO DE DURACIÓN DE LA PRÁCTICA\nSe estima 100 minutos.\n6. MEDICIÓN, CÁLCULOS Y GRÁFICOS\nA la conclusión de la práctica, el estudiante tendrá la capacidad de armar un\ncircuito utilizando sensores y una placa de desarrollo con conexión wifi.\n7. CUESTIONARIO\nDescriba la configuración de los sensores y las características de su\nfuncionamiento en la placa de desarrollo\n3",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 4,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 2\nIMPLEMENTAR UNA INFRAESTRUCTURA IOT\n1. CONOCIMIENTO TEÓRICO REQUERIDO\nIntroducción a sistemas basados en la nube.\n2. COMPETENCIAS\nDesarrolla programas informáticos de manejo de dispositivos electrónicos,\npara resolución de problemas identificados en el contexto laboral, tomando en\ncuenta la correcta aplicación de las propiedades, elementos, estructura de la\nprogramación en la nube con Arduino Raspberry, Esp8266 o Nodemcu.\n3. MATERIALES, REACTIVOS Y EQUIPOS\nEQUIPOS\nCantidad Unidad Descripción Observaciones\n1 Pza Multímetro Digital\nINSUMOS\nCantidad Unidad Descripción Observaciones\n1 Pza Breadboard\n1 Pza ESP8266\n1 Pza SENSOR DTH11\nLa práctica es para 1 grupo\n1 Pza SENSOR DE GAS MQ2\nde 2 estudiantes, la\nSENSOR DE HUMEDAD\n2 Pza capacidad del Laboratorio\nFC-28\nes de 10 grupos\n3 Pza Resistencias de 220 Ω\n3 Pza LEDS\n1 Pza CABLES DE CONEXION\n4",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ],
+        [
+          [
+            "EQUIPOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Multímetro Digital",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INSUMOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Breadboard",
+            "",
+            "",
+            "La práctica es para 1 grupo\nde 2 estudiantes, la\ncapacidad del Laboratorio\nes de 10 grupos"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "ESP8266",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SENSOR DTH11",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SENSOR DE GAS MQ2",
+            "",
+            "",
+            ""
+          ],
+          [
+            "2",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SENSOR DE HUMEDAD\nFC-28",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Resistencias de 220 Ω",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "LEDS",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CABLES DE CONEXION",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 5,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 2\n4. TÉCNICA O PROCEDIMIENTO\nImplementar una arquitectura IOT desde el Sistema de Adquisición de Datos,\nutilizando protocolos de comunicación con la infraestructura Iot\n5. TIEMPO DE DURACIÓN DE LA PRÁCTICA\nSe estima 100 minutos.\n6. MEDICIÓN, CÁLCULOS Y GRÁFICOS\nA la conclusión de la práctica, el estudiante tendrá las bases de configuración\ne implementación de un sistema en la nube.\n7. CUESTIONARIO\n¿Qué características tiene el sistema de adquisición de datos?\n¿Cuál es la característica que tiene una arquitectura IOT?\n5",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 6,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 3\nCONTROL DE MOVIMIENTO DE ROBOTS\n1. CONOCIMIENTO TEÓRICO REQUERIDO\no Introducción a la robótica\no Introducción a los mecanismos con poleas y engranes.\n2. COMPETENCIAS\no Explica los componentes, elementos e historia inherentes a la robótica\npara definir los tipos de empleo o servicios que complementan el\ntrabajo del Ingeniero en Sistemas Informáticos en base a ejemplos del\ncontexto acordes al avance de la ciencia y la tecnología.\no Emplea dispositivos robóticos motorizados que emplean mecanismos\nde engranes y poleas, para la construcción de robots, con\ncaracterísticas de movilidad y manipulación de objetos aplicables el\ncampo de la ingeniería, de acuerdo a especificaciones.\n3. MATERIALES, REACTIVOS Y EQUIPOS\nEQUIPOS\nCantidad Unidad Descripción Observaciones\n1 Pza FUENTE DE PODER\nINSUMOS\nCantidad Unidad Descripción Observaciones\n1 Pza Breadboard\n1 Pza ARDUINO\n3 Pza SERVO MOTORES La práctica es para 1 grupo\n1 Pza BRAZO DE ROBOT de 2 estudiantes, la\ncapacidad del Laboratorio\n1 Pza CABLE DE FUENTE\nes de 10 grupos\n1 Pza CABLES DE CONEXION\nMODULO CONTROLADOR\n1 Pza\nPCA9685\n6",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ],
+        [
+          [
+            "EQUIPOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "FUENTE DE PODER",
+            "",
+            "",
+            ""
+          ],
+          [
+            "INSUMOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Breadboard",
+            "",
+            "",
+            "La práctica es para 1 grupo\nde 2 estudiantes, la\ncapacidad del Laboratorio\nes de 10 grupos"
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "ARDUINO",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SERVO MOTORES",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "BRAZO DE ROBOT",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CABLE DE FUENTE",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CABLES DE CONEXION",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "MODULO CONTROLADOR\nPCA9685",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 7,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 3\n4. TÉCNICA O PROCEDIMIENTO\nControlar el movimiento de un robot n tiempo real a distancia, utilizando\ninfraestructura IOT\n5. TIEMPO DE DURACIÓN DE LA PRÁCTICA\nSe estima 100 minutos.\n6. MEDICIÓN, CÁLCULOS Y GRÁFICOS\nA la conclusión de la práctica, el estudiante tendrá conocimientos para\ncontrolar movimientos de un robot desde una infraestructura IOT.\n7. CUESTIONARIO\n¿En qué situaciones se aplica el control de movimientos de un robot desde\nuna infraestructura IOT a distancia y en tiempo real?\n¿Qué funcionalidades tiene el control de movimientos de un robot,\nejemplifique?\n7",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 8,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\nPRACTICA 4\nROBOT CON SENSORES Y ACTUADORES\n1. CONOCIMIENTO TEÓRICO REQUERIDO\nMotorización y sensores. introducción a la programación\n2. COMPETENCIAS\no Explica los componentes, elementos e historia inherentes a la robótica\npara definir los tipos de empleo o servicios que complementan el\ntrabajo del Ingeniero en Sistemas Informáticos en base a ejemplos del\ncontexto acordes al avance de la ciencia y la tecnología.\no Emplea dispositivos robóticos motorizados que emplean mecanismos\nde engranes y poleas, para la construcción de robots, con\ncaracterísticas de movilidad y manipulación de objetos aplicables el\ncampo de la ingeniería, de acuerdo a especificaciones.\n3. MATERIALES, REACTIVOS Y EQUIPOS\nEQUIPOS\nCantidad Unidad Descripción Observaciones\n1 Pza FUENTE DE PODER\nINSUMOS\nCantidad Unidad Descripción Observaciones\n1 Pza Breadboard\n1 Pza ARDUINO\n3 Pza SERVO MOTORES\nCAMARA PARA\n1 Pza La práctica es para 1 grupo\nARDUINO OV7670\nde 2 estudiantes, la\n1 Pza ESP32 +CAM+WIFI\ncapacidad del Laboratorio\n1 Pza BRAZO DE ROBOT es de 10 grupos\n1 Pza CABLE DE FUENTE\n1 Pza CABLES DE CONEXION\nMODULO CONTROLADOR\n1 Pza\nPCA9685\n8",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ],
+        [
+          [
+            "",
+            "EQUIPOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "FUENTE DE PODER",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "INSUMOS",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "Cantidad",
+            "",
+            "",
+            "Unidad",
+            "",
+            "",
+            "Descripción",
+            "",
+            "Observaciones",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "Breadboard",
+            "",
+            "",
+            "La práctica es para 1 grupo\nde 2 estudiantes, la\ncapacidad del Laboratorio\nes de 10 grupos",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "ARDUINO",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "3",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "SERVO MOTORES",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CAMARA PARA\nARDUINO OV7670",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "ESP32 +CAM+WIFI",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "BRAZO DE ROBOT",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CABLE DE FUENTE",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "CABLES DE CONEXION",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "1",
+            "",
+            "",
+            "Pza",
+            "",
+            "",
+            "MODULO CONTROLADOR\nPCA9685",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      ]
+    },
+    {
+      "page_number": 9,
+      "text": "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO\nCódigo de registro: RE-10-LAB-322 Versión 2.0\nUNIVESIDAD DEL VALLE\nLABORATORIO DE IOT Y ROBÓTICA\n4. TÉCNICA O PROCEDIMIENTO\nConfigurar un robot con sensores y actuadores.\n5. TIEMPO DE DURACIÓN DE LA PRÁCTICA\nSe estima 100 minutos.\n6. MEDICIÓN, CÁLCULOS Y GRÁFICOS\nA la conclusión de la práctica, el estudiante tendrá conocimientos para\nconfigurar y programar sensores y actuadores en un robot.\n7. CUESTIONARIO\n¿Qué funcionalidades tienen los sensores y actuadores en un robot,\nejemplifique?\n9",
+      "tables": [
+        [
+          [
+            "GUIAS DE PRÁCTICA CENTROS DE CÓMPUTO",
+            ""
+          ],
+          [
+            "Código de registro: RE-10-LAB-322",
+            "Versión 2.0"
+          ]
+        ]
+      ]
+    }
+  ]
+}

@@ -44,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RIaXN0b3JpY29Nb25nby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repos/forecastlab/ForecastLab/fl_api/fl_front/Pages/ForecastHistoricoSemestre.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RIaXN0b3JpY29TZW1lc3RyZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repos/forecastlab/ForecastLab/fl_api/fl_front/Pages/ForecastInsumosRiesgo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RJbnN1bW9zUmllc2dvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

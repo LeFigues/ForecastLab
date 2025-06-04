@@ -18,7 +18,7 @@ namespace fl_api.Interfaces
 
 
 
-
+        Task<List<ForecastInsumoSemestreDto>> ForecastInsumosSemestreAsync();
 
     }
 }
