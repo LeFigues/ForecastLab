@@ -1,7 +1,0 @@
-{
-  "MONGO_URI": "mongodb://usuario:pass@localhost:27017/forecastdb",
-  "MOVIMIENTOS_API": "https://universidad-la9h.onrender.com/movimientos-inventario",
-  "OPENAI_API_KEY": "tu_api_key_de_openai",
-  "FORECAST_COLLECTION": "forecast_insumos",
-  "PAST_MONTHS_TO_USE": 6
-}
