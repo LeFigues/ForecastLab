@@ -1,0 +1,270 @@
+﻿@page "/insumos-historico-chart"
+@using System.Text.Json
+@using System.Globalization
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<!-- Animate.css & Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<h3 class="text-center text-uppercase text-primary mb-4 fw-bold animate__animated animate__fadeInDown">
+    <span class="d-inline-flex justify-content-center align-items-center me-2"
+          style="width: 55px; height: 55px; border-radius: 50%; background: linear-gradient(135deg, #00c6ff, #007bff); box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 3px solid white;">
+        <i class="bi bi-bar-chart-line text-white" style="font-size: 1.7rem;"></i>
+    </span>
+    USO HISTÓRICO DE INSUMOS
+</h3>
+
+@if (IsLoading)
+{
+    <div class="d-flex justify-content-center mt-5 animate__animated animate__fadeIn">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row mb-4 animate__animated animate__fadeInUp">
+        <div class="col-md-6 mb-2">
+            <input type="text" class="form-control shadow-sm rounded-pill px-4" placeholder="🔎 Buscar insumo"
+                   value="@SearchTerm" @oninput="OnSearchInputChanged" />
+        </div>
+        <div class="col-md-6 mb-2">
+            <select class="form-control shadow-sm rounded-pill px-4" @bind="SelectedMonth">
+                <option value="">📆 Filtrar por mes</option>
+                @foreach (var mes in Meses)
+                {
+                    <option value="@mes">@mes</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-4 animate__animated animate__fadeInUp">
+        <div class="col-md-6">
+            <div class="card bg-primary text-white text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Insumos</h5>
+                    <h2 class="fw-bold">@FilteredData.Count</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-success text-white text-center shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Total Usado</h5>
+                    <h2 class="fw-bold">@FilteredData.Sum(x => x.TotalUsado)</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-4 animate__animated animate__fadeInUp">
+        <canvas id="insumosChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="mb-4 text-end animate__animated animate__fadeInUp">
+        <button class="btn btn-success shadow-sm rounded-pill px-4 py-2 transition-fast" @onclick="ExportToExcelAsync">
+            <i class="bi bi-file-earmark-excel me-2"></i> Exportar Excel
+        </button>
+    </div>
+
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-hover table-bordered table-sm shadow-sm">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>🧪 Insumo</th>
+                    <th>📅 Mes</th>
+                    <th>📦 Total Usado</th>
+                    <th>⏱️ Fecha Forecast</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                @foreach (var item in FilteredData)
+                {
+                    <tr>
+                        <td>@item.InsumoNombre</td>
+                        <td>@MostrarMesFormateado(item.Mes)</td>
+                        <td>@item.TotalUsado</td>
+                        <td>@item.FechaForecast.ToString("dd 'de' MMMM 'de' yyyy", new CultureInfo("es-ES"))</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @if (!FilteredData.Any())
+    {
+        <div class="alert alert-warning text-center mt-4 shadow-sm animate__animated animate__fadeIn">
+            ⚠️ No se encontraron registros con los filtros aplicados.
+        </div>
+    }
+}
+
+@code {
+    private List<ForecastHistoricoRecord> AllData = new();
+    private List<ForecastHistoricoRecord> FilteredData = new();
+    private List<string> Meses = new();
+    private string SearchTerm = "";
+    private string SelectedMonth = "";
+    private bool IsLoading = true;
+    private bool _chartRendered = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var response = await Http.GetAsync("https://forecast.labs.underflabs.com/api/forecast/insumos-historico/historico");
+            var content = await response.Content.ReadAsStringAsync();
+
+            var raw = JsonSerializer.Deserialize<List<RawForecastHistoricoRecord>>(content, new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+
+            if (raw == null) return;
+
+            AllData = raw.Select(x => new ForecastHistoricoRecord
+                {
+                    InsumoNombre = x.InsumoNombre?.Trim() ?? "",
+                    Mes = x.Mes,
+                    TotalUsado = x.TotalUsado,
+                    FechaForecast = x.FechaForecast
+                }).OrderByDescending(x => x.Mes).ToList();
+
+            Meses = AllData.Select(x => x.Mes).Distinct().OrderByDescending(x => x).ToList();
+            ApplyFilters();
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender && !_chartRendered && !IsLoading)
+        {
+            await RenderChartAsync();
+            _chartRendered = true;
+        }
+    }
+
+    private void ApplyFilters()
+    {
+        FilteredData = AllData;
+
+        if (!string.IsNullOrWhiteSpace(SearchTerm))
+        {
+            FilteredData = FilteredData
+                .Where(x => x.InsumoNombre.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        if (!string.IsNullOrWhiteSpace(SelectedMonth))
+        {
+            FilteredData = FilteredData
+                .Where(x => x.Mes == SelectedMonth)
+                .ToList();
+        }
+    }
+
+    private string MostrarMesFormateado(string mes)
+    {
+        if (DateTime.TryParseExact(mes, "yyyy-MM", CultureInfo.InvariantCulture, DateTimeStyles.None, out var fecha))
+        {
+            return fecha.ToString("MMMM 'de' yyyy", new CultureInfo("es-ES"));
+        }
+        return mes;
+    }
+
+    private async Task RenderChartAsync()
+    {
+        var labels = FilteredData.Select(x => x.InsumoNombre).ToList();
+        var data = FilteredData.Select(x => x.TotalUsado).ToList();
+        await JS.InvokeVoidAsync("renderInsumosChart", labels, data);
+    }
+
+    private async Task ExportToExcelAsync()
+    {
+        var data = FilteredData.Select(item => new Dictionary<string, object>
+            {
+                ["Insumo"] = item.InsumoNombre,
+                ["Mes"] = MostrarMesFormateado(item.Mes),
+                ["Total Usado"] = item.TotalUsado,
+                ["Fecha Forecast"] = item.FechaForecast.ToString("dd 'de' MMMM 'de' yyyy", new CultureInfo("es-ES"))
+            }).ToList();
+
+        var json = JsonSerializer.Serialize(data);
+        await JS.InvokeVoidAsync("exportToExcel", json);
+    }
+
+    private void OnSearchInputChanged(ChangeEventArgs e)
+    {
+        SearchTerm = e.Value?.ToString() ?? "";
+        ApplyFilters();
+        _ = RenderChartAsync();
+    }
+
+    private class RawForecastHistoricoRecord
+    {
+        public ForecastId Id { get; set; } = new();
+        public string InsumoNombre { get; set; } = "";
+        public string Mes { get; set; } = "";
+        public int TotalUsado { get; set; }
+        public DateTime FechaForecast { get; set; }
+    }
+
+    private class ForecastHistoricoRecord
+    {
+        public string InsumoNombre { get; set; } = "";
+        public string Mes { get; set; } = "";
+        public int TotalUsado { get; set; }
+        public DateTime FechaForecast { get; set; }
+    }
+
+    private class ForecastId
+    {
+        public long Timestamp { get; set; }
+        public DateTime CreationTime { get; set; }
+    }
+}
+<script>
+    window.renderInsumosChart = (labels, data) => {
+        const ctx = document.getElementById('insumosChart');
+        if (!ctx) return;
+
+        if (window.myInsumosChart) {
+            window.myInsumosChart.destroy();
+        }
+
+        window.myInsumosChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Total Usado',
+                    data: data,
+                    backgroundColor: '#0d6efd'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+</script>

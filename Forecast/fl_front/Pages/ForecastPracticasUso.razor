@@ -1,0 +1,215 @@
+﻿@page "/practicas-uso"
+@using fl_front.Dtos
+@using fl_front.Services
+@inject IForecastService ForecastService
+@inject IJSRuntime JS
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Estilos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+<style>
+    .custom-title-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #007bff, #00c6ff);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        border: 2px solid white;
+    }
+
+    .custom-table th {
+        background-color: #212529;
+        color: #fff;
+        text-align: center;
+    }
+
+    .custom-table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .custom-table tbody tr:hover {
+        background-color: rgba(13, 110, 253, 0.05);
+        transition: background-color 0.3s ease-in-out;
+    }
+</style>
+
+<h3 class="text-center text-uppercase text-primary mb-4 fw-bold animate__animated animate__fadeInDown">
+    <span class="d-inline-flex justify-content-center align-items-center me-2 custom-title-icon">
+        <i class="bi bi-journal-check text-white fs-5"></i>
+    </span>
+    USO DE PRÁCTICAS POR MES
+</h3>
+
+@if (IsLoading)
+{
+    <div class="text-center my-5 animate__animated animate__fadeIn">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-bordered table-striped shadow-sm custom-table">
+            <thead>
+                <tr>
+                    <th>Mes</th>
+                    <th>Práctica</th>
+                    <th>Solicitudes</th>
+                    <th>Estudiantes Totales</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in data.OrderBy(d => d.Mes).ThenByDescending(d => d.TotalEstudiantes))
+                {
+                    <tr>
+                        <td>@item.Mes</td>
+                        <td>@item.PracticaTitulo</td>
+                        <td>@item.TotalSolicitudes</td>
+                        <td>@item.TotalEstudiantes</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center my-4">
+        <button class="btn btn-primary fw-bold" @onclick="MostrarGraficas">
+            📊 Mostrar Gráficas
+        </button>
+    </div>
+
+    <div class="animate__animated animate__fadeInUp">
+        <canvas id="barChart" class="mt-4 w-100" height="250"></canvas>
+        <canvas id="lineChart" class="mt-5 w-100" height="250"></canvas>
+        <canvas id="doughnutChart" class="mt-5 mx-auto" style="max-width: 400px; height: 300px;"></canvas>
+
+    </div>
+}
+
+@code {
+    private List<ForecastPracticaDto> data = new();
+    private List<string> Meses = new();
+    private List<string> Practicas = new();
+    private Dictionary<string, List<PracticaPoint>> SeriesPorPractica = new();
+    private bool IsLoading = true;
+
+    public class PracticaPoint
+    {
+        public string Mes { get; set; } = "";
+        public double Estudiantes { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await ForecastService.GetForecastPracticasUsoAsync();
+        data = response.ToList();
+
+        Meses = data.Select(x => x.Mes).Distinct().OrderBy(x => x).ToList();
+        Practicas = data.Select(x => x.PracticaTitulo).Distinct().ToList();
+
+        foreach (var practica in Practicas)
+        {
+            var puntos = Meses.Select(mes => new PracticaPoint
+                {
+                    Mes = mes,
+                    Estudiantes = data.FirstOrDefault(x => x.PracticaTitulo == practica && x.Mes == mes)?.TotalEstudiantes ?? 0
+                }).ToList();
+
+            SeriesPorPractica[practica] = puntos;
+        }
+
+        IsLoading = false;
+    }
+
+    private async Task MostrarGraficas()
+    {
+        var chartData = new
+        {
+            labels = Meses,
+            practicas = Practicas,
+            series = SeriesPorPractica.ToDictionary(
+                kvp => kvp.Key,
+                kvp => kvp.Value.Select(p => new { mes = p.Mes, estudiantes = p.Estudiantes }).ToList()
+            ),
+            totalPorMes = Meses.Select(m => data.Where(d => d.Mes == m).Sum(d => d.TotalEstudiantes)).ToList(),
+            totalPorPractica = Practicas.Select(p => new
+            {
+                nombre = p,
+                total = data.Where(d => d.PracticaTitulo == p).Sum(d => d.TotalEstudiantes)
+            }).ToList()
+        };
+
+        await JS.InvokeVoidAsync("renderPracticasCharts", chartData);
+    }
+}
+
+<script>
+    window.renderPracticasCharts = function (data) {
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: {
+                labels: data.labels,
+                datasets: data.practicas.map(p => ({
+                    label: p,
+                    data: data.series[p].map(e => e.estudiantes),
+                    backgroundColor: 'rgba(0,123,255,0.5)',
+                    borderColor: '#007bff',
+                    borderWidth: 1
+                }))
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Estudiantes por práctica por mes' },
+                    tooltip: { mode: 'index', intersect: false }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('lineChart'), {
+            type: 'line',
+            data: {
+                labels: data.labels,
+                datasets: [{
+                    label: 'Total estudiantes por mes',
+                    data: data.totalPorMes,
+                    borderColor: '#28a745',
+                    backgroundColor: 'rgba(40,167,69,0.2)',
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Evolución Total de Estudiantes' }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('doughnutChart'), {
+            type: 'doughnut',
+            data: {
+                labels: data.totalPorPractica.map(x => x.nombre),
+                datasets: [{
+                    data: data.totalPorPractica.map(x => x.total),
+                    backgroundColor: [
+                        '#007bff', '#6610f2', '#28a745', '#fd7e14', '#dc3545', '#6f42c1', '#00c6ff'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: { display: true, text: 'Participación por Práctica' }
+                }
+            }
+        });
+    };
+</script>

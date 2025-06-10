@@ -1,0 +1,197 @@
+﻿@page "/forecastS"
+@inject IForecastService ForecastService
+@inject IJSRuntime JS
+@using fl_front.Models
+@using System.Globalization
+@using fl_front.Services
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<h3 class="text-center text-uppercase text-primary mb-4 fw-bold animate__animated animate__fadeInDown">
+    <span class="d-inline-flex justify-content-center align-items-center me-2"
+          style="width: 55px; height: 55px; border-radius: 50%; background: linear-gradient(135deg, #007bff, #00c6ff); box-shadow: 0 6px 12px rgba(0,0,0,0.3); border: 3px solid white;">
+        <i class="bi bi-graph-up-arrow text-white" style="font-size: 1.7rem;"></i>
+    </span>
+    REPORTES DE DEMANDA
+</h3>
+
+<div class="card custom-card mb-4 animate__animated animate__fadeInUp">
+    <div class="row g-4">
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Desde</label>
+            <InputDate class="form-control stylish-input" @bind-Value="from" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Hasta</label>
+            <InputDate class="form-control stylish-input" @bind-Value="to" />
+        </div>
+        <div class="col-md-3">
+            <label class="form-label fw-semibold">Horizonte</label>
+            <select class="form-select stylish-input" @bind="horizon">
+                <option value="monthly">Mensual</option>
+                <option value="weekly">Semanal</option>
+                <option value="daily">Diario</option>
+            </select>
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+            <button class="btn btn-primary w-100" @onclick="GetForecast">
+                <i class="bi bi-bar-chart-steps me-1"></i> Generar Predicción
+            </button>
+        </div>
+    </div>
+</div>
+
+@if (isLoading)
+{
+    <div class="text-center my-5 animate__animated animate__fadeIn">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+        <p class="text-muted mt-2">Procesando predicción...</p>
+    </div>
+}
+else if (forecastResults.Any())
+{
+    <div class="card custom-card animate__animated animate__fadeIn">
+        <h5 class="mb-3 fw-semibold text-dark"><i class="bi bi-table"></i> Resultados</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center align-middle">
+                <thead class="table-primary text-white">
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Demanda Pronosticada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in forecastResults)
+                    {
+                        <tr>
+                            <td>
+                                @{
+                                    var format = horizon switch
+                                    {
+                                        "monthly" => "MMMM yyyy",
+                                        "weekly" => "dd/MM/yyyy",
+                                        "daily" => "dd/MM/yyyy",
+                                        _ => "dd/MM/yyyy"
+                                    };
+                                    var formatted = item.PeriodStart.ToString(format, CultureInfo.CreateSpecificCulture("es-ES"));
+                                }
+                                @formatted
+                            </td>
+                            <td class="fw-bold">@item.ForecastedQuantity</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            <canvas id="forecastChart" width="700" height="350"></canvas>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning mt-4 animate__animated animate__fadeIn">
+        <i class="bi bi-exclamation-triangle me-1"></i>
+        No hay datos para mostrar. Por favor selecciona un rango válido y presiona <strong>Generar Predicción</strong>.
+    </div>
+}
+
+@code {
+    private DateTime from = new(2025, 3, 11);
+    private DateTime to = new(2025, 5, 11);
+    private string horizon = "monthly";
+    private bool isLoading = false;
+    private List<ForecastResult> forecastResults = new();
+
+    private async Task GetForecast()
+    {
+        isLoading = true;
+
+        var request = new ForecastRequest
+        {
+            From = from.ToString("yyyy-MM-dd"),
+            To = to.ToString("yyyy-MM-dd"),
+            Horizon = horizon
+        };
+
+        try
+        {
+            var response = await ForecastService.GetForecastAsync(request);
+            if (response != null && response.Any())
+            {
+                forecastResults = response;
+
+                isLoading = false; // primero actualizamos estado para mostrar canvas
+                await InvokeAsync(StateHasChanged); // forzar render
+                await Task.Delay(300); // aseguramos que el canvas esté en el DOM
+
+                await RenderChart();
+            }
+        }
+        catch
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task RenderChart()
+    {
+        var labels = forecastResults.Select(f => f.PeriodStart.ToString(horizon switch
+        {
+            "monthly" => "MMM yyyy",
+            "weekly" => "dd/MM",
+            "daily" => "dd/MM",
+            _ => "dd/MM"
+        })).ToList();
+
+        var data = forecastResults.Select(f => f.ForecastedQuantity).ToList();
+
+        await JS.InvokeVoidAsync("renderForecastChart", labels, data);
+    }
+}
+
+<script>
+    window.renderForecastChart = (labels, data) => {
+        const ctx = document.getElementById('forecastChart');
+        if (!ctx) {
+            console.error("❌ No se encontró el canvas 'forecastChart'");
+            return;
+        }
+
+        if (window.myForecastChart) {
+            window.myForecastChart.destroy();
+        }
+
+        window.myForecastChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Demanda Pronosticada',
+                    data: data,
+                    backgroundColor: '#0d6efd'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    };
+</script>

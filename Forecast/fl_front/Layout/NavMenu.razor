@@ -1,0 +1,70 @@
+﻿<!-- Topbar -->
+<div class="top-row bg-dark text-white d-flex align-items-center px-4 py-2 shadow-sm" data-bs-theme="dark">
+    <i class="bi bi-box-seam-fill fs-4 me-2 text-primary"></i>
+    <h4 class="m-0 fw-bold">FL_FRONT SYSTEM</h4>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar bg-black text-light p-4" style="min-height: 100vh;" data-bs-theme="dark">
+    <h6 class="text-uppercase text-secondary mb-3">General</h6>
+    <NavLink href="" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-house-door-fill me-2"></i> Home
+    </NavLink>
+    <NavLink href="health" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-activity me-2"></i> Estado del Sistema
+    </NavLink>
+
+    <h6 class="mt-4 text-uppercase text-secondary mb-3">Análisis</h6>
+    @* <NavLink href="upload" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-file-earmark-text-fill me-2"></i> Analizar Guías
+    </NavLink> *@
+    <NavLink href="analisis-practica" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-file-earmark-text-fill me-2"></i> Analizar Practicas
+    </NavLink>
+    <NavLink href="demand-reports" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-boxes me-2"></i> Demanda de Insumos
+    </NavLink>
+
+    <h6 class="mt-4 text-uppercase text-secondary mb-3">Forecast</h6>
+    <NavLink href="forecastS" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-graph-up-arrow me-2"></i> Predicción
+    </NavLink>
+    <NavLink href="insumos-historico-chart" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-archive me-2"></i> Insumos Histórico
+    </NavLink>
+    <NavLink href="practicas-uso" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-journal-bookmark-fill me-2"></i> Prácticas Uso
+    </NavLink>
+    <NavLink href="insumos-riesgo" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-exclamation-triangle-fill me-2 text-warning"></i> Insumos Riesgo
+    </NavLink>
+    <NavLink href="insumos-riesgo-ai" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-cpu-fill me-2 text-info"></i> Forecast IA
+    </NavLink>
+    <NavLink href="forecast-semestre" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-calendar-range-fill me-2 text-success"></i> Forecast Semestral
+    </NavLink>
+
+    <h6 class="mt-4 text-uppercase text-secondary mb-3">Historial</h6>
+    <NavLink href="forecast-historico-insumos" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-clock-history me-2"></i> Forecast Insumos
+    </NavLink>
+    <NavLink href="forecast-historico-practicas" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
+        <i class="bi bi-clock me-2"></i> Forecast Prácticas
+    </NavLink>
+</div>
+
+<!-- CSS EXTRA -->
+<style>
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav-link.active {
+        background-color: #0d6efd !important;
+        color: white !important;
+        font-weight: bold;
+    }
+</style>

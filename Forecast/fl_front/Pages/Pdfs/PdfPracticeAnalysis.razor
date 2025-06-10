@@ -1,0 +1,148 @@
+﻿@page "/analisis-practica"
+@using fl_front.Models.Guides
+@using fl_front.Services.Pdfs
+@inject IPdfAnalysisService PdfService
+
+<h3 class="mb-4"><i class="fas fa-file-alt text-primary"></i> Análisis de Guía de Práctica</h3>
+
+<div class="mb-3">
+    <InputFile OnChange="HandleFileChange" class="form-control" />
+</div>
+
+<button @onclick="UploadFile"
+        class="btn btn-primary mb-3"
+        disabled="@(!fileSelected || isLoading)">
+    <i class="fas fa-upload"></i> Analizar PDF
+</button>
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center my-4">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+
+@if (result != null && practica != null)
+{
+    <div class="card bg-dark text-white shadow-sm mt-4">
+        <div class="card-header border-info border-bottom">
+            <h5 class="mb-0"><i class="fas fa-clipboard-list text-info"></i> Resultado</h5>
+        </div>
+        <div class="card-body">
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <div class="p-3 bg-secondary bg-opacity-10 rounded">
+                        <h6 class="text-info text-uppercase">Laboratorio</h6>
+                        <p class="mb-0 fw-bold">@result.Laboratorio</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 bg-secondary bg-opacity-10 rounded">
+                        <h6 class="text-info text-uppercase">Título</h6>
+                        <p class="mb-0 fw-bold">@practica.Titulo</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 bg-secondary bg-opacity-10 rounded">
+                        <h6 class="text-info text-uppercase">Grupos</h6>
+                        <p class="mb-0 fw-bold">@result.Grupos</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-3 bg-secondary bg-opacity-10 rounded">
+                        <h6 class="text-info text-uppercase">Estudiantes por grupo</h6>
+                        <p class="mb-0 fw-bold">@result.EstudiantesPorGrupo</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-info" />
+
+            <h5 class="text-success mt-3"><i class="fas fa-tools"></i> Equipos</h5>
+            <table class="table table-dark table-striped table-bordered align-middle mt-2">
+                <thead class="table-secondary text-dark">
+                    <tr>
+                        <th style="width: 80px;">Cantidad</th>
+                        <th>Unidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in practica.Materiales.Equipos)
+                    {
+                        <tr>
+                            <td>@item.CantidadPorGrupo</td>
+                            <td>@item.Unidad</td>
+                            <td>@item.Descripcion</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <h5 class="text-warning mt-4"><i class="fas fa-vial"></i> Insumos</h5>
+            <table class="table table-dark table-striped table-bordered align-middle mt-2">
+                <thead class="table-warning text-dark">
+                    <tr>
+                        <th style="width: 80px;">Cantidad</th>
+                        <th>Unidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in practica.Materiales.Insumos)
+                    {
+                        <tr>
+                            <td>@item.CantidadPorGrupo</td>
+                            <td>@item.Unidad</td>
+                            <td>@item.Descripcion</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+else if (!isLoading && wasSubmitted)
+{
+    <div class="alert alert-warning mt-4">
+        ⚠️ No se pudo analizar el archivo. Verifica que el PDF tenga el formato correcto.
+    </div>
+}
+
+@code {
+    private IBrowserFile? uploadedFile;
+    private PdfPracticeAnalysisResult? result;
+    private PracticaItem? practica => result?.Practicas?.FirstOrDefault();
+    private bool fileSelected = false;
+    private bool isLoading = false;
+    private bool wasSubmitted = false;
+
+    private void HandleFileChange(InputFileChangeEventArgs e)
+    {
+        uploadedFile = e.File;
+        fileSelected = uploadedFile != null;
+        result = null;
+        wasSubmitted = false;
+    }
+
+    private async Task UploadFile()
+    {
+        if (uploadedFile == null) return;
+
+        isLoading = true;
+        result = null;
+        wasSubmitted = true;
+
+        try
+        {
+            using var stream = uploadedFile.OpenReadStream(maxAllowedSize: 10_000_000);
+            result = await PdfService.AnalyzePdfAsync(stream, uploadedFile.Name);
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
