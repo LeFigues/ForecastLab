@@ -1,0 +1,72 @@
+﻿@page "/planning"
+@using fl_front.Dtos.Planification
+@using fl_front.Interfaces
+@inject IPlanningServiceF PlanningService
+
+<h3>Planes de Compra</h3>
+
+<button class="btn btn-primary mb-3" @onclick="GenerarPlanes">Generar Nuevos Planes</button>
+
+@if (planes == null)
+{
+    <p>Cargando planes...</p>
+}
+else if (planes.Count == 0)
+{
+    <p>No hay planes de compra registrados.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Insumo</th>
+                <th>Unidades a Comprar</th>
+                <th>Fecha Sugerida</th>
+                <th>Proveedor Sugerido</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in planes)
+            {
+                <tr>
+                    <td>@p.Insumo</td>
+                    <td>@p.UnidadesAComprar</td>
+                    <td>@p.FechaSugeridaCompra.ToString("yyyy-MM-dd")</td>
+                    <td>@p.ProveedorSugerido</td>
+                    <td>@p.Estado</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <div class="alert alert-info mt-3">@mensaje</div>
+}
+
+@code {
+    private List<PlanCompraDtoF>? planes;
+    private string mensaje = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        planes = await PlanningService.GetPlanesAsync();
+    }
+
+    private async Task GenerarPlanes()
+    {
+        var success = await PlanningService.GenerarPlanesAsync();
+        if (success)
+        {
+            planes = await PlanningService.GetPlanesAsync();
+            mensaje = "Planes generados correctamente.";
+        }
+        else
+        {
+            mensaje = "Error al generar los planes.";
+        }
+    }
+}

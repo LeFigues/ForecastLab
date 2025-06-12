@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "fl_front",
   "resources": {
-    "hash": "sha256-KnsYBLYrqmgcnwaH8Cyj9yec8R6zUUbtvjkE8/fJk/U=",
+    "hash": "sha256-PfZdHCoABAOCWuRy5ALipI2JSbqULbNY8bJBbfoFapY=",
     "fingerprinting": {
       "Blazor-ApexCharts.6svvilbkck.wasm": "Blazor-ApexCharts.wasm",
       "Blazorise.m9nkbb8nyy.wasm": "Blazorise.wasm",
@@ -40,6 +40,7 @@
       "Microsoft.Extensions.Primitives.hkjc7m6x3e.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.uxfxoah9jv.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.lao5cp8gqq.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
+      "MongoDB.Bson.fbvpnundo9.wasm": "MongoDB.Bson.wasm",
       "Newtonsoft.Json.qkbufwhni2.wasm": "Newtonsoft.Json.wasm",
       "Newtonsoft.Json.Bson.bau63na29o.wasm": "Newtonsoft.Json.Bson.wasm",
       "Polly.ivrqkyor03.wasm": "Polly.wasm",
@@ -222,8 +223,8 @@
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
       "University.9s3vyes0n4.wasm": "University.wasm",
       "University.0kerl4bv4d.pdb": "University.pdb",
-      "fl_front.784rn6c9td.wasm": "fl_front.wasm",
-      "fl_front.r9qgn7htf4.pdb": "fl_front.pdb"
+      "fl_front.sagcrcamvo.wasm": "fl_front.wasm",
+      "fl_front.uwxipg8rwo.pdb": "fl_front.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.1p93gcv9fh.js": "sha256-1UPiprzN3JhPftx3be7XEMaYlUN+chRF41CuttiWVtQ="
@@ -281,6 +282,7 @@
       "Microsoft.Extensions.Primitives.hkjc7m6x3e.wasm": "sha256-EQ2SeJgaUjRLYUVamIO8veqo0ULa8a/smS1fHkPruaY=",
       "Microsoft.JSInterop.uxfxoah9jv.wasm": "sha256-DmHnC9ymHQnTh0MVm4HX6gjjWpxkDYwTq2KqksxY+ZA=",
       "Microsoft.JSInterop.WebAssembly.lao5cp8gqq.wasm": "sha256-w+WvmTYZ9xv2XDrEoF7buW47/o7dUeKdnYWKUgyFEkU=",
+      "MongoDB.Bson.fbvpnundo9.wasm": "sha256-y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=",
       "Newtonsoft.Json.qkbufwhni2.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
       "Newtonsoft.Json.Bson.bau63na29o.wasm": "sha256-LWJN5PUlmyuUO5U/g3JioL184LenNn5SOVaZ5FmvqcU=",
       "Polly.ivrqkyor03.wasm": "sha256-nqtTJO4ORk0a9aj8aiYClicrbMc0aZVi3iA34o/Gznc=",
@@ -453,11 +455,11 @@
       "mscorlib.vt9pwshhot.wasm": "sha256-/aFxOaPc1iTNlJw0z4/RGEMD0nzl4qVE3SF4wMsLgp0=",
       "netstandard.or41gtprh3.wasm": "sha256-nD1KqAI5YYz+YohqHaZ5EmXi7Eq9Uy9sUknnI8sj1AM=",
       "University.9s3vyes0n4.wasm": "sha256-6T5/SQO2frgATkHC67Pnk5TAT+G62zg5VeTcvl00GxQ=",
-      "fl_front.784rn6c9td.wasm": "sha256-J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M="
+      "fl_front.sagcrcamvo.wasm": "sha256-hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8="
     },
     "pdb": {
       "University.0kerl4bv4d.pdb": "sha256-kEiQhftPr+zhVuPzDK1kZlxBV4kBNhIhl55yNyTzFWI=",
-      "fl_front.r9qgn7htf4.pdb": "sha256-AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4="
+      "fl_front.uwxipg8rwo.pdb": "sha256-LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc="
     }
   },
   "cacheBootResources": true,

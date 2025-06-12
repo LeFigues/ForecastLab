@@ -32,10 +32,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVtYW5kUmVwb3J0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Repos/pro/Forecast/fl_front/Pages/Forecast.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Repos/pro/Forecast/fl_front/Pages/ForecastHistorico.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RIaXN0b3JpY28ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +60,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RTZW1lc3RyZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repos/pro/Forecast/fl_front/Pages/ForecastVisual.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RWaXN1YWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Forecast/ForecastDashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RcRm9yZWNhc3REYXNoYm9hcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Forecast/ForecastGeneratorTool.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RcRm9yZWNhc3RHZW5lcmF0b3JUb29sLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Forecast/ForecastHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZWNhc3RcRm9yZWNhc3RIaXN0b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repos/pro/Forecast/fl_front/Pages/Health.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVhbHRoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,8 +84,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repos/pro/Forecast/fl_front/Pages/Orders/NewOrder.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXE5ld09yZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Orders/OrderDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXE9yZGVyRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Orders/Orders.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXE9yZGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Pdfs/AnalysisHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGRmc1xBbmFseXNpc0hpc3RvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Pdfs/AutoAnalyzeGuide.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGRmc1xBdXRvQW5hbHl6ZUd1aWRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repos/pro/Forecast/fl_front/Pages/Pdfs/PdfPracticeAnalysis.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGRmc1xQZGZQcmFjdGljZUFuYWx5c2lzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Pdfs/UploadPdf.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGRmc1xVcGxvYWRQZGYucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Planification/Planning.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbmlmaWNhdGlvblxQbGFubmluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Planification/PlanningCalendar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbmlmaWNhdGlvblxQbGFubmluZ0NhbGVuZGFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Reports/ReportCompra.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0c1xSZXBvcnRDb21wcmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/Reports/ReportForecast.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0c1xSZXBvcnRGb3JlY2FzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Repos/pro/Forecast/fl_front/Pages/UniversityForecastController/UniversityMovements.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdmVyc2l0eUZvcmVjYXN0Q29udHJvbGxlclxVbml2ZXJzaXR5TW92ZW1lbnRzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Repos/pro/Forecast/fl_front/Pages/UploadPdf.razor]

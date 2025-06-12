@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mE6gfNeSzInhmr3imoEn2vJMk1zotbhWrflvOk+K0W4=",
+  "Hash": "GvNgxvumVZ88UhwjkqROJUTonkTrC6ARhfIZ+tyB/MM=",
   "Source": "fl_front",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "oxmvjakzh7",
-      "Integrity": "3OD0ylsaoaJfMIJsl9fVDK4a2rnrx64IdDUph6BW6aE=",
+      "Fingerprint": "r1lmuusgds",
+      "Integrity": "D+qGVYS0iskejzGDucrbCsJdKGl/w8lD+T583iR/rCI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -346,8 +346,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "r9qgn7htf4",
-      "Integrity": "AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4=",
+      "Fingerprint": "uwxipg8rwo",
+      "Integrity": "LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\fl_front.pdb"
@@ -367,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "784rn6c9td",
-      "Integrity": "J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M=",
+      "Fingerprint": "sagcrcamvo",
+      "Integrity": "hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\webcil\\fl_front.wasm"
@@ -1170,6 +1170,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\webcil\\Microsoft.Win32.Registry.wasm"
+    },
+    {
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MongoDB.Bson.wasm",
+      "SourceId": "fl_front",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MongoDB.Bson#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "fbvpnundo9",
+      "Integrity": "y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\webcil\\MongoDB.Bson.wasm"
     },
     {
       "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\mscorlib.wasm",
@@ -5960,6 +5981,27 @@
       "OriginalItemSpec": "C:\\Users\\figue\\.nuget\\packages\\blazorise\\1.7.6\\staticwebassets\\floatingUi.js"
     },
     {
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\60ml9k9dqi-s1fdx1iu3c.gz",
+      "SourceId": "fl_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "js/chartForecast#[.{fingerprint=s1fdx1iu3c}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vzlkoh1ggy",
+      "Integrity": "W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js"
+    },
+    {
       "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\64klitv14p-n4kp8xrm7p.gz",
       "SourceId": "fl_front",
       "SourceType": "Computed",
@@ -6632,12 +6674,12 @@
       "OriginalItemSpec": "C:\\Users\\figue\\.nuget\\packages\\blazor-apexcharts\\6.0.0\\staticwebassets\\locales\\pt-br.json"
     },
     {
-      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-r9qgn7htf4.gz",
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-uwxipg8rwo.gz",
       "SourceId": "fl_front",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/fl_front#[.{fingerprint=r9qgn7htf4}]!.pdb.gz",
+      "RelativePath": "_framework/fl_front#[.{fingerprint=uwxipg8rwo}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6646,8 +6688,8 @@
       "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fj4l65k415",
-      "Integrity": "O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q=",
+      "Fingerprint": "xvswzfezse",
+      "Integrity": "w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.pdb"
@@ -7241,7 +7283,7 @@
       "OriginalItemSpec": "C:\\Users\\figue\\.nuget\\packages\\blazorise\\1.7.6\\staticwebassets\\vendors\\Behave.js"
     },
     {
-      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\c1vhp6mtf5-oxmvjakzh7.gz",
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\c1vhp6mtf5-r1lmuusgds.gz",
       "SourceId": "fl_front",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
@@ -7255,8 +7297,8 @@
       "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ljtvpm4588",
-      "Integrity": "UfjMDRChsNYAZu7LdDSUoY9ufa76gCIOKnFRqJIqdUw=",
+      "Fingerprint": "447w6lv2x6",
+      "Integrity": "/GkXUg2f7yniIT+uxSVOCR+953DB+VyXY6IgtzlASco=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -7766,7 +7808,7 @@
       "OriginalItemSpec": "C:\\Users\\figue\\.nuget\\packages\\blazor-apexcharts\\6.0.0\\staticwebassets\\locales\\da.json"
     },
     {
-      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\d60em4v4q2-zf17zsgztk.gz",
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\d60em4v4q2-mj5jnlxhmx.gz",
       "SourceId": "fl_front",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
@@ -9257,7 +9299,7 @@
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Net.ServicePoint.wasm"
     },
     {
-      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\j8qdbusocr-vx9uyknh0e.gz",
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\j8qdbusocr-0qumrwinr3.gz",
       "SourceId": "fl_front",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
@@ -9271,8 +9313,8 @@
       "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\service-worker\\service-worker-assets.js.build",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qk8ci8cdsv",
-      "Integrity": "ltfeWEeUuKPYqj6y/IZlb+h6LfGk4oUpYIS2RsPRb5Q=",
+      "Fingerprint": "bodfjk4ph2",
+      "Integrity": "+zVQlUTqv7k5QJvtqJnlNe5t2esz++Mdp33aR67ZyQE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\service-worker\\service-worker-assets.js.build"
@@ -10286,12 +10328,12 @@
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kb6zht5dsq.gz",
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kvkfzb7exr.gz",
       "SourceId": "fl_front",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint=kb6zht5dsq}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=kvkfzb7exr}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10300,8 +10342,8 @@
       "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "isbc7ny6mp",
-      "Integrity": "TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU=",
+      "Fingerprint": "ovwkqe6nfz",
+      "Integrity": "jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\index.html"
@@ -10389,6 +10431,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Linq.wasm"
+    },
+    {
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\o2pn5i2uun-fbvpnundo9.gz",
+      "SourceId": "fl_front",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MongoDB.Bson#[.{fingerprint=fbvpnundo9}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MongoDB.Bson.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wje9kbb7b5",
+      "Integrity": "FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MongoDB.Bson.wasm"
     },
     {
       "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\of7q45ws4h-n0ihslit6r.gz",
@@ -12659,12 +12722,12 @@
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-784rn6c9td.gz",
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-sagcrcamvo.gz",
       "SourceId": "fl_front",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/fl_front#[.{fingerprint=784rn6c9td}]!.wasm.gz",
+      "RelativePath": "_framework/fl_front#[.{fingerprint=sagcrcamvo}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -12673,8 +12736,8 @@
       "RelatedAsset": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "w0uz1gv8ke",
-      "Integrity": "wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw=",
+      "Fingerprint": "rlno9r8o3x",
+      "Integrity": "fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.wasm"
@@ -12778,8 +12841,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "BlazorServiceWorker",
       "AssetTraitValue": "ServiceWorkerJs",
-      "Fingerprint": "zf17zsgztk",
-      "Integrity": "D7YAK1lMsQ8d4PWCZlKQl1PXkDFRMgyslybvhRNxnLU=",
+      "Fingerprint": "mj5jnlxhmx",
+      "Integrity": "LiL4dgFP8tH0itFhuuuiSlUeYTgSf/+4w/SuuXzrX8I=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "wwwroot\\service-worker.js"
@@ -12799,8 +12862,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "BlazorServiceWorker",
       "AssetTraitValue": "ServiceWorkerManifest",
-      "Fingerprint": "vx9uyknh0e",
-      "Integrity": "LZC5qZ7wMtvONfIa46/134Td084+cA7gG26LbDimYC8=",
+      "Fingerprint": "0qumrwinr3",
+      "Integrity": "+F9pM1lsWXrJBskqzIYXtNtkM3+GcqC2Fx6hrifFavg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\service-worker\\service-worker-assets.js.build"
@@ -12904,11 +12967,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kb6zht5dsq",
-      "Integrity": "QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI=",
+      "Fingerprint": "kvkfzb7exr",
+      "Integrity": "kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
+      "SourceId": "fl_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/chartForecast#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s1fdx1iu3c",
+      "Integrity": "cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chartForecast.js"
     },
     {
       "Identity": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -36813,7 +36897,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "43152"
+          "Value": "43306"
         },
         {
           "Name": "Content-Type",
@@ -36821,11 +36905,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3OD0ylsaoaJfMIJsl9fVDK4a2rnrx64IdDUph6BW6aE=\""
+          "Value": "\"D+qGVYS0iskejzGDucrbCsJdKGl/w8lD+T583iR/rCI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36835,18 +36919,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3OD0ylsaoaJfMIJsl9fVDK4a2rnrx64IdDUph6BW6aE="
+          "Value": "sha256-D+qGVYS0iskejzGDucrbCsJdKGl/w8lD+T583iR/rCI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\c1vhp6mtf5-oxmvjakzh7.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\c1vhp6mtf5-r1lmuusgds.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000073469988"
+          "Quality": "0.000073126143"
         }
       ],
       "ResponseHeaders": [
@@ -36856,15 +36940,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13610"
+          "Value": "13674"
         },
         {
           "Name": "ETag",
-          "Value": "\"UfjMDRChsNYAZu7LdDSUoY9ufa76gCIOKnFRqJIqdUw=\""
+          "Value": "\"/GkXUg2f7yniIT+uxSVOCR+953DB+VyXY6IgtzlASco=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:52:10 GMT"
+          "Value": "Thu, 12 Jun 2025 11:26:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36884,19 +36968,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"3OD0ylsaoaJfMIJsl9fVDK4a2rnrx64IdDUph6BW6aE=\""
+          "Value": "W/\"D+qGVYS0iskejzGDucrbCsJdKGl/w8lD+T583iR/rCI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3OD0ylsaoaJfMIJsl9fVDK4a2rnrx64IdDUph6BW6aE="
+          "Value": "sha256-D+qGVYS0iskejzGDucrbCsJdKGl/w8lD+T583iR/rCI="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\c1vhp6mtf5-oxmvjakzh7.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\c1vhp6mtf5-r1lmuusgds.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -36905,7 +36989,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13610"
+          "Value": "13674"
         },
         {
           "Name": "Content-Type",
@@ -36913,11 +36997,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UfjMDRChsNYAZu7LdDSUoY9ufa76gCIOKnFRqJIqdUw=\""
+          "Value": "\"/GkXUg2f7yniIT+uxSVOCR+953DB+VyXY6IgtzlASco=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:52:10 GMT"
+          "Value": "Thu, 12 Jun 2025 11:26:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36935,7 +37019,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UfjMDRChsNYAZu7LdDSUoY9ufa76gCIOKnFRqJIqdUw="
+          "Value": "sha256-/GkXUg2f7yniIT+uxSVOCR+953DB+VyXY6IgtzlASco="
         }
       ]
     },
@@ -40951,7 +41035,144 @@
       ]
     },
     {
-      "Route": "_framework/fl_front.784rn6c9td.wasm",
+      "Route": "_framework/fl_front.pdb",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/fl_front.pdb",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-uwxipg8rwo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000008661233"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115456"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/fl_front.pdb.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-uwxipg8rwo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "115456"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/fl_front.sagcrcamvo.wasm",
       "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -40961,7 +41182,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "204565"
+          "Value": "300821"
         },
         {
           "Name": "Content-Type",
@@ -40969,11 +41190,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M=\""
+          "Value": "\"hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -40983,7 +41204,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "784rn6c9td"
+          "Value": "sagcrcamvo"
         },
         {
           "Name": "label",
@@ -40991,18 +41212,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M="
+          "Value": "sha256-hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8="
         }
       ]
     },
     {
-      "Route": "_framework/fl_front.784rn6c9td.wasm",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-784rn6c9td.gz",
+      "Route": "_framework/fl_front.sagcrcamvo.wasm",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-sagcrcamvo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000015949218"
+          "Quality": "0.000010754307"
         }
       ],
       "ResponseHeaders": [
@@ -41012,15 +41233,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "62698"
+          "Value": "92985"
         },
         {
           "Name": "ETag",
-          "Value": "\"wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw=\""
+          "Value": "\"fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41040,13 +41261,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M=\""
+          "Value": "W/\"hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "784rn6c9td"
+          "Value": "sagcrcamvo"
         },
         {
           "Name": "label",
@@ -41054,13 +41275,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M="
+          "Value": "sha256-hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8="
         }
       ]
     },
     {
-      "Route": "_framework/fl_front.784rn6c9td.wasm.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-784rn6c9td.gz",
+      "Route": "_framework/fl_front.sagcrcamvo.wasm.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-sagcrcamvo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -41069,7 +41290,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "62698"
+          "Value": "92985"
         },
         {
           "Name": "Content-Type",
@@ -41077,11 +41298,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw=\""
+          "Value": "\"fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41099,7 +41320,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "784rn6c9td"
+          "Value": "sagcrcamvo"
         },
         {
           "Name": "label",
@@ -41107,12 +41328,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw="
+          "Value": "sha256-fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM="
         }
       ]
     },
     {
-      "Route": "_framework/fl_front.pdb",
+      "Route": "_framework/fl_front.uwxipg8rwo.pdb",
       "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -41122,7 +41343,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "107248"
+          "Value": "162304"
         },
         {
           "Name": "Content-Type",
@@ -41130,148 +41351,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4=\""
+          "Value": "\"LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/fl_front.pdb",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-r9qgn7htf4.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000013021003"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "76798"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/fl_front.pdb.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-r9qgn7htf4.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "76798"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/fl_front.r9qgn7htf4.pdb",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\fl_front.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "107248"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41281,7 +41365,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "r9qgn7htf4"
+          "Value": "uwxipg8rwo"
         },
         {
           "Name": "label",
@@ -41289,18 +41373,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4="
+          "Value": "sha256-LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc="
         }
       ]
     },
     {
-      "Route": "_framework/fl_front.r9qgn7htf4.pdb",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-r9qgn7htf4.gz",
+      "Route": "_framework/fl_front.uwxipg8rwo.pdb",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-uwxipg8rwo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000013021003"
+          "Quality": "0.000008661233"
         }
       ],
       "ResponseHeaders": [
@@ -41310,15 +41394,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "76798"
+          "Value": "115456"
         },
         {
           "Name": "ETag",
-          "Value": "\"O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q=\""
+          "Value": "\"w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41338,13 +41422,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4=\""
+          "Value": "W/\"LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "r9qgn7htf4"
+          "Value": "uwxipg8rwo"
         },
         {
           "Name": "label",
@@ -41352,13 +41436,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4="
+          "Value": "sha256-LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc="
         }
       ]
     },
     {
-      "Route": "_framework/fl_front.r9qgn7htf4.pdb.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-r9qgn7htf4.gz",
+      "Route": "_framework/fl_front.uwxipg8rwo.pdb.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\9gaovfyq9g-uwxipg8rwo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -41367,7 +41451,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "76798"
+          "Value": "115456"
         },
         {
           "Name": "Content-Type",
@@ -41375,11 +41459,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q=\""
+          "Value": "\"w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41397,7 +41481,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "r9qgn7htf4"
+          "Value": "uwxipg8rwo"
         },
         {
           "Name": "label",
@@ -41405,7 +41489,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-O0Q5W9V3fO1e0gTpp5/Djqa43s5XgJNn6tBsq89RS8Q="
+          "Value": "sha256-w2Z+IG4BEV20R7cgBG/KUZlAV2RjVA3joHHVAGWPcuQ="
         }
       ]
     },
@@ -41420,7 +41504,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "204565"
+          "Value": "300821"
         },
         {
           "Name": "Content-Type",
@@ -41428,11 +41512,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M=\""
+          "Value": "\"hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41442,18 +41526,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M="
+          "Value": "sha256-hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8="
         }
       ]
     },
     {
       "Route": "_framework/fl_front.wasm",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-784rn6c9td.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-sagcrcamvo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000015949218"
+          "Quality": "0.000010754307"
         }
       ],
       "ResponseHeaders": [
@@ -41463,15 +41547,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "62698"
+          "Value": "92985"
         },
         {
           "Name": "ETag",
-          "Value": "\"wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw=\""
+          "Value": "\"fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41491,19 +41575,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M=\""
+          "Value": "W/\"hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M="
+          "Value": "sha256-hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8="
         }
       ]
     },
     {
       "Route": "_framework/fl_front.wasm.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-784rn6c9td.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\z6w0ut6h5j-sagcrcamvo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -41512,7 +41596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "62698"
+          "Value": "92985"
         },
         {
           "Name": "Content-Type",
@@ -41520,11 +41604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw=\""
+          "Value": "\"fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:39 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41542,7 +41626,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wFPOmjE4hyB8elIqJygBggR8oCOQF7dT4TXKM3saWhw="
+          "Value": "sha256-fwK9DhOkHm8cO84hALLsQiDyUG+rFoTZxNV8ZW5DxrM="
         }
       ]
     },
@@ -52867,6 +52951,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-eFKd94OljtffClMwsTtvBhVyFiJw5Syj09VdHCuu8MI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MongoDB.Bson.fbvpnundo9.wasm",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MongoDB.Bson.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "556309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 02:35:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fbvpnundo9"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MongoDB.Bson.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MongoDB.Bson.fbvpnundo9.wasm",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\o2pn5i2uun-fbvpnundo9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000004717515"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211975"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 02:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fbvpnundo9"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MongoDB.Bson.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MongoDB.Bson.fbvpnundo9.wasm.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\o2pn5i2uun-fbvpnundo9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 02:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fbvpnundo9"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/MongoDB.Bson.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MongoDB.Bson.wasm",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\bin\\Debug\\net9.0\\wwwroot\\_framework\\MongoDB.Bson.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "556309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 02:35:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MongoDB.Bson.wasm",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\o2pn5i2uun-fbvpnundo9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000004717515"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211975"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 02:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/MongoDB.Bson.wasm.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\o2pn5i2uun-fbvpnundo9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "211975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 02:35:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FD6bcFytemfqr67BOLyw7bkh2J0tbsE46u1pRyhRp2M="
         }
       ]
     },
@@ -104672,12 +105054,12 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kb6zht5dsq.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kvkfzb7exr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000848176421"
+          "Quality": "0.000720980534"
         }
       ],
       "ResponseHeaders": [
@@ -104687,15 +105069,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1178"
+          "Value": "1386"
         },
         {
           "Name": "ETag",
-          "Value": "\"TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU=\""
+          "Value": "\"jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 19:29:27 GMT"
+          "Value": "Thu, 12 Jun 2025 11:29:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -104715,13 +105097,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI=\""
+          "Value": "W/\"kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI="
+          "Value": "sha256-kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik="
         }
       ]
     },
@@ -104736,7 +105118,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2865"
+          "Value": "3594"
         },
         {
           "Name": "Content-Type",
@@ -104744,11 +105126,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI=\""
+          "Value": "\"kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 19:29:27 GMT"
+          "Value": "Thu, 12 Jun 2025 11:29:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -104758,13 +105140,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI="
+          "Value": "sha256-kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik="
         }
       ]
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kb6zht5dsq.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kvkfzb7exr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -104773,7 +105155,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1178"
+          "Value": "1386"
         },
         {
           "Name": "Content-Type",
@@ -104781,11 +105163,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU=\""
+          "Value": "\"jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 19:29:27 GMT"
+          "Value": "Thu, 12 Jun 2025 11:29:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -104803,18 +105185,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU="
+          "Value": "sha256-jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak="
         }
       ]
     },
     {
-      "Route": "index.kb6zht5dsq.html",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kb6zht5dsq.gz",
+      "Route": "index.kvkfzb7exr.html",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kvkfzb7exr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000848176421"
+          "Quality": "0.000720980534"
         }
       ],
       "ResponseHeaders": [
@@ -104824,15 +105206,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1178"
+          "Value": "1386"
         },
         {
           "Name": "ETag",
-          "Value": "\"TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU=\""
+          "Value": "\"jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 19:29:27 GMT"
+          "Value": "Thu, 12 Jun 2025 11:29:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -104852,13 +105234,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI=\""
+          "Value": "W/\"kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kb6zht5dsq"
+          "Value": "kvkfzb7exr"
         },
         {
           "Name": "label",
@@ -104866,12 +105248,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI="
+          "Value": "sha256-kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik="
         }
       ]
     },
     {
-      "Route": "index.kb6zht5dsq.html",
+      "Route": "index.kvkfzb7exr.html",
       "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -104881,7 +105263,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2865"
+          "Value": "3594"
         },
         {
           "Name": "Content-Type",
@@ -104889,11 +105271,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI=\""
+          "Value": "\"kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 19:29:27 GMT"
+          "Value": "Thu, 12 Jun 2025 11:29:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -104903,7 +105285,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kb6zht5dsq"
+          "Value": "kvkfzb7exr"
         },
         {
           "Name": "label",
@@ -104911,13 +105293,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI="
+          "Value": "sha256-kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik="
         }
       ]
     },
     {
-      "Route": "index.kb6zht5dsq.html.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kb6zht5dsq.gz",
+      "Route": "index.kvkfzb7exr.html.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\nrdxpedozw-kvkfzb7exr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -104926,7 +105308,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1178"
+          "Value": "1386"
         },
         {
           "Name": "Content-Type",
@@ -104934,11 +105316,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU=\""
+          "Value": "\"jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 19:29:27 GMT"
+          "Value": "Thu, 12 Jun 2025 11:29:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -104956,7 +105338,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kb6zht5dsq"
+          "Value": "kvkfzb7exr"
         },
         {
           "Name": "label",
@@ -104964,7 +105346,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TnbvXKeH5D2Yg+vn2hGE7r+iH6pDOY+3SvCoQE8WGGU="
+          "Value": "sha256-jKpU8E/gMZGvfOo1PEHQHjJHq7RAksW5zgZyKnNS0ak="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartForecast.js",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\60ml9k9dqi-s1fdx1iu3c.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001798561151"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "555"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartForecast.js",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartForecast.js.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\60ml9k9dqi-s1fdx1iu3c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartForecast.s1fdx1iu3c.js",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\60ml9k9dqi-s1fdx1iu3c.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001798561151"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "555"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1fdx1iu3c"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chartForecast.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartForecast.s1fdx1iu3c.js",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1fdx1iu3c"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chartForecast.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chartForecast.s1fdx1iu3c.js.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\60ml9k9dqi-s1fdx1iu3c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "555"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1fdx1iu3c"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chartForecast.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W7hlJscqREE1Su4cMLYUaqnUs9omk/kGxazInMQMSJQ="
         }
       ]
     },
@@ -118678,7 +119358,7 @@
     },
     {
       "Route": "service-worker.js",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\d60em4v4q2-zf17zsgztk.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\d60em4v4q2-mj5jnlxhmx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -118701,7 +119381,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -118721,13 +119401,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"D7YAK1lMsQ8d4PWCZlKQl1PXkDFRMgyslybvhRNxnLU=\""
+          "Value": "W/\"LiL4dgFP8tH0itFhuuuiSlUeYTgSf/+4w/SuuXzrX8I=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-D7YAK1lMsQ8d4PWCZlKQl1PXkDFRMgyslybvhRNxnLU="
+          "Value": "sha256-LiL4dgFP8tH0itFhuuuiSlUeYTgSf/+4w/SuuXzrX8I="
         }
       ]
     },
@@ -118750,7 +119430,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"D7YAK1lMsQ8d4PWCZlKQl1PXkDFRMgyslybvhRNxnLU=\""
+          "Value": "\"LiL4dgFP8tH0itFhuuuiSlUeYTgSf/+4w/SuuXzrX8I=\""
         },
         {
           "Name": "Last-Modified",
@@ -118764,13 +119444,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-D7YAK1lMsQ8d4PWCZlKQl1PXkDFRMgyslybvhRNxnLU="
+          "Value": "sha256-LiL4dgFP8tH0itFhuuuiSlUeYTgSf/+4w/SuuXzrX8I="
         }
       ]
     },
     {
       "Route": "service-worker.js.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\d60em4v4q2-zf17zsgztk.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\d60em4v4q2-mj5jnlxhmx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -118791,7 +119471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -118815,12 +119495,12 @@
     },
     {
       "Route": "service-worker-assets.js",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\j8qdbusocr-vx9uyknh0e.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\j8qdbusocr-0qumrwinr3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000052077909"
+          "Quality": "0.000051805419"
         }
       ],
       "ResponseHeaders": [
@@ -118830,15 +119510,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19201"
+          "Value": "19302"
         },
         {
           "Name": "ETag",
-          "Value": "\"ltfeWEeUuKPYqj6y/IZlb+h6LfGk4oUpYIS2RsPRb5Q=\""
+          "Value": "\"+zVQlUTqv7k5QJvtqJnlNe5t2esz++Mdp33aR67ZyQE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -118858,13 +119538,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LZC5qZ7wMtvONfIa46/134Td084+cA7gG26LbDimYC8=\""
+          "Value": "W/\"+F9pM1lsWXrJBskqzIYXtNtkM3+GcqC2Fx6hrifFavg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LZC5qZ7wMtvONfIa46/134Td084+cA7gG26LbDimYC8="
+          "Value": "sha256-+F9pM1lsWXrJBskqzIYXtNtkM3+GcqC2Fx6hrifFavg="
         }
       ]
     },
@@ -118879,7 +119559,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "60280"
+          "Value": "60542"
         },
         {
           "Name": "Content-Type",
@@ -118887,11 +119567,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LZC5qZ7wMtvONfIa46/134Td084+cA7gG26LbDimYC8=\""
+          "Value": "\"+F9pM1lsWXrJBskqzIYXtNtkM3+GcqC2Fx6hrifFavg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -118901,13 +119581,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LZC5qZ7wMtvONfIa46/134Td084+cA7gG26LbDimYC8="
+          "Value": "sha256-+F9pM1lsWXrJBskqzIYXtNtkM3+GcqC2Fx6hrifFavg="
         }
       ]
     },
     {
       "Route": "service-worker-assets.js.gz",
-      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\j8qdbusocr-vx9uyknh0e.gz",
+      "AssetFile": "C:\\Repos\\pro\\Forecast\\fl_front\\obj\\Debug\\net9.0\\compressed\\j8qdbusocr-0qumrwinr3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -118916,7 +119596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19201"
+          "Value": "19302"
         },
         {
           "Name": "Content-Type",
@@ -118924,11 +119604,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ltfeWEeUuKPYqj6y/IZlb+h6LfGk4oUpYIS2RsPRb5Q=\""
+          "Value": "\"+zVQlUTqv7k5QJvtqJnlNe5t2esz++Mdp33aR67ZyQE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 12:56:38 GMT"
+          "Value": "Thu, 12 Jun 2025 11:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -118946,7 +119626,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ltfeWEeUuKPYqj6y/IZlb+h6LfGk4oUpYIS2RsPRb5Q="
+          "Value": "sha256-+zVQlUTqv7k5QJvtqJnlNe5t2esz++Mdp33aR67ZyQE="
         }
       ]
     }

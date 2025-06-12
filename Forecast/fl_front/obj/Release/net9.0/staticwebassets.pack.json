@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
+      "PackagePath": "staticwebassets\\js\\chartForecast.js"
+    },
+    {
       "Id": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },

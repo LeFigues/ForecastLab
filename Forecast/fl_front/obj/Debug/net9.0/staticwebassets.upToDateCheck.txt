@@ -3,6 +3,7 @@ C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
 C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Repos\pro\Forecast\fl_front\wwwroot\js\chartForecast.js
 C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
 C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 C:\Repos\pro\Forecast\fl_front\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
@@ -51,6 +52,7 @@ wwwroot\favicon.png
 wwwroot\icon-192.png
 wwwroot\icon-512.png
 wwwroot\index.html
+wwwroot\js\chartForecast.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

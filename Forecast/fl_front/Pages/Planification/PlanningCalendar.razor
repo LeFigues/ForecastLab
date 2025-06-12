@@ -1,0 +1,55 @@
+﻿@page "/planning-calendar"
+@using fl_front.Dtos.Planification
+@using fl_front.Interfaces
+@inject IPlanningServiceF PlanningService
+
+<h3>Calendario de Compras</h3>
+
+@if (eventos == null)
+{
+    <p>Cargando eventos...</p>
+}
+else if (eventos.Count == 0)
+{
+    <p>No hay eventos programados.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Evento</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ev in eventos)
+            {
+                <tr>
+                    <td>@ev.Titulo</td>
+                    <td>@ev.Fecha.ToString("yyyy-MM-dd")</td>
+                    <td>
+                        <span class="badge @ObtenerClaseEstado(ev.Estado)">@ev.Estado</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<EventoCompraDtoF>? eventos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        eventos = await PlanningService.GetCalendarioEventosAsync();
+    }
+
+    private string ObtenerClaseEstado(string estado) => estado switch
+    {
+        "Pendiente" => "bg-warning text-dark",
+        "Ordenado" => "bg-success",
+        _ => "bg-secondary"
+    };
+}

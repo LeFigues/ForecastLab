@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Repos\\pro\\Forecast\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\appsettings.json",
-              "RelativeDocumentMoniker": "fl_api\\appsettings.json",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\appsettings.json",
-              "RelativeToolTip": "fl_api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-10T13:35:40.538Z",
-              "EditorCaption": ""
             }
           ]
         }

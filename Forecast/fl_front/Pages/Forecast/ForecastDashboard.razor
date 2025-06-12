@@ -1,0 +1,71 @@
+﻿@page "/forecast-dashboard"
+@using fl_front.Dtos.ForecastF
+@using fl_front.Interfaces
+@inject IForecastServiceF ForecastServiceF
+
+<h3>Dashboard de Pronóstico de Insumos</h3>
+
+<button class="btn btn-primary mb-3" @onclick="CargarDatos">Cargar Todo</button>
+
+@if (insumosPorPractica != null)
+{
+    <h5>Insumos por Práctica</h5>
+    <ul>
+        @foreach (var i in insumosPorPractica)
+        {
+            <li>@i.Nombre (@i.Practica): @i.Cantidad unidades</li>
+        }
+    </ul>
+}
+
+@if (practicasUso != null)
+{
+    <h5>Prácticas con mayor uso</h5>
+    <ul>
+        @foreach (var p in practicasUso)
+        {
+            <li>@p.Nombre - Total insumos: @p.TotalInsumos</li>
+        }
+    </ul>
+}
+
+@if (riesgo != null)
+{
+    <h5>Insumos en Riesgo</h5>
+    <ul>
+        @foreach (var r in riesgo)
+        {
+            <li>@r.InsumoNombre - @r.Riesgo (meses restantes: @r.MesesSobrantes)</li>
+        }
+    </ul>
+    <button class="btn btn-warning" @onclick="AnalizarConIA">Analizar con IA</button>
+}
+
+@if (!string.IsNullOrEmpty(comentarioIA))
+{
+    <div class="alert alert-info mt-3">
+        <strong>Análisis IA:</strong>
+        <p>@comentarioIA</p>
+    </div>
+}
+
+@code {
+    private List<InsumoPorPracticaDtoF>? insumosPorPractica;
+    private List<PracticaUsoDtoF>? practicasUso;
+    private List<RiesgoInsumoDtoF>? riesgo;
+    private string comentarioIA = string.Empty;
+
+    private async Task CargarDatos()
+    {
+        insumosPorPractica = await ForecastServiceF.GetInsumosPorPracticaAsync();
+        practicasUso = await ForecastServiceF.GetPracticasUsoAsync();
+        riesgo = await ForecastServiceF.GetInsumosEnRiesgoAsync();
+    }
+
+    private async Task AnalizarConIA()
+    {
+        if (riesgo == null || riesgo.Count == 0) return;
+
+        comentarioIA = await ForecastServiceF.AnalizarConIAAsync(riesgo);
+    }
+}

@@ -1,0 +1,62 @@
+﻿@page "/order-detail/{Id}"
+@using fl_front.Dtos.OrdersF
+@using fl_front.Interfaces
+@inject IOrderServiceF OrderService
+
+<h3>Detalle de Orden</h3>
+
+@if (orden == null)
+{
+    <p>Cargando datos...</p>
+}
+else
+{
+    <div class="mb-3">
+        <strong>Número de Orden:</strong> @orden.NumeroOrden<br />
+        <strong>Proveedor:</strong> @orden.Proveedor<br />
+        <strong>Fecha de Emisión:</strong> @orden.FechaEmision.ToString("yyyy-MM-dd")<br />
+        <strong>Estado:</strong> @orden.Estado<br />
+        <strong>Notas:</strong> @orden.Notas
+    </div>
+
+    <h5>Ítems</h5>
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>Insumo</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Subtotal</th>
+                <th>Fecha Entrega</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in orden.Items)
+            {
+                <tr>
+                    <td>@item.Insumo</td>
+                    <td>@item.Cantidad</td>
+                    <td>@item.PrecioUnitario.ToString("C")</td>
+                    <td>@(item.Cantidad * item.PrecioUnitario).ToString("C")</td>
+                    <td>@item.FechaEntregaDeseada.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p><strong>Total:</strong> @orden.TotalMonto.ToString("C")</p>
+}
+
+@code {
+    [Parameter]
+    public string? Id { get; set; }
+
+    private PurchaseOrderDetailF? orden;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(Id))
+        {
+            orden = await OrderService.GetByIdAsync(Id);
+        }
+    }
+}

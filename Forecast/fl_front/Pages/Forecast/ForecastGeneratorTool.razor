@@ -1,0 +1,70 @@
+﻿@page "/forecast-generator"
+@using fl_front.Dtos.ForecastF
+@using fl_front.Interfaces
+@inject IForecastServiceF ForecastServiceF
+
+<h3>Generar Pronóstico por Fechas</h3>
+
+<div class="row mb-3">
+    <div class="col">
+        <label class="form-label">Desde</label>
+        <input type="date" class="form-control" @bind="from" />
+    </div>
+    <div class="col">
+        <label class="form-label">Hasta</label>
+        <input type="date" class="form-control" @bind="to" />
+    </div>
+    <div class="col">
+        <label class="form-label">Horizonte</label>
+        <select class="form-select" @bind="horizon">
+            <option value="monthly">Mensual</option>
+            <option value="quarterly">Trimestral</option>
+            <option value="semester">Semestral</option>
+        </select>
+    </div>
+    <div class="col-auto align-self-end">
+        <button class="btn btn-primary" @onclick="GenerarPronostico">Generar</button>
+    </div>
+</div>
+
+@if (datos != null && datos.Count > 0)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Periodo</th>
+                <th>Cantidad Pronosticada</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in datos)
+            {
+                <tr>
+                    <td>@p.PeriodStart.ToString("yyyy-MM-dd")</td>
+                    <td>@p.ForecastedQuantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private DateTime from = DateTime.Today.AddMonths(-3);
+    private DateTime to = DateTime.Today;
+    private string horizon = "monthly";
+
+    private List<ForecastPointDtoF>? datos;
+
+    private async Task GenerarPronostico()
+    {
+        var request = new ForecastRequestDtoF
+            {
+                From = from.ToString("yyyy-MM-dd"),
+                To = to.ToString("yyyy-MM-dd"),
+                Horizon = horizon
+            };
+
+
+        datos = await ForecastServiceF.GenerarPronosticoAsync(request);
+    }
+}

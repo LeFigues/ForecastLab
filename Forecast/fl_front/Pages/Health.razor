@@ -1,5 +1,6 @@
 ﻿@page "/health"
 @using fl_front.Services
+@using fl_front.Interfaces
 @using fl_front.Models
 @inject IHealthService HealthService
 @inject AppState AppState
@@ -94,7 +95,24 @@
     private async Task RefreshStatus()
     {
         isLoading = true;
-        response = await HealthService.GetHealthStatusAsync();
+        try
+        {
+            var dto = await HealthService.GetHealthStatusAsync();
+            response = new Dictionary<string, bool>
+            {
+                { nameof(dto.Mongo), dto?.Mongo ?? false },
+                { nameof(dto.OpenAI), dto?.OpenAI ?? false },
+                { nameof(dto.StudentsApi), dto?.StudentsApi ?? false },
+                { nameof(dto.LabsApi), dto?.LabsApi ?? false },
+                { nameof(dto.PdfStorage), dto?.PdfStorage ?? false }
+            };
+
+        }
+        catch (Exception ex)
+        {
+            
+            throw ex;
+        }
         isLoading = false;
     }
 }

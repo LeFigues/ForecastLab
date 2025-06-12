@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "aZhLZoUh",
+  "version": "dUqouVhA",
   "assets": [
     {
       "hash": "sha256-We76yQ6BbUqy3OL7pB4AiChSOtAH/BdDsZ0Z+MzXvD0=",
@@ -660,6 +660,10 @@ self.assetsManifest = {
     {
       "hash": "sha256-5E1OW2jOP0sC2xDrg1wPVU+AT40zGS6wfHzblMd1JmY=",
       "url": "_framework/Microsoft.Win32.Registry.ozmyxl3pzt.wasm"
+    },
+    {
+      "hash": "sha256-y8neNRr+cD97zmFxw3yPbV/nv7h5Z5o7XKxH0l2oOmk=",
+      "url": "_framework/MongoDB.Bson.fbvpnundo9.wasm"
     },
     {
       "hash": "sha256-LWJN5PUlmyuUO5U/g3JioL184LenNn5SOVaZ5FmvqcU=",
@@ -1334,7 +1338,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.ag32297siy.wasm"
     },
     {
-      "hash": "sha256-3OD0ylsaoaJfMIJsl9fVDK4a2rnrx64IdDUph6BW6aE=",
+      "hash": "sha256-D+qGVYS0iskejzGDucrbCsJdKGl/w8lD+T583iR/rCI=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1366,12 +1370,12 @@ self.assetsManifest = {
       "url": "_framework/dotnet.runtime.qrl1fuqt3c.js"
     },
     {
-      "hash": "sha256-J52WqZXM6tdkC0wecaLRoZzPwuvMoNnODYxkqBdoF1M=",
-      "url": "_framework/fl_front.784rn6c9td.wasm"
+      "hash": "sha256-hKjrokVRzf90GOH+M1L7oFYmGuK3w/AsLWLpKYeDCI8=",
+      "url": "_framework/fl_front.sagcrcamvo.wasm"
     },
     {
-      "hash": "sha256-AdSvZo2lKAr6aHiqbatOLmWOa2mY6CHWH0fJDMG9TT4=",
-      "url": "_framework/fl_front.r9qgn7htf4.pdb"
+      "hash": "sha256-LrXxZRbOxA1BRqWAh7lJEJT5DT+QIp8Z7RhO/hB2jCc=",
+      "url": "_framework/fl_front.uwxipg8rwo.pdb"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -1414,8 +1418,12 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-QCBWokelMjP+VRh4/m3Y/tDbpkyCvs0tT4ia5fzcQiI=",
+      "hash": "sha256-kOngyRQI98uiEA3WjEwCiis01JJv0iiroDu6ZRaoFik=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-cJJfG6E5U95et5G1W+c1dpVjbYpMY4BwDonhFRiW1e0=",
+      "url": "js/chartForecast.js"
     },
     {
       "hash": "sha256-f4c8YV1qrr6RSiVYWMQT7R5W2OkT+iXmE5H69/uRvGQ=",

@@ -1,0 +1,41 @@
+﻿@page "/forecast-history"
+@using fl_front.Dtos.ForecastF
+@using fl_front.Interfaces
+@inject IForecastServiceF ForecastServiceF
+@inject IJSRuntime JS
+
+<h3 class="mb-4">Histórico de Forecasts</h3>
+<button class="btn btn-outline-primary mb-4" @onclick="CargarTodo">Cargar Históricos</button>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <h5>Pronóstico por Insumo</h5>
+        <canvas id="chartInsumos"></canvas>
+    </div>
+    <div class="col-md-6 mb-4">
+        <h5>Prácticas y Cantidad de Insumos</h5>
+        <canvas id="chartPracticas"></canvas>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 mb-4">
+        <h5>Comparativa Stock vs Pronóstico (Semestre)</h5>
+        <canvas id="chartSemestre"></canvas>
+    </div>
+</div>
+
+@code {
+    private List<HistoricoInsumoDtoF>? historicoInsumos;
+    private List<HistoricoPracticaDtoF>? historicoPracticas;
+    private List<HistoricoSemestreDtoF>? historicoSemestre;
+
+    private async Task CargarTodo()
+    {
+        historicoInsumos = await ForecastServiceF.GetHistoricoInsumosAsync();
+        historicoPracticas = await ForecastServiceF.GetHistoricoPracticasAsync();
+        historicoSemestre = await ForecastServiceF.GetHistoricoSemestreAsync();
+
+        await JS.InvokeVoidAsync("renderForecastCharts", historicoInsumos, historicoPracticas, historicoSemestre);
+    }
+}

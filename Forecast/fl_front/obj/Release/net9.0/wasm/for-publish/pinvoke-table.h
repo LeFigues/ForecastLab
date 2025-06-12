@@ -163,7 +163,7 @@ int32_t SystemNative_Write (void *, void *, int32_t);
 static PinvokeImport libSystem_Native_imports [] = {
     {"SystemNative_Close", SystemNative_Close}, // System.Private.CoreLib
     {"SystemNative_CloseDir", SystemNative_CloseDir}, // System.Private.CoreLib
-    {"SystemNative_ConvertErrorPalToPlatform", SystemNative_ConvertErrorPalToPlatform}, // System.Console, System.Private.CoreLib
+    {"SystemNative_ConvertErrorPalToPlatform", SystemNative_ConvertErrorPalToPlatform}, // System.Console, System.Net.Primitives, System.Private.CoreLib
     {"SystemNative_ConvertErrorPlatformToPal", SystemNative_ConvertErrorPlatformToPal}, // System.Console, System.Private.CoreLib
     {"SystemNative_Dup", SystemNative_Dup}, // System.Console
     {"SystemNative_FAllocate", SystemNative_FAllocate}, // System.Private.CoreLib
@@ -205,7 +205,7 @@ static PinvokeImport libSystem_Native_imports [] = {
     {"SystemNative_SchedGetCpu", SystemNative_SchedGetCpu}, // System.Private.CoreLib
     {"SystemNative_SetErrNo", SystemNative_SetErrNo}, // System.Private.CoreLib
     {"SystemNative_Stat", SystemNative_Stat}, // System.Private.CoreLib
-    {"SystemNative_StrErrorR", SystemNative_StrErrorR}, // System.Console, System.Private.CoreLib
+    {"SystemNative_StrErrorR", SystemNative_StrErrorR}, // System.Console, System.Net.Primitives, System.Private.CoreLib
     {"SystemNative_SysLog", SystemNative_SysLog}, // System.Private.CoreLib
     {"SystemNative_TryGetUInt32OSThreadId", SystemNative_TryGetUInt32OSThreadId}, // System.Private.CoreLib
     {"SystemNative_Unlink", SystemNative_Unlink}, // System.Private.CoreLib
