@@ -1,53 +1,82 @@
 ﻿@page "/analysis-history"
 @inject fl_front.Interfaces.IPdfAnalysisServiceF PdfServiceF
 
-<h3>Historial de Archivos PDF Analizados</h3>
+<div class="container mt-4">
+    <div class="card shadow-sm p-4 rounded-4">
+        <h3 class="mb-4 text-primary">
+            <i class="fas fa-history me-2"></i>Historial de Archivos PDF Analizados
+        </h3>
 
-@if (archivos == null)
-{
-    <p>Cargando...</p>
-}
-else if (archivos.Count == 0)
-{
-    <p>No hay archivos registrados.</p>
-}
-else
-{
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Archivo</th>
-                <th>Tipo</th>
-                <th>Fecha de subida</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var f in archivos)
-            {
-                <tr>
-                    <td>@f.FileName</td>
-                    <td>@f.Tipo</td>
-                    <td>@f.UploadedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
-                    <td>
-                        <button class="btn btn-sm btn-info" @onclick="() => VerAnalisis(f.Id)">Ver análisis</button>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
+        @if (archivos == null)
+        {
+            <div class="text-center text-muted">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p class="mt-2">Cargando historial...</p>
+            </div>
+        }
+        else if (archivos.Count == 0)
+        {
+            <div class="alert alert-warning d-flex align-items-center">
+                <i class="fas fa-exclamation-circle me-2"></i>
+                No hay archivos registrados.
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th><i class="fas fa-file-alt me-1"></i>Archivo</th>
+                            <th><i class="fas fa-tag me-1"></i>Tipo</th>
+                            <th><i class="fas fa-calendar-alt me-1"></i>Fecha de Subida</th>
+                            <th><i class="fas fa-cogs me-1"></i>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var f in archivos)
+                        {
+                            <tr>
+                                <td>@f.FileName</td>
+                                <td class="text-capitalize">@f.Tipo</td>
+                                <td>@f.UploadedAt.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-info" @onclick="() => VerAnalisis(f.Id)">
+                                        <i class="fas fa-eye me-1"></i>Ver análisis
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
 
-@if (analisis != null)
-{
-    <div class="mt-4">
-        <h5>Análisis de: @analisis.FileName</h5>
-        <p><strong>Versión:</strong> @analisis.Version</p>
-        <p><strong>Código:</strong> @analisis.RegistryCode</p>
-        <p><strong>Materia:</strong> @analisis.Subject</p>
-        <pre>@analisis.RawJson</pre>
+        @if (analisis != null)
+        {
+            <div class="mt-5 p-4 border rounded-4 bg-light shadow-sm">
+                <h5 class="text-secondary mb-3">
+                    <i class="fas fa-file-search me-2"></i>Análisis de: <strong>@analisis.FileName</strong>
+                </h5>
+
+                <div class="row mb-3">
+                    <div class="col-md-4 mb-2">
+                        <strong>Versión:</strong> <span class="text-dark">@analisis.Version</span>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <strong>Código:</strong> <span class="text-dark">@analisis.RegistryCode</span>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <strong>Materia:</strong> <span class="text-dark">@analisis.Subject</span>
+                    </div>
+                </div>
+
+                <label class="form-label fw-bold"><i class="fas fa-code me-1"></i>Contenido JSON:</label>
+                <pre class="bg-white border rounded p-3 small text-break">@analisis.RawJson</pre>
+            </div>
+        }
     </div>
-}
+</div>
 
 @code {
     private List<fl_front.Dtos.Guides.GuideFileDtoF>? archivos;

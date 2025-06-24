@@ -30,5 +30,12 @@ namespace fl_api.Repositories.Guides
         {
             return await _collection.Find(_ => true).ToListAsync();
         }
+        public async Task<List<GuideFileRecord>> GetByCycleAndFacultyAsync(string ciclo, string faculty)
+        {
+            var filter = Builders<GuideFileRecord>.Filter.Eq(x => x.Cycle, ciclo) &
+                         Builders<GuideFileRecord>.Filter.Eq(x => x.Faculty, faculty);
+            return await _collection.Find(filter).ToListAsync();
+        }
+
     }
 }

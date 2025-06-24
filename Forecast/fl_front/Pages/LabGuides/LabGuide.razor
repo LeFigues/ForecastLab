@@ -1,0 +1,786 @@
+﻿@page "/upload-and-verify"
+@using System.Text.Json.Serialization
+@using fl_front.Dtos.Students
+@using fl_front.Interfaces.Students
+@inject IUniversityStudentServiceF UniversityService
+@inject HttpClient Http
+
+<div class="container mt-4">
+    <div class="shadow p-4 rounded bg-dark text-white">
+        <h2 class="mb-4 fw-bold d-flex align-items-center text-pink">
+            <i class="bi bi-upload me-2"></i> Subida de Guías PDF
+        </h2>
+
+        @if (faculties == null || careers == null || cycles == null || subjects == null)
+        {
+            <div class="alert alert-light text-dark"><i class="bi bi-hourglass-split"></i> Cargando datos...</div>
+        }
+        else
+        {
+            <EditForm Model="this">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Facultad</label>
+                        <select class="form-select" @bind="selectedFacultyId">
+                            <option disabled selected>Seleccione</option>
+                            @foreach (var fac in faculties)
+                            {
+                                <option value="@fac.Id">@fac.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label fw-semibold">Ciclo</label>
+                        <select class="form-select" @bind="selectedCycle">
+                            <option disabled selected>Seleccione</option>
+                            @foreach (var cyc in cycles)
+                            {
+                                <option value="@cyc.Display">@cyc.Display</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <h4 class="fw-bold text-pink">
+                        <i class="bi bi-files me-2"></i> Guías a Cargar
+                    </h4>
+                    @foreach (var item in archivos)
+                    {
+                        <div class="card mb-3 border-0 shadow bg-secondary text-white">
+                            <div class="card-body">
+                                <div class="row g-2 align-items-end">
+                                    <div class="col-md-3">
+                                        <label class="form-label">Archivo</label>
+                                        <InputFile class="form-control" OnChange="e => OnFileSelected(e, item)" />
+                                        @if (item.File != null)
+                                        {
+                                            <small class="text-light">@item.File.Name</small>
+                                        }
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Carrera</label>
+                                        <select class="form-select" @bind="item.CarreraId">
+                                            <option disabled selected>Seleccione Carrera</option>
+                                            @foreach (var car in careers)
+                                            {
+                                                <option value="@car.Id">@car.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Materia</label>
+                                        <select class="form-select" @bind="item.MateriaId">
+                                            <option disabled selected>Seleccione Materia</option>
+                                            @foreach (var mat in subjects.Where(s => s.CareerId == item.CarreraId))
+                                            {
+                                                <option value="@mat.Id">@mat.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <button class="btn btn-outline-danger w-100" @onclick="() => RemoveItem(item)">
+                                            <i class="bi bi-x-lg"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-pink" @onclick="AddItem">
+                            <i class="bi bi-plus-circle"></i> Agregar Guía
+                        </button>
+                        <button class="btn btn-outline-light border-pink text-pink" @onclick="UploadBatchAsync">
+                            <span class="spinner-border spinner-border-sm me-2 d-none" role="status" aria-hidden="true"></span>
+                            <i class="bi bi-cloud-upload"></i> Subir Guías
+                        </button>
+                    </div>
+                </div>
+            </EditForm>
+        }
+
+        @if (uploadResults?.Any() == true)
+        {
+            <div class="mt-4">
+                <h5 class="fw-bold text-success"><i class="bi bi-check-circle-fill"></i> Resultado de la Subida de Guías</h5>
+
+                <div class="row g-3">
+                    @foreach (var result in uploadResults)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm border-0 bg-secondary text-white">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h6 class="card-title">
+                                            <i class="bi bi-file-earmark-pdf-fill text-danger me-1"></i> @result.File
+                                        </h6>
+                                        <p class="mb-1">
+                                            <span class="fw-semibold">Estado:</span>
+                                            <span class="badge bg-success">@result.Status</span>
+                                        </p>
+                                        <p class="mb-0 text-light opacity-75"><small>ID: @result.Id</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="mt-4 text-end">
+                    <button class="btn btn-warning" @onclick="OnAnalyzeClick" disabled="@isAnalyzing">
+                        @if (isAnalyzing)
+                        {
+                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                            
+                            }
+                        else
+                        {
+                            <i class="bi bi-search me-1">Iniciar Análisis</i>
+                            
+                            }
+                    </button>
+
+                </div>
+            </div>
+        }
+
+
+
+        @if (analyzeResults?.Any() == true)
+        {
+            <div class="mt-5">
+                <h4 class="fw-bold text-light"><i class="bi bi-journal-check"></i> Resultados del Análisis</h4>
+                <div class="row g-4">
+                    @foreach (var result in analyzeResults)
+                    {
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm h-100 bg-secondary text-white">
+                                <div class="card-header bg-primary text-white">
+                                    <i class="bi bi-file-earmark-text me-1"></i> @result.NombreArchivo
+                                </div>
+                                <div class="card-body">
+                                    <p><strong>Materia:</strong> @result.Materia<br /><strong>Carrera:</strong> @result.Carrera</p>
+
+                                    @if (detallesAnalizados.ContainsKey(result.Id))
+                                    {
+                                        <h6 class="fw-semibold text-pink"><i class="bi bi-flask"></i> Prácticas Analizadas</h6>
+                                        @foreach (var practica in detallesAnalizados[result.Id].Practices)
+                                        {
+                                            <div class="bg-dark rounded p-2 mb-3 border-start border-3 border-pink text-white">
+                                                <strong>@practica.Title</strong><br />
+                                                <small>Grupos: @practica.GroupCount, Estudiantes por grupo: @practica.StudentsPerGroup</small>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <h6 class="text-light"><i class="bi bi-tools"></i> Equipos</h6>
+                                                        <ul class="mb-1">
+                                                            @foreach (var eq in practica.Materials.Equipment)
+                                                            {
+                                                                <li>@eq.Description (@eq.QuantityPerGroup @eq.Unit)</li>
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h6 class="text-light"><i class="bi bi-droplet-half"></i> Insumos</h6>
+                                                        <ul class="mb-1">
+                                                            @foreach (var ins in practica.Materials.Supplies)
+                                                            {
+                                                                <li>@ins.Description (@ins.QuantityPerGroup @ins.Unit)</li>
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+
+                                    @if (verificaciones.ContainsKey(result.Id))
+                                    {
+                                        <h6 class="fw-semibold mt-3 text-primary"><i class="bi bi-check2-square"></i> Verificación de Insumos</h6>
+                                        @foreach (var v in verificaciones[result.Id].Verificados)
+                                        {
+                                            <div class="bg-dark text-white p-2 rounded mb-2 shadow-sm border border-secondary">
+                                                <div class="d-flex justify-content-between">
+                                                    <div><strong>@v.Nombre</strong> (@v.Unidad)</div>
+                                                    <span class="badge @(v.Estado == "Disponible" ? "bg-success" : v.Estado == "Faltante" ? "bg-danger" : "bg-warning text-dark")">@v.Estado</span>
+                                                </div>
+                                                <small class="opacity-75">Req: @v.CantidadTotal • Stock: @v.Stock • Faltante: @v.Faltante • Sugerencia: @(v.EsSugerencia ? "Sí" : "No")</small>
+                                            </div>
+                                        }
+
+                                        @if (verificaciones[result.Id].NoEncontrados.Any())
+                                        {
+                                            <h6 class="mt-3 text-danger"><i class="bi bi-x-octagon"></i> No Encontrados</h6>
+                                            <ul>
+                                                @foreach (var n in verificaciones[result.Id].NoEncontrados)
+                                                {
+                                                    <li>@n.Nombre (@n.CantidadTotal @n.Unidad)</li>
+                                                }
+                                            </ul>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <div class="text-light opacity-75"><i class="bi bi-hourglass-split"></i> Cargando verificación...</div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="mt-4 text-end">
+                    <button class="btn btn-primary" @onclick="OnGeneratePurchasePlanClick" disabled="@isGeneratingPurchasePlan">
+                        @if (isGeneratingPurchasePlan)
+                        {
+                            <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                            
+                            }
+                        else
+                        {
+                            <i class="bi bi-cart4">Generar Plan de Compras </i>
+                            }
+                    </button>
+
+                </div>
+            </div>
+        }
+
+
+
+        @if (purchasePlan != null)
+        {
+            <div class="mt-5">
+                <h4 class="fw-bold text-info"><i class="bi bi-receipt-cutoff"></i> Plan de Compras Generado</h4>
+                <div class="row g-4">
+                    @foreach (var item in purchasePlan.Items)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm border-0 h-100 bg-secondary text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-2">
+                                        <i class="bi bi-box-seam text-info me-1"></i> @item.Description
+                                    </h5>
+                                    <p class="mb-1"><strong>Unidad:</strong> @item.Unit</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-2">
+                                        <span class="badge bg-primary">Requerido: @item.RequiredQuantity</span>
+                                        <span class="badge bg-success">Stock: @item.StockAvailable</span>
+                                        <span class="badge @(item.MissingQuantity > 0 ? "bg-danger" : "bg-dark text-white border border-light")">
+                                            Faltante: @item.MissingQuantity
+                                        </span>
+                                        <span class="badge @(item.ExistsInSystem ? "bg-success" : "bg-warning text-dark")">
+                                            @(item.ExistsInSystem ? "En Sistema" : "Nuevo")
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+
+        @if (purchasePlan != null)
+        {
+            <button class="btn btn-info mt-4" @onclick="OnGenerateStudentForecastClick" disabled="@isForecastingStudents">
+                @if (isForecastingStudents)
+                {
+                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                    
+            }
+                else
+                {
+                    <i class="bi bi-graph-up">Pronóstico según estudiantes</i>
+                    
+            }
+            </button>
+
+        }
+
+        @if (studentDemandForecast != null)
+        {
+            <div class="mt-5">
+                <h4 class="fw-bold text-warning"><i class="bi bi-bar-chart-line"></i> Pronóstico de Insumos según Estudiantes</h4>
+                <div class="row g-4">
+                    @foreach (var item in studentDemandForecast.Items)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm border-0 h-100 bg-secondary text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-2">
+                                        <i class="bi bi-box2-heart text-warning me-1"></i> @item.Description
+                                    </h5>
+                                    <p class="mb-1"><strong>Unidad:</strong> @item.Unit</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-2">
+                                        <span class="badge bg-info text-dark">Grupos: @item.TotalGroups</span>
+                                        <span class="badge bg-light text-dark">Estudiantes: @item.TotalStudents</span>
+                                        <span class="badge bg-primary">Requerido: @item.RequiredQuantity</span>
+                                        <span class="badge bg-success">Stock: @item.StockAvailable</span>
+                                        <span class="badge @(item.MissingQuantity > 0 ? "bg-danger" : "bg-dark border border-light text-white")">
+                                            Faltante: @item.MissingQuantity
+                                        </span>
+                                        <span class="badge @(item.ExistsInSystem ? "bg-success" : "bg-warning text-dark")">
+                                            @(item.ExistsInSystem ? "En Sistema" : "Nuevo")
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+
+
+        @if (studentDemandForecast != null)
+        {
+            <button class="btn btn-warning mt-3" @onclick="OnGenerateSupplyPlanClick" disabled="@isGeneratingSupplyPlan">
+                @if (isGeneratingSupplyPlan)
+                {
+                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                    
+            }
+                else
+                {
+                    <i class="bi bi-currency-dollar">Generar Plan con Precios</i>
+                    
+            }
+            </button>
+
+        }
+
+       
+
+        @if (supplyPurchasePlan != null)
+        {
+            var totalGlobal = supplyPurchasePlan.Items.Sum(i => i.TotalCost);
+
+            <div class="mt-5">
+                <h4 class="fw-bold text-success"><i class="bi bi-cash-coin"></i> Plan de Compras con Precios Estimados</h4>
+                <div class="row g-4">
+                    @foreach (var item in supplyPurchasePlan.Items)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card shadow-sm border-0 h-100 bg-secondary text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-2">
+                                        <i class="bi bi-box text-success me-1"></i> @item.Description
+                                    </h5>
+                                    <p class="mb-1"><strong>Unidad:</strong> @item.Unit</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-2">
+                                        <span class="badge bg-primary">Req: @item.RequiredQuantity</span>
+                                        <span class="badge bg-warning text-dark">Recom: @item.RecommendedQuantity</span>
+                                        <span class="badge bg-info text-dark">Precio: Bs @item.EstimatedPrice.ToString("0.00")</span>
+                                        <span class="badge bg-success">Total: Bs @item.TotalCost.ToString("0.00")</span>
+                                        <span class="badge @(item.ExistsInSystem ? "bg-success" : "bg-danger")">
+                                            @(item.ExistsInSystem ? "En Sistema" : "Nuevo")
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="mt-4">
+                    <div class="card bg-dark border-success text-white shadow-sm">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <div class="fw-bold fs-5">
+                                <i class="bi bi-calculator me-2"></i> Total Estimado del Plan
+                            </div>
+                            <div class="fs-4 text-success">
+                                Bs @totalGlobal.ToString("N2")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-3 mt-4">
+                    <a class="btn btn-success" href="@($"https://forecast.labs.underflabs.com/api/supplypurchaseplan/{supplyPurchasePlan.Id}/export/excel")" target="_blank">
+                        <i class="bi bi-file-earmark-excel"></i> Descargar Excel
+                    </a>
+                    <a class="btn btn-secondary" href="@($"https://forecast.labs.underflabs.com/api/supplypurchaseplan/{supplyPurchasePlan.Id}/export/csv")" target="_blank">
+                        <i class="bi bi-filetype-csv"></i> Descargar CSV
+                    </a>
+                </div>
+            </div>
+        }
+
+
+
+
+    </div>
+</div>
+
+<style>
+    .text-pink {
+        color: #ff0077;
+    }
+
+    .btn-pink {
+        background-color: #ff0077;
+        color: white;
+    }
+
+        .btn-pink:hover {
+            background-color: #e6006e;
+            color: white;
+        }
+
+    .border-pink {
+        border-color: #ff0077 !important;
+    }
+</style>
+
+
+@code {
+    private List<FacultyDto> faculties;
+    private List<CareerDto> careers;
+    private List<CycleDto> cycles;
+    private List<SubjectDto> subjects;
+    private StudentDemandForecast studentDemandForecast;
+    private SupplyPurchasePlan supplyPurchasePlan;
+
+    private string selectedFacultyId;
+    private string selectedCycle;
+
+    private List<LabGuideUploadItem> archivos = new();
+    private List<UploadResult> uploadResults;
+    private List<AnalyzeResult> analyzeResults;
+    private Dictionary<string, VerificationResult> verificaciones = new();
+    private Dictionary<string, AnalyzedGuide> detallesAnalizados = new();
+    private PurchasePlan purchasePlan;
+
+    // Estados de carga
+    private bool isAnalyzing = false;
+    private bool isGeneratingPurchasePlan = false;
+    private bool isForecastingStudents = false;
+    private bool isGeneratingSupplyPlan = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        faculties = await UniversityService.GetFacultiesAsync();
+        careers = await UniversityService.GetCareersAsync();
+        cycles = await UniversityService.GetCyclesAsync();
+        subjects = await UniversityService.GetSubjectsAsync();
+
+        archivos.Add(new LabGuideUploadItem());
+    }
+
+    void AddItem() => archivos.Add(new LabGuideUploadItem());
+    void RemoveItem(LabGuideUploadItem item) => archivos.Remove(item);
+    void OnFileSelected(InputFileChangeEventArgs e, LabGuideUploadItem item) => item.File = e.File;
+
+    async Task UploadBatchAsync()
+    {
+        var content = new MultipartFormDataContent();
+        content.Add(new StringContent(selectedCycle), "ciclo");
+        content.Add(new StringContent(faculties.FirstOrDefault(f => f.Id == selectedFacultyId)?.Name ?? ""), "facultad");
+
+        foreach (var item in archivos)
+        {
+            if (item.File != null)
+            {
+                var stream = item.File.OpenReadStream(15_000_000);
+                var fileContent = new StreamContent(stream);
+                fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(item.File.ContentType);
+                content.Add(fileContent, "files", item.File.Name);
+
+                content.Add(new StringContent(careers.FirstOrDefault(c => c.Id == item.CarreraId)?.Name ?? ""), "carreras");
+                content.Add(new StringContent(subjects.FirstOrDefault(s => s.Id == item.MateriaId)?.Name ?? ""), "materias");
+            }
+        }
+
+        var response = await Http.PostAsync("https://forecast.labs.underflabs.com/api/labguide/upload-batch", content);
+        if (response.IsSuccessStatusCode)
+        {
+            uploadResults = await response.Content.ReadFromJsonAsync<List<UploadResult>>();
+        }
+    }
+
+    // 🔁 Con animación de carga
+    async Task OnAnalyzeClick()
+    {
+        isAnalyzing = true;
+        try
+        {
+            await AnalyzeAllAsync();
+        }
+        finally
+        {
+            isAnalyzing = false;
+        }
+    }
+
+    async Task AnalyzeAllAsync()
+    {
+        var facultad = faculties.FirstOrDefault(f => f.Id == selectedFacultyId)?.Name ?? "";
+        var url = $"https://forecast.labs.underflabs.com/api/labguide/analyze-all?ciclo={Uri.EscapeDataString(selectedCycle)}&facultad={Uri.EscapeDataString(facultad)}";
+
+        var response = await Http.PostAsync(url, null);
+        if (response.IsSuccessStatusCode)
+        {
+            var result = await response.Content.ReadFromJsonAsync<AnalyzeAllResponse>();
+            analyzeResults = result?.Analizadas ?? new();
+
+            foreach (var a in analyzeResults)
+            {
+                var analyzeDetailUrl = $"https://forecast.labs.underflabs.com/api/labguide/analyzed/{a.Id}";
+                var detailRes = await Http.GetAsync(analyzeDetailUrl);
+                if (detailRes.IsSuccessStatusCode)
+                {
+                    var detail = await detailRes.Content.ReadFromJsonAsync<AnalyzedGuide>();
+                    if (detail != null)
+                        detallesAnalizados[a.Id] = detail;
+                }
+
+                var verifyUrl = $"https://forecast.labs.underflabs.com/api/labguide/verify/{a.Id}";
+                var res = await Http.PostAsync(verifyUrl, null);
+                if (res.IsSuccessStatusCode)
+                {
+                    var data = await res.Content.ReadFromJsonAsync<VerificationResult>();
+                    if (data != null)
+                        verificaciones[a.Id] = data;
+                }
+            }
+        }
+    }
+
+    async Task OnGeneratePurchasePlanClick()
+    {
+        isGeneratingPurchasePlan = true;
+        try
+        {
+            await GeneratePurchasePlanAsync();
+        }
+        finally
+        {
+            isGeneratingPurchasePlan = false;
+        }
+    }
+
+    async Task GeneratePurchasePlanAsync()
+    {
+        var facultad = faculties.FirstOrDefault(f => f.Id == selectedFacultyId)?.Name ?? "";
+        var url = $"https://forecast.labs.underflabs.com/api/semesterpurchase/generate?ciclo={Uri.EscapeDataString(selectedCycle)}&facultad={Uri.EscapeDataString(facultad)}";
+
+        var response = await Http.PostAsync(url, null);
+        if (response.IsSuccessStatusCode)
+        {
+            purchasePlan = await response.Content.ReadFromJsonAsync<PurchasePlan>();
+        }
+    }
+
+    async Task OnGenerateStudentForecastClick()
+    {
+        isForecastingStudents = true;
+        try
+        {
+            await GenerateStudentDemandForecastAsync();
+        }
+        finally
+        {
+            isForecastingStudents = false;
+        }
+    }
+
+    async Task GenerateStudentDemandForecastAsync()
+    {
+        var facultad = faculties.FirstOrDefault(f => f.Id == selectedFacultyId)?.Name ?? "";
+        var url = $"https://forecast.labs.underflabs.com/api/studentdemandforecast/generate?ciclo={Uri.EscapeDataString(selectedCycle)}&facultad={Uri.EscapeDataString(facultad)}";
+
+        var response = await Http.PostAsync(url, null);
+        if (response.IsSuccessStatusCode)
+        {
+            studentDemandForecast = await response.Content.ReadFromJsonAsync<StudentDemandForecast>();
+        }
+    }
+
+    async Task OnGenerateSupplyPlanClick()
+    {
+        isGeneratingSupplyPlan = true;
+        try
+        {
+            await GenerateSupplyPurchasePlanAsync();
+        }
+        finally
+        {
+            isGeneratingSupplyPlan = false;
+        }
+    }
+
+    async Task GenerateSupplyPurchasePlanAsync()
+    {
+        if (studentDemandForecast == null)
+            return;
+
+        var url = $"https://forecast.labs.underflabs.com/api/supplypurchaseplan/generate?reportId={Uri.EscapeDataString(studentDemandForecast.Id)}";
+
+        var response = await Http.PostAsync(url, null);
+        if (response.IsSuccessStatusCode)
+        {
+            supplyPurchasePlan = await response.Content.ReadFromJsonAsync<SupplyPurchasePlan>();
+        }
+    }
+
+    public class LabGuideUploadItem
+    {
+        public IBrowserFile File { get; set; }
+        public string CarreraId { get; set; }
+        public string MateriaId { get; set; }
+    }
+
+    public class UploadResult
+    {
+        public string File { get; set; }
+        public string Status { get; set; }
+        public string Id { get; set; }
+    }
+
+    public class AnalyzeAllResponse
+    {
+        [JsonPropertyName("procesadas")]
+        public int Procesadas { get; set; }
+
+        [JsonPropertyName("analizadas")]
+        public List<AnalyzeResult> Analizadas { get; set; }
+    }
+
+    public class AnalyzeResult
+    {
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
+
+        [JsonPropertyName("guideFileId")]
+        public string GuideFileId { get; set; }
+
+        [JsonPropertyName("nombreArchivo")]
+        public string NombreArchivo { get; set; }
+
+        [JsonPropertyName("materia")]
+        public string Materia { get; set; }
+
+        [JsonPropertyName("carrera")]
+        public string Carrera { get; set; }
+    }
+
+    public class VerificationResult
+    {
+        public List<Verificado> Verificados { get; set; }
+        public List<NoEncontrado> NoEncontrados { get; set; }
+    }
+
+    public class Verificado
+    {
+        public string Nombre { get; set; }
+        public int CantidadTotal { get; set; }
+        public int Stock { get; set; }
+        public int Faltante { get; set; }
+        public string Estado { get; set; }
+        public int IdInsumo { get; set; }
+        public string Unidad { get; set; }
+        public bool EsSugerencia { get; set; }
+    }
+
+    public class NoEncontrado
+    {
+        public string Nombre { get; set; }
+        public int CantidadTotal { get; set; }
+        public string Unidad { get; set; }
+    }
+
+    public class PurchasePlan
+    {
+        public string Id { get; set; }
+        public string Cycle { get; set; }
+        public string Faculty { get; set; }
+        public DateTime GeneratedAt { get; set; }
+        public List<PurchaseItem> Items { get; set; }
+    }
+
+    public class PurchaseItem
+    {
+        public string Description { get; set; }
+        public string Unit { get; set; }
+        public int RequiredQuantity { get; set; }
+        public int StockAvailable { get; set; }
+        public int MissingQuantity { get; set; }
+        public bool ExistsInSystem { get; set; }
+        public int? IdInsumo { get; set; }
+    }
+
+    public class AnalyzedGuide
+    {
+        public string Id { get; set; }
+        public string LabName { get; set; }
+        public string Code { get; set; }
+        public string GuideFileId { get; set; }
+        public string Version { get; set; }
+        public List<Practice> Practices { get; set; }
+    }
+
+    public class Practice
+    {
+        public string Title { get; set; }
+        public int GroupCount { get; set; }
+        public int StudentsPerGroup { get; set; }
+        public PracticeMaterials Materials { get; set; }
+    }
+
+    public class PracticeMaterials
+    {
+        public List<MaterialItem> Equipment { get; set; }
+        public List<MaterialItem> Supplies { get; set; }
+    }
+
+    public class MaterialItem
+    {
+        public int QuantityPerGroup { get; set; }
+        public string Unit { get; set; }
+        public string Description { get; set; }
+    }
+    public class StudentDemandForecast
+    {
+        public string Id { get; set; }
+        public string Cycle { get; set; }
+        public string Faculty { get; set; }
+        public DateTime GeneratedAt { get; set; }
+        public List<StudentDemandForecastItem> Items { get; set; }
+    }
+
+    public class StudentDemandForecastItem
+    {
+        public string Description { get; set; }
+        public string Unit { get; set; }
+        public int TotalGroups { get; set; }
+        public int TotalStudents { get; set; }
+        public int RequiredQuantity { get; set; }
+        public int StockAvailable { get; set; }
+        public int MissingQuantity { get; set; }
+        public bool ExistsInSystem { get; set; }
+        public int? IdInsumo { get; set; }
+    }
+    public class SupplyPurchasePlan
+    {
+        public string Id { get; set; }
+        public string StudentDemandReportId { get; set; }
+        public string Cycle { get; set; }
+        public string Faculty { get; set; }
+        public DateTime GeneratedAt { get; set; }
+        public List<SupplyPurchaseItem> Items { get; set; }
+    }
+
+    public class SupplyPurchaseItem
+    {
+        public string Description { get; set; }
+        public string Unit { get; set; }
+        public int RequiredQuantity { get; set; }
+        public int RecommendedQuantity { get; set; }
+        public decimal EstimatedPrice { get; set; }
+        public decimal TotalCost { get; set; }
+        public bool ExistsInSystem { get; set; }
+        public int? IdInsumo { get; set; }
+    }
+
+}

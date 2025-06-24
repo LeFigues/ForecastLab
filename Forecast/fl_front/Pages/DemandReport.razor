@@ -1,35 +1,39 @@
 ﻿@page "/demand-reports"
 @using fl_front.Services
 @using fl_front.Models
-@using ApexCharts
 @inject IDemandReportService DemandReportService
 @inject IJSRuntime JS
 
-<!-- Animate.css for smooth transitions -->
+<!-- Animate.css & Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 <style>
-    .transition-fast {
-        transition: all 0.3s ease-in-out;
+    .btn-tab {
+        padding: 0.6rem 1.5rem;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: all 0.3s ease;
     }
 
-    .btn:hover {
-        transform: scale(1.03);
-        background-color: rgba(255, 255, 255, 0.05);
-    }
+        .btn-tab:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
 
-    .active {
+    .btn-active {
         border-width: 2px !important;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .card-highlight {
+        border-left-width: 6px;
     }
 </style>
 
-<h3 class="text-center text-uppercase text-primary mb-4 fw-bold animate__animated animate__fadeInDown">
-    <span class="d-inline-flex justify-content-center align-items-center me-2"
-          style="width: 50px; height: 50px; border-radius: 50%; background: linear-gradient(135deg, #007bff, #00c6ff); box-shadow: 0 4px 8px rgba(0,0,0,0.2); border: 2px solid white;">
-        <i class="bi bi-bar-chart-fill text-white" style="font-size: 1.5rem;"></i>
-    </span>
-    REPORTES DE DEMANDA
+<h3 class="text-center text-uppercase fw-bold mb-4 animate__animated animate__fadeInDown"
+    style="color: #850038;">
+    <i class="bi bi-bar-chart-fill me-2" style="font-size: 1.7rem;"></i> Reportes de Demanda
 </h3>
 
 @if (isLoading)
@@ -42,61 +46,55 @@
 }
 else
 {
-    <!-- BOTONES -->
-    <div class="mb-4 d-flex justify-content-center flex-wrap gap-3 animate__animated animate__fadeIn">
-        <button class="btn btn-outline-primary px-4 py-2 rounded-pill shadow-sm fw-semibold transition-fast @(activeTab == "summary" ? "active fw-bold border-2" : "")"
-                @onclick='() => activeTab = "summary"'>
-            <i class="bi bi-bar-chart-fill me-2"></i> Resumen
+    <!-- BOTONES DE NAVEGACIÓN -->
+    <div class="mb-4 d-flex justify-content-center flex-wrap gap-3 animate__animated animate__fadeInUp">
+        <button class="btn btn-outline-primary btn-tab @(activeTab == "summary" ? "btn-active" : "")" @onclick='() => activeTab = "summary"'>
+            <i class="bi bi-pie-chart-fill me-2"></i>Resumen
         </button>
-        <button class="btn btn-outline-danger px-4 py-2 rounded-pill shadow-sm fw-semibold transition-fast @(activeTab == "detail" ? "active fw-bold border-2" : "")"
-                @onclick='() => activeTab = "detail"'>
-            <i class="bi bi-card-list me-2"></i> Detalle
+        <button class="btn btn-outline-secondary btn-tab @(activeTab == "detail" ? "btn-active" : "")" @onclick='() => activeTab = "detail"'>
+            <i class="bi bi-list-ul me-2"></i>Detalle
         </button>
-        <button class="btn btn-outline-success px-4 py-2 rounded-pill shadow-sm fw-semibold transition-fast @(activeTab == "simulation" ? "active fw-bold border-2" : "")"
-                @onclick='() => activeTab = "simulation"'>
-            <i class="bi bi-gear-wide-connected me-2"></i> Simulación
+        <button class="btn btn-outline-success btn-tab @(activeTab == "simulation" ? "btn-active" : "")" @onclick='() => activeTab = "simulation"'>
+            <i class="bi bi-sliders me-2"></i>Simulación
         </button>
-        <button class="btn btn-outline-info px-4 py-2 rounded-pill shadow-sm fw-semibold transition-fast @(activeTab == "history" ? "active fw-bold border-2" : "")"
-                @onclick='() => activeTab = "history"'>
-            <i class="bi bi-calendar3 me-2"></i> Historial
+        <button class="btn btn-outline-dark btn-tab @(activeTab == "history" ? "btn-active" : "")" @onclick='() => activeTab = "history"'>
+            <i class="bi bi-clock-history me-2"></i>Historial
         </button>
     </div>
 
-    <!-- CONTENIDO POR PESTAÑAS -->
-    <div class="animate__animated animate__fadeInUp">
+    <div class="animate__animated animate__fadeIn">
         @switch (activeTab)
         {
             case "summary":
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card border-0 shadow-lg border-start border-5 border-primary">
+                        <div class="card card-highlight border-0 shadow border-primary">
                             <div class="card-body text-center">
                                 <h6 class="text-muted">Equipos</h6>
-                                <h2 class="fw-bold text-primary">@summary?.TotalEquipmentItems</h2>
+                                <h2 class="text-primary fw-bold">@summary?.TotalEquipmentItems</h2>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 shadow-lg border-start border-5 border-success">
+                        <div class="card card-highlight border-0 shadow border-success">
                             <div class="card-body text-center">
                                 <h6 class="text-muted">Insumos</h6>
-                                <h2 class="fw-bold text-success">@summary?.TotalSupplyItems</h2>
+                                <h2 class="text-success fw-bold">@summary?.TotalSupplyItems</h2>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card border-0 shadow-lg border-start border-5 border-warning">
+                        <div class="card card-highlight border-0 shadow border-warning">
                             <div class="card-body text-center">
                                 <h6 class="text-muted">Reactivos</h6>
-                                <h2 class="fw-bold text-warning">@summary?.TotalReactiveItems</h2>
+                                <h2 class="text-warning fw-bold">@summary?.TotalReactiveItems</h2>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- GRÁFICA DE DONA -->
                 <div class="d-flex justify-content-center mt-4">
-                    <canvas id="donutChart" style="max-width: 300px; max-height: 300px;"></canvas>
+                    <canvas id="donutChart" style="max-width: 300px;"></canvas>
                 </div>
                 break;
 
@@ -104,13 +102,13 @@ else
                 <div class="mt-3">
                     @foreach (var item in detail)
                     {
-                        <div class="card mb-4 shadow-lg animate__animated animate__fadeInUp">
-                            <div class="card-header bg-dark text-white">
-                                <strong>@item.CareerName - @item.SubjectName</strong>
+                        <div class="card shadow mb-4">
+                            <div class="card-header bg-secondary text-white fw-semibold">
+                                @item.CareerName - @item.SubjectName
                             </div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-md-4">
                                         <h6 class="text-primary">Equipos</h6>
                                         <ul>
                                             @foreach (var eq in item.Equipment)
@@ -119,7 +117,7 @@ else
                                             }
                                         </ul>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-4">
                                         <h6 class="text-success">Insumos</h6>
                                         <ul>
                                             @foreach (var su in item.Supplies)
@@ -128,7 +126,7 @@ else
                                             }
                                         </ul>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-4">
                                         <h6 class="text-warning">Reactivos</h6>
                                         <ul>
                                             @foreach (var re in item.Reactives)
@@ -145,15 +143,15 @@ else
                 break;
 
             case "simulation":
-                <div class="table-responsive mt-3">
-                    <table class="table table-hover table-bordered text-center">
-                        <thead class="table-primary text-white">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped text-center mt-3">
+                        <thead class="table-dark">
                             <tr>
                                 <th>Descripción</th>
                                 <th>Unidad</th>
-                                <th>Demanda total</th>
-                                <th>Uso diario</th>
-                                <th>Pedido sugerido</th>
+                                <th>Demanda Total</th>
+                                <th>Uso Diario</th>
+                                <th>Pedido Sugerido</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -173,13 +171,13 @@ else
                 break;
 
             case "history":
-                <div class="row">
-                    <div class="col-md-7">
-                        <table class="table table-striped table-bordered text-center">
-                            <thead class="table-dark">
+                <div class="row mt-3">
+                    <div class="col-md-8">
+                        <table class="table table-bordered table-striped text-center">
+                            <thead class="table-secondary">
                                 <tr>
                                     <th>Fecha</th>
-                                    <th>Item</th>
+                                    <th>Ítem</th>
                                     <th>Unidad</th>
                                     <th>Cantidad</th>
                                 </tr>
@@ -197,7 +195,6 @@ else
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-md-5"></div>
                 </div>
                 break;
         }
@@ -207,7 +204,6 @@ else
 @code {
     private string activeTab = "summary";
     private bool isLoading = true;
-
     private DemandSummary? summary;
     private List<DemandDetail> detail = new();
     private DemandSimulation? simulation;
@@ -232,7 +228,6 @@ else
     {
         if (activeTab == "summary" && summary != null)
         {
-            await Task.Delay(100);
             await JS.InvokeVoidAsync("renderDonutChart",
                 summary.TotalEquipmentItems,
                 summary.TotalSupplyItems,
@@ -240,45 +235,3 @@ else
         }
     }
 }
-
-<script>
-    function renderDonutChart(equipos, insumos, reactivos) {
-        const ctx = document.getElementById('donutChart');
-        if (!ctx) return;
-
-        if (window.myDonutChart) {
-            window.myDonutChart.destroy();
-        }
-
-        window.myDonutChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Equipos', 'Insumos', 'Reactivos'],
-                datasets: [{
-                    data: [equipos, insumos, reactivos],
-                    backgroundColor: ['#0d6efd', '#198754', '#ffc107'],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: true,
-                aspectRatio: 1.5,
-                plugins: {
-                    legend: {
-                        position: 'bottom'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function (context) {
-                                const label = context.label || '';
-                                const value = context.raw || 0;
-                                return `${label}: ${value}`;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    }
-</script>

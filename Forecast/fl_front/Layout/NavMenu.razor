@@ -1,116 +1,128 @@
-﻿<!-- Topbar -->
-<div class="top-row bg-dark text-white d-flex align-items-center px-4 py-2 shadow-sm" data-bs-theme="dark">
-    <i class="bi bi-box-seam-fill fs-4 me-2 text-primary"></i>
-    <h4 class="m-0 fw-bold">FL_FRONT SYSTEM</h4>
+﻿@* Topbar fijo con logo y botón de menú en móviles *@
+<div class="topbar d-flex align-items-center justify-content-between px-3 py-2 shadow-sm" style="background-color: #850038; color: white;">
+    <div class="d-flex align-items-center">
+        <img src="https://correoinstitucionalonline.info/wp-content/uploads/2021/11/logo-univalle-bolivia.png"
+             alt="Logo Univalle" style="height: 40px;" class="me-3" />
+        <h5 class="m-0 fw-bold d-none d-sm-block">Sistema Forecast</h5>
+    </div>
+    <button class="btn btn-light d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+        <i class="bi bi-list"></i>
+    </button>
 </div>
 
-<!-- Sidebar -->
-<div class="sidebar bg-black text-light p-4" style="min-height: 100vh;" data-bs-theme="dark">
-    <!-- GENERAL -->
-    <h6 class="text-uppercase text-secondary mb-3">General</h6>
-    <NavLink href="" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-house-door-fill me-2"></i> Home
-    </NavLink>
-    <NavLink href="health" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-activity me-2"></i> Estado del Sistema
-    </NavLink>
-
-    <!-- GESTIÓN DE PDFs Y ANÁLISIS -->
-    <h6 class="mt-4 text-uppercase text-secondary mb-3">Gestión de Guías y Prácticas</h6>
-    @* <NavLink href="upload-pdf" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-upload me-2"></i> Subir PDF Manual
-    </NavLink>
-    <NavLink href="auto-analyze-guide" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-upload me-2"></i> Analizar Guía (Auto)
-    </NavLink> *@
-    <NavLink href="analisis-practica" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-file-earmark-text-fill me-2"></i> Analizar Prácticas
-    </NavLink>
-   @*  <NavLink href="analysis-history" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-collection me-2"></i> Historial de Análisis
-    </NavLink> *@
-
-    <!-- FORECAST -->
-    <h6 class="mt-4 text-uppercase text-secondary mb-3">Forecast</h6>
-    <NavLink href="forecast-generator" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-rocket-takeoff-fill me-2"></i> Lanzar Forecast
-    </NavLink>
-    @* <NavLink href="forecast-dashboard" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-speedometer2 me-2"></i> Dashboard Forecast
-    </NavLink> *@
-    <NavLink href="forecastS" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-graph-up-arrow me-2"></i> Predicción
-    </NavLink>
-    <NavLink href="forecast-semestre" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-calendar-range-fill me-2 text-success"></i> Forecast Semestral
-    </NavLink>
-    <NavLink href="forecast-history" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-database-check me-2"></i> Histórico Forecast
-    </NavLink>
-    <NavLink href="forecast-historico-insumos" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-clock-history me-2"></i> Forecast Insumos
-    </NavLink>
-    <NavLink href="forecast-historico-practicas" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-clock me-2"></i> Forecast Prácticas
-    </NavLink>
-    <NavLink href="insumos-historico-chart" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-archive me-2"></i> Insumos Histórico
-    </NavLink>
-    <NavLink href="practicas-uso" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-journal-bookmark-fill me-2"></i> Prácticas Uso
-    </NavLink>
-    <NavLink href="insumos-riesgo" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-exclamation-triangle-fill me-2 text-warning"></i> Insumos Riesgo
-    </NavLink>
-    <NavLink href="insumos-riesgo-ai" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-cpu-fill me-2 text-info"></i> Forecast IA
-    </NavLink>
-
-    <!-- ÓRDENES Y PLANIFICACIÓN -->
-    <h6 class="mt-4 text-uppercase text-secondary mb-3">Órdenes y Planificación</h6>
-    @* <NavLink href="orders" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-cart-check-fill me-2"></i> Órdenes de Compra
-    </NavLink> *@
-    <NavLink href="new-order" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-plus-circle-fill me-2"></i> Nueva Orden
-    </NavLink>
-    <NavLink href="planning" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-journal-text me-2"></i> Planes de Compra
-    </NavLink>
-    <NavLink href="planning-calendar" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-calendar-event-fill me-2"></i> Calendario de Compras
-    </NavLink>
-
-    <!-- REPORTES -->
-    <h6 class="mt-4 text-uppercase text-secondary mb-3">Reportes</h6>
-    @* <NavLink href="demand-reports" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-boxes me-2"></i> Demanda de Insumos
-    </NavLink> *@
-    <NavLink href="report-forecast" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-bar-chart-line-fill me-2"></i> Reporte Consumo
-    </NavLink>
-    <NavLink href="report-compra" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-file-earmark-excel-fill me-2"></i> Reporte Compras
-    </NavLink>
-
-    <!-- UNIVERSIDAD -->
-    <h6 class="mt-4 text-uppercase text-secondary mb-3">Universidad</h6>
-    <NavLink href="university-movements" class="nav-link text-light mb-2 px-3 py-2 rounded-pill transition-fast d-flex align-items-center">
-        <i class="bi bi-people-fill me-2"></i> Movimientos Estudiantes
-    </NavLink>
+@* Sidebar fijo en desktop *@
+<div class="d-none d-md-block sidebar text-light p-4"
+     style="background-color: #2b001a; width: 260px; height: 100vh; position: fixed; top: 0; left: 0; margin-top: 64px; overflow-y: auto;">
+    @SidebarContent
 </div>
 
-<!-- CSS EXTRA -->
+@* Sidebar Offcanvas en móvil *@
+<div class="offcanvas offcanvas-start d-md-none text-bg-dark" tabindex="-1" id="sidebarOffcanvas" style="background-color: #2b001a;">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menú</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body p-3">
+        @SidebarContent
+        <div class="p-5"></div>
+    </div>
+</div>
+
+@code {
+    private RenderFragment SidebarContent => builder =>
+    {
+        int seq = 0;
+
+        void Section(string title)
+        {
+            builder.OpenElement(seq++, "h6");
+            builder.AddAttribute(seq++, "class", "mt-4 text-uppercase text-muted mb-3");
+            builder.AddContent(seq++, title);
+            builder.CloseElement();
+        }
+
+        void NavItem(string href, string icon, string label)
+        {
+            builder.OpenComponent<NavLink>(seq++);
+            builder.AddAttribute(seq++, "href", href);
+            builder.AddAttribute(seq++, "class", "nav-link mb-2 px-3 py-2 rounded-pill d-flex align-items-center custom-link");
+            builder.AddAttribute(seq++, "ChildContent", (RenderFragment)(childBuilder =>
+            {
+                childBuilder.OpenElement(seq++, "i");
+                childBuilder.AddAttribute(seq++, "class", $"bi {icon} me-2");
+                childBuilder.CloseElement();
+                childBuilder.AddContent(seq++, label);
+            }));
+            builder.CloseComponent();
+        }
+
+        Section("General");
+        NavItem("/", "bi-house-door-fill", "Home");
+
+        Section("Gestión de Guías y Prácticas");
+        // NavItem("analisis-practica", "bi-file-earmark-text-fill", "Analizar Prácticas");
+        NavItem("upload-and-verify", "bi-file-earmark-text-fill", "Analizar Guía");
+
+        Section("Insumos");
+        NavItem("normalized-supplies", "bi-file-earmark-text-fill", "Insumos");
+
+        Section("Forecast");
+        NavItem("forecastS", "bi-rocket-takeoff-fill", "Lanzar Forecast");
+       
+        NavItem("forecast-semestre", "bi-calendar-range-fill text-success", "Forecast Semestral");
+        NavItem("forecast-history", "bi-database-check", "Histórico Forecast");
+        // NavItem("forecast-historico-insumos", "bi-clock-history", "Forecast Insumos");
+        // NavItem("forecast-historico-practicas", "bi-clock", "Forecast Prácticas");
+        NavItem("insumos-historico-chart", "bi-archive", "Insumos Histórico");
+        NavItem("practicas-uso", "bi-journal-bookmark-fill", "Prácticas Uso");
+        NavItem("insumos-riesgo", "bi-exclamation-triangle-fill text-warning", "Insumos Riesgo");
+        NavItem("insumos-riesgo-ai", "bi-cpu-fill text-info", "Forecast IA");
+
+        Section("Órdenes y Planificación");
+        NavItem("new-order", "bi-plus-circle-fill", "Nueva Orden");
+        NavItem("planning", "bi-journal-text", "Planes de Compra");
+        // NavItem("planning-calendar", "bi-calendar-event-fill", "Calendario de Compras");
+
+        Section("Reportes");
+        NavItem("report-forecast", "bi-bar-chart-line-fill", "Reporte Consumo");
+        NavItem("report-compra", "bi-file-earmark-excel-fill", "Reporte Compras");
+
+        Section("Universidad");
+        NavItem("university-movements", "bi-people-fill", "Movimientos Estudiantes");
+
+        Section("Sistema");
+        NavItem("health", "bi-activity", "Estado del Sistema");
+    };
+}
 <style>
-    .nav-link:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-        transform: scale(1.02);
+    .custom-link {
+        background-color: transparent;
+        color: #f8f9fa;
         transition: all 0.2s ease-in-out;
+        text-decoration: none;
     }
 
-    .nav-link.active {
-        background-color: #0d6efd !important;
-        color: white !important;
-        font-weight: bold;
+        .custom-link:hover {
+            background-color: rgba(255, 255, 255, 0.08);
+            transform: scale(1.02);
+            color: #ffffff;
+        }
+
+        .custom-link.active {
+            background-color: #850038;
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+
+    .topbar {
+        height: 64px;
+        z-index: 1030;
+        position: sticky;
+        top: 0;
+    }
+
+    .sidebar h6 {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
     }
 </style>

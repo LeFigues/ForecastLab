@@ -2,73 +2,106 @@
 @using fl_front.Dtos.UniversityForecast
 @using fl_front.Interfaces
 @inject IUniversityForecastServiceF UniversityService
+@inject IJSRuntime JS
 
-<h3>Movimientos de Insumos por Semestre</h3>
+<!-- Animate.css & Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<div class="mb-3">
-    <label class="form-label">ID de Semestre</label>
-    <input class="form-control" @bind="semestreId" />
+<h3 class="text-center text-info fw-bold mb-4 animate__animated animate__fadeInDown">
+    <i class="bi bi-arrow-left-right me-2 fs-3"></i> Movimientos de Insumos por Semestre
+</h3>
+
+<div class="card shadow-sm border-0 mb-4 animate__animated animate__fadeIn">
+    <div class="card-body">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label class="form-label fw-semibold">ID de Semestre</label>
+                <input class="form-control" placeholder="Ej. 2024-I" @bind="semestreId" />
+            </div>
+            <div class="col-md-auto">
+                <button class="btn btn-outline-info px-4" @onclick="CargarResumen">
+                    <i class="bi bi-search me-1"></i> Buscar
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
-<button class="btn btn-primary mb-3" @onclick="CargarResumen">Buscar</button>
-
-@if (resumen != null)
+@if (resumen != null && resumen.Count > 0)
 {
-    <table class="table table-bordered">
-        <thead class="table-light">
-            <tr>
-                <th>Insumo</th>
-                <th>Total Movido</th>
-                <th>Tipo Movimiento</th>
-                <th>Responsable</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in resumen)
-            {
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-bordered table-hover shadow-sm text-center align-middle">
+            <thead class="table-dark">
                 <tr>
-                    <td>@item.Insumo</td>
-                    <td>@item.CantidadTotal</td>
-                    <td>@item.TipoMovimiento</td>
-                    <td>@item.Responsable</td>
-                    <td>
-                        <button class="btn btn-sm btn-info" @onclick="() => VerDetalle(item.Insumo)">Ver Detalle</button>
-                    </td>
+                    <th>Insumo</th>
+                    <th>Total Movido</th>
+                    <th>Tipo Movimiento</th>
+                    <th>Responsable</th>
+                    <th>Acción</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var item in resumen)
+                {
+                    <tr>
+                        <td>@item.Insumo</td>
+                        <td>@item.CantidadTotal</td>
+                        <td>@item.TipoMovimiento</td>
+                        <td>@item.Responsable</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary" @onclick="() => VerDetalle(item.Insumo)">
+                                <i class="bi bi-eye"></i> Ver Detalle
+                            </button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center my-4">
+        <button class="btn btn-outline-info" @onclick="MostrarGrafica">
+            <i class="bi bi-bar-chart"></i> Ver Gráfica de Movimientos
+        </button>
+    </div>
+    <canvas id="barMovements" style="max-height: 400px;"></canvas>
 }
 
 @if (detalle != null && detalle.Count > 0)
 {
-    <h5>Detalle de: @detalleInsumo</h5>
-    <table class="table table-sm">
-        <thead>
-            <tr>
-                <th>Fecha Entregado</th>
-                <th>Fecha Devuelto</th>
-                <th>Cantidad</th>
-                <th>Tipo Movimiento</th>
-                <th>Responsable</th>
-                <th>ID Solicitud</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var d in detalle)
-            {
+    <h5 class="text-secondary fw-bold mt-5 animate__animated animate__fadeIn">
+        <i class="bi bi-list-columns-reverse me-1"></i> Detalle de: <span class="text-dark">@detalleInsumo</span>
+    </h5>
+
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-sm table-striped table-bordered shadow-sm text-center">
+            <thead class="table-secondary">
                 <tr>
-                    <td>@d.FechaEntregado.ToString("yyyy-MM-dd")</td>
-                    <td>@(d.FechaDevuelto?.ToString("yyyy-MM-dd") ?? "–")</td>
-                    <td>@d.Cantidad</td>
-                    <td>@d.TipoMovimiento</td>
-                    <td>@d.Responsable</td>
-                    <td>@d.IdSolicitud</td>
+                    <th>Fecha Entregado</th>
+                    <th>Fecha Devuelto</th>
+                    <th>Cantidad</th>
+                    <th>Tipo Movimiento</th>
+                    <th>Responsable</th>
+                    <th>ID Solicitud</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var d in detalle)
+                {
+                    <tr>
+                        <td>@d.FechaEntregado.ToString("yyyy-MM-dd")</td>
+                        <td>@(d.FechaDevuelto?.ToString("yyyy-MM-dd") ?? "–")</td>
+                        <td>@d.Cantidad</td>
+                        <td>@d.TipoMovimiento</td>
+                        <td>@d.Responsable</td>
+                        <td>@d.IdSolicitud</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 }
 
 @code {
@@ -91,4 +124,45 @@
         detalleInsumo = insumo;
         detalle = await UniversityService.GetDetallePorInsumoAsync(insumo);
     }
+
+    private async Task MostrarGrafica()
+    {
+        var labels = resumen.Select(r => r.Insumo).ToList();
+        var values = resumen.Select(r => r.CantidadTotal).ToList();
+        await JS.InvokeVoidAsync("renderBarMovementsChart", labels, values);
+    }
 }
+
+<script>
+    let barChart;
+    window.renderBarMovementsChart = (labels, values) => {
+        const ctx = document.getElementById("barMovements").getContext("2d");
+        if (barChart) barChart.destroy();
+
+        barChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Cantidad Total Movida',
+                    data: values,
+                    backgroundColor: '#0dcaf0'
+                }]
+            },
+            options: {
+                responsive: true,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Movimientos Totales por Insumo'
+                    }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+    };
+</script>

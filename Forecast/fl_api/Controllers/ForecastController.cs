@@ -124,5 +124,44 @@ namespace fl_api.Controllers
             var data = await repo.GetAllAsync();
             return Ok(data);
         }
+
+        [HttpGet("insumos-por-expirar")]
+        public async Task<ActionResult<List<object>>> GetInsumosPorExpirar(
+    [FromServices] INormalizedSupplyRepository repo,
+    [FromQuery] bool soloConStockBajo = false,
+    [FromQuery] int mesesAntes = 3)
+        {
+            var insumos = await repo.GetAllAsync();
+            var ahora = DateTime.UtcNow;
+
+            var porExpirar = insumos
+                .Where(i =>
+                    i.VidaUtilMeses > 0 &&
+                    i.AñoCompra > 0 &&
+                    CalcularFechaExpiracion(i.AñoCompra, i.VidaUtilMeses) <= ahora.AddMonths(mesesAntes))
+                .Where(i => !soloConStockBajo || i.StockTotal <= i.StockMinimo)
+                .Select(i => new
+                {
+                    i.IdInsumo,
+                    i.Nombre,
+                    i.StockTotal,
+                    i.PrecioEstimado,
+                    i.VidaUtilMeses,
+                    i.AñoCompra,
+                    FechaExpiracion = CalcularFechaExpiracion(i.AñoCompra, i.VidaUtilMeses).ToString("yyyy-MM-dd"),
+                    Reponer = i.StockTotal <= i.StockMinimo
+                })
+                .ToList();
+
+            return Ok(porExpirar);
+        }
+
+        private DateTime CalcularFechaExpiracion(int anioCompra, int vidaUtilMeses)
+        {
+            var fechaCompra = new DateTime(anioCompra, 1, 1);
+            return fechaCompra.AddMonths(vidaUtilMeses);
+        }
+
+
     }
 }

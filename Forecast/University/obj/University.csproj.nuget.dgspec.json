@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\pro\\Forecast\\University\\University.csproj": {}
+    "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\University\\University.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\pro\\Forecast\\University\\University.csproj": {
+    "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\University\\University.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\pro\\Forecast\\University\\University.csproj",
+        "projectUniqueName": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\University\\University.csproj",
         "projectName": "University",
-        "projectPath": "C:\\Repos\\pro\\Forecast\\University\\University.csproj",
+        "projectPath": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\University\\University.csproj",
         "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\pro\\Forecast\\University\\obj\\",
+        "outputPath": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\University\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

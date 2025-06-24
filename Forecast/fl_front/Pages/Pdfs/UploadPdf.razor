@@ -1,27 +1,39 @@
 ﻿@page "/upload-pdf"
 @inject fl_front.Interfaces.IPdfAnalysisServiceF PdfServiceF
 
-<h3>Subir Archivo PDF</h3>
+<div class="container mt-4">
+    <div class="card shadow-sm rounded-4 p-4 bg-light">
+        <h3 class="text-primary mb-4"><i class="fas fa-upload me-2"></i>Subir Archivo PDF</h3>
 
-<div class="mb-3">
-    <label class="form-label">Tipo de archivo</label>
-    <select class="form-select" @bind="tipo">
-        <option value="guia">Guía</option>
-        <option value="practica">Práctica</option>
-    </select>
+        <div class="mb-3">
+            <label class="form-label fw-semibold">
+                <i class="fas fa-tags me-2 text-secondary"></i>Tipo de archivo
+            </label>
+            <select class="form-select" @bind="tipo">
+                <option value="guia">Guía</option>
+                <option value="practica">Práctica</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-semibold">
+                <i class="fas fa-file-pdf me-2 text-danger"></i>Seleccionar PDF
+            </label>
+            <InputFile OnChange="HandleFileChange" accept="application/pdf" class="form-control" />
+        </div>
+
+        <button class="btn btn-success w-100" @onclick="SubirArchivo" disabled="@(archivo == null)">
+            <i class="fas fa-cloud-upload-alt me-2"></i>Subir
+        </button>
+
+        @if (!string.IsNullOrEmpty(mensaje))
+        {
+            <div class="alert alert-info mt-4" role="alert">
+                <i class="fas fa-info-circle me-2"></i>@mensaje
+            </div>
+        }
+    </div>
 </div>
-
-<div class="mb-3">
-    <label class="form-label">Archivo PDF</label>
-    <InputFile OnChange="HandleFileChange" accept="application/pdf" />
-</div>
-
-<button class="btn btn-success" @onclick="SubirArchivo" disabled="@(archivo == null)">Subir</button>
-
-@if (!string.IsNullOrEmpty(mensaje))
-{
-    <div class="alert alert-info mt-3">@mensaje</div>
-}
 
 @code {
     private IBrowserFile? archivo;
@@ -37,7 +49,10 @@
     private async Task SubirArchivo()
     {
         if (archivo == null) return;
+
         var success = await PdfServiceF.UploadPdfAsync(archivo, tipo);
-        mensaje = success ? "Archivo subido correctamente." : "Error al subir el archivo.";
+        mensaje = success
+            ? "✅ Archivo subido correctamente."
+            : "❌ Error al subir el archivo. Verifica el formato o intenta nuevamente.";
     }
 }

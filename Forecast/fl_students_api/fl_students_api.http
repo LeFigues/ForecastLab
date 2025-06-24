@@ -1,0 +1,6 @@
+@fl_students_api_HostAddress = http://localhost:5232
+
+GET {{fl_students_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

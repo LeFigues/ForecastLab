@@ -7,5 +7,7 @@ namespace fl_api.Interfaces.Guides
         Task SaveAsync(GuideFileRecord file);
         Task<GuideFileRecord?> GetByIdAsync(string id);
         Task<List<GuideFileRecord>> GetAllAsync();
+        Task<List<GuideFileRecord>> GetByCycleAndFacultyAsync(string ciclo, string faculty);
+
     }
 }

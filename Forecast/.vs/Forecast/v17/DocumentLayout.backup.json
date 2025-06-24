@@ -1,322 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Repos\\pro\\Forecast\\",
+  "WorkspaceRootPath": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\wwwroot\\js\\chartforecast.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\wwwroot\\js\\chartforecast.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_front\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\forecast\\forecasthistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecast\\forecasthistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\orders\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\orders\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_front\\pages\\labguides\\labguide.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\labguides\\labguide.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\pdfs\\pdfanalysisservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\pdfs\\pdfanalysisservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\repositories\\purchases\\supplypurchaseplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\repositories\\purchases\\supplypurchaseplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\pdfs\\uploadpdf.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\pdfs\\uploadpdf.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\supplypurchaseplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\supplypurchaseplancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\pdfs\\analysishistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\pdfs\\analysishistory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\pdfs\\autoanalyzeguide.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\pdfs\\autoanalyzeguide.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\ipdfanalysisservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\ipdfanalysisservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\guides\\guideanalysisdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\guides\\guideanalysisdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\guides\\guidefiledtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\guides\\guidefiledtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\pdfs\\pdfpracticeanalysis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\pdfs\\pdfpracticeanalysis.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\forecast\\forecastdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecast\\forecastdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\forecastf\\forecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\forecastf\\forecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\services\\purchases\\supplypurchaseplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\purchases\\supplypurchaseplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\iforecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\iforecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\services\\university\\supplyupdateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\university\\supplyupdateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\forecast\\forecastgeneratortool.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecast\\forecastgeneratortool.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\openaiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\universityforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\universityforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\interfaces\\purchases\\isupplypurchaseplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\purchases\\isupplypurchaseplanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\universityforecast\\universityforecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\universityforecast\\universityforecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\repositories\\planification\\purchaseorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\repositories\\planification\\purchaseorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\universityforecastcontroller\\universitymovements.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\universityforecastcontroller\\universitymovements.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\interfaces\\purchases\\isupplypurchaseplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\purchases\\isupplypurchaseplanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\universityforecast\\movimientodetalledtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\universityforecast\\movimientodetalledtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\models\\planification\\supplypurchaseplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\models\\planification\\supplypurchaseplan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\universityforecast\\movimientoresumendtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\universityforecast\\movimientoresumendtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\models\\planification\\supplypurchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\models\\planification\\supplypurchaseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\iuniversityforecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\iuniversityforecastservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\services\\students\\studentdemandforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\students\\studentdemandforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\planningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\planningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\reports\\reportcompra.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\reports\\reportcompra.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_front\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\reports\\reportforecast.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\reports\\reportforecast.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\normalizedsuppliescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\normalizedsuppliescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\reports\\reportservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\reports\\reportservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\synchronizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\synchronizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\ireportservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\ireportservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\studentdemandforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\studentdemandforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\reports\\reportfilterdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\reports\\reportfilterdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}|fl_students_api\\fl_students_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_students_api\\controllers\\careercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}|fl_students_api\\fl_students_api.csproj|solutionrelative:fl_students_api\\controllers\\careercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\reports\\unidadesacomprardtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\reports\\unidadesacomprardtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\labguidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\labguidecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\reports\\consumovspronosticodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\reports\\consumovspronosticodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\services\\guides\\labguideverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\guides\\labguideverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\services\\guides\\labguideextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\guides\\labguideextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\models\\demandsimulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\models\\demandsimulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\models\\career.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\models\\career.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\models\\reportitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\models\\reportitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\models\\materialitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\models\\materialitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\models\\healthcheckitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\models\\healthcheckitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\models\\chartdatapoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\models\\chartdatapoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecasthistoricodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecasthistoricodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\forecastsemestre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecastsemestre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\iplanningservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\iplanningservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\planification\\planningservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\planification\\planningservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\planification\\eventocompradtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\planification\\eventocompradtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\planification\\plancompradtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\planification\\plancompradtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\planification\\planningcalendar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\planification\\planningcalendar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\planification\\planning.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\planification\\planning.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\orders\\neworder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\orders\\neworder.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\ordersf\\createorderdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\ordersf\\createorderdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\ordersf\\purchaseorderitemdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\ordersf\\purchaseorderitemdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\ordersf\\orderservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\ordersf\\orderservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\iorderservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\iorderservicef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\orders\\orderdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\orders\\orderdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\forecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\forecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\models\\planification\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\models\\planification\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\ordersf\\purchaseorderdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\ordersf\\purchaseorderdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\ordersf\\purchaseorderdetailf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\ordersf\\purchaseorderdetailf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\ordersf\\itemdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\ordersf\\itemdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\impl\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\impl\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\services\\iforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\services\\iforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\interfaces\\ihealthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\interfaces\\ihealthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\forecastrequestdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\forecastrequestdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\historicosemestredtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\historicosemestredtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\historicopracticadtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\historicopracticadtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\historicoinsumodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\historicoinsumodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\riesgoinsumodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\riesgoinsumodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\practicausodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\practicausodtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\insumoporpracticadtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\insumoporpracticadtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\dtos\\forecastf\\forecastpointdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\dtos\\forecastf\\forecastpointdtof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|c:\\repos\\pro\\forecast\\fl_front\\pages\\forecastvisual.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecastvisual.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\forecastvalidationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\forecastvalidationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\universityconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\universityconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\dtos\\forecast\\forecasthistoricodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\forecast\\forecasthistoricodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\dtos\\forecast\\forecastpointdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\forecast\\forecastpointdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\dtos\\forecast\\forecastinsumodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\forecast\\forecastinsumodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\pro\\forecast\\fl_api\\dtos\\forecast\\choice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\forecast\\choice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|c:\\repos\\jos\\forecast 1\\forecast 1\\forecast\\fl_api\\controllers\\labsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451BFFD6-0A8A-4AE0-995E-2AB8D29F4A70}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\labsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -326,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -334,1030 +118,318 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "chartForecast.js",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
-              "RelativeDocumentMoniker": "fl_front\\wwwroot\\js\\chartForecast.js",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\js\\chartForecast.js",
-              "RelativeToolTip": "fl_front\\wwwroot\\js\\chartForecast.js",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-12T11:30:06.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GuideFileDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Guides\\GuideFileDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Guides\\GuideFileDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Guides\\GuideFileDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Guides\\GuideFileDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:20:07.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PdfPracticeAnalysis.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\PdfPracticeAnalysis.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Pdfs\\PdfPracticeAnalysis.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\PdfPracticeAnalysis.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Pdfs\\PdfPracticeAnalysis.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LabGuide.razor",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\Pages\\LabGuides\\LabGuide.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\LabGuides\\LabGuide.razor",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\Pages\\LabGuides\\LabGuide.razor*",
+              "RelativeToolTip": "fl_front\\Pages\\LabGuides\\LabGuide.razor*",
+              "ViewState": "AgIAAOYBAAAAAAAAAAAAAIYAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T09:17:17.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Program.cs",
-              "RelativeDocumentMoniker": "fl_front\\Program.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Program.cs",
-              "RelativeToolTip": "fl_front\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:41:10.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UploadPdf.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\UploadPdf.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Pdfs\\UploadPdf.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\UploadPdf.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Pdfs\\UploadPdf.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:14:10.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AutoAnalyzeGuide.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\AutoAnalyzeGuide.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Pdfs\\AutoAnalyzeGuide.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\AutoAnalyzeGuide.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Pdfs\\AutoAnalyzeGuide.razor",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:13:31.938Z",
+              "WhenOpened": "2025-06-24T11:27:57.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AnalysisHistory.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\AnalysisHistory.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Pdfs\\AnalysisHistory.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Pdfs\\AnalysisHistory.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Pdfs\\AnalysisHistory.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:14:39.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Orders.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Orders\\Orders.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Orders\\Orders.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Orders\\Orders.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Orders\\Orders.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T01:51:37.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "fl_front\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "fl_front\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAFcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:19:14.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ForecastHistory.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Forecast\\ForecastHistory.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Forecast\\ForecastHistory.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Forecast\\ForecastHistory.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Forecast\\ForecastHistory.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:17:06.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "fl_front\\wwwroot\\index.html",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\wwwroot\\index.html",
-              "RelativeToolTip": "fl_front\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-12T02:11:11.498Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GuideAnalysisDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Guides\\GuideAnalysisDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Guides\\GuideAnalysisDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Guides\\GuideAnalysisDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Guides\\GuideAnalysisDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "SupplyUpdateService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\University\\SupplyUpdateService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\University\\SupplyUpdateService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\University\\SupplyUpdateService.cs",
+              "RelativeToolTip": "fl_api\\Services\\University\\SupplyUpdateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:20:18.768Z",
+              "WhenOpened": "2025-06-24T11:00:39.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PdfAnalysisServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Pdfs\\PdfAnalysisServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\Pdfs\\PdfAnalysisServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Pdfs\\PdfAnalysisServiceF.cs",
-              "RelativeToolTip": "fl_front\\Services\\Pdfs\\PdfAnalysisServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "OpenAIService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\OpenAIService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\OpenAIService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\OpenAIService.cs",
+              "RelativeToolTip": "fl_api\\Services\\OpenAIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:21:00.65Z",
+              "WhenOpened": "2025-06-24T10:58:21.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SupplyPurchasePlanService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Purchases\\SupplyPurchasePlanService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\Purchases\\SupplyPurchasePlanService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Purchases\\SupplyPurchasePlanService.cs",
+              "RelativeToolTip": "fl_api\\Services\\Purchases\\SupplyPurchasePlanService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwFkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:58:02.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ISupplyPurchasePlanService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanService.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:57:29.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IPdfAnalysisServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IPdfAnalysisServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IPdfAnalysisServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IPdfAnalysisServiceF.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IPdfAnalysisServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "PurchaseOrderRepository.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Repositories\\Planification\\PurchaseOrderRepository.cs",
+              "RelativeDocumentMoniker": "fl_api\\Repositories\\Planification\\PurchaseOrderRepository.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Repositories\\Planification\\PurchaseOrderRepository.cs",
+              "RelativeToolTip": "fl_api\\Repositories\\Planification\\PurchaseOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T09:20:41.377Z",
+              "WhenOpened": "2025-06-24T10:55:58.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "fl_front\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "fl_front\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T19:54:07.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "fl_front\\wwwroot\\index.html",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\wwwroot\\index.html",
+              "RelativeToolTip": "fl_front\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-23T21:24:15.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SupplyPurchasePlanController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\SupplyPurchasePlanController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\SupplyPurchasePlanController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\SupplyPurchasePlanController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\SupplyPurchasePlanController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T11:04:06.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SupplyPurchasePlanRepository.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Repositories\\Purchases\\SupplyPurchasePlanRepository.cs",
+              "RelativeDocumentMoniker": "fl_api\\Repositories\\Purchases\\SupplyPurchasePlanRepository.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Repositories\\Purchases\\SupplyPurchasePlanRepository.cs",
+              "RelativeToolTip": "fl_api\\Repositories\\Purchases\\SupplyPurchasePlanRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:55:44.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Program.cs",
+              "RelativeDocumentMoniker": "fl_api\\Program.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Program.cs",
+              "RelativeToolTip": "fl_api\\Program.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAjwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T00:31:07.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ISupplyPurchasePlanRepository.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanRepository.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanRepository.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanRepository.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\Purchases\\ISupplyPurchasePlanRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:55:17.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SupplyPurchaseItem.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Models\\Planification\\SupplyPurchaseItem.cs",
+              "RelativeDocumentMoniker": "fl_api\\Models\\Planification\\SupplyPurchaseItem.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Models\\Planification\\SupplyPurchaseItem.cs",
+              "RelativeToolTip": "fl_api\\Models\\Planification\\SupplyPurchaseItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:54:27.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SupplyPurchasePlan.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Models\\Planification\\SupplyPurchasePlan.cs",
+              "RelativeDocumentMoniker": "fl_api\\Models\\Planification\\SupplyPurchasePlan.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Models\\Planification\\SupplyPurchasePlan.cs",
+              "RelativeToolTip": "fl_api\\Models\\Planification\\SupplyPurchasePlan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T10:54:08.545Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ForecastDashboard.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Forecast\\ForecastDashboard.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Forecast\\ForecastDashboard.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Forecast\\ForecastDashboard.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Forecast\\ForecastDashboard.razor",
-              "ViewState": "AgIAACEAAAAAAAAAAAAUwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:16:22.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IForecastServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IForecastServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IForecastServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IForecastServiceF.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IForecastServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABEAAAAAAAAAA==",
+              "Title": "StudentDemandForecastService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Students\\StudentDemandForecastService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\Students\\StudentDemandForecastService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Students\\StudentDemandForecastService.cs",
+              "RelativeToolTip": "fl_api\\Services\\Students\\StudentDemandForecastService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:25:37.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ForecastGeneratorTool.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Forecast\\ForecastGeneratorTool.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Forecast\\ForecastGeneratorTool.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Forecast\\ForecastGeneratorTool.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Forecast\\ForecastGeneratorTool.razor",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:27:52.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ForecastServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\ForecastF\\ForecastServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\ForecastF\\ForecastServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\ForecastF\\ForecastServiceF.cs",
-              "RelativeToolTip": "fl_front\\Services\\ForecastF\\ForecastServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:26:24.676Z",
+              "WhenOpened": "2025-06-24T10:46:02.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Program.cs",
-              "RelativeDocumentMoniker": "fl_api\\Program.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Program.cs",
-              "RelativeToolTip": "fl_api\\Program.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAkwKEAAAAAAAAAAAAAAA==",
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\ErrorController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\ErrorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:07:08.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T00:36:44.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UniversityForecastServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\UniversityForecast\\UniversityForecastServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\UniversityForecast\\UniversityForecastServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\UniversityForecast\\UniversityForecastServiceF.cs",
-              "RelativeToolTip": "fl_front\\Services\\UniversityForecast\\UniversityForecastServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "fl_front\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_front\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "fl_front\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T21:23:47.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "NormalizedSuppliesController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\NormalizedSuppliesController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\NormalizedSuppliesController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\NormalizedSuppliesController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\NormalizedSuppliesController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwDwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:40:55.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T19:40:06.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SynchronizationController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\SynchronizationController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\SynchronizationController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\SynchronizationController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\SynchronizationController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T19:39:49.572Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "UniversityForecastController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\UniversityForecastController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\UniversityForecastController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\UniversityForecastController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\UniversityForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Title": "StudentDemandForecastController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\StudentDemandForecastController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\StudentDemandForecastController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\StudentDemandForecastController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\StudentDemandForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:15:00.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T19:39:45.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UniversityMovements.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\UniversityForecastController\\UniversityMovements.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\UniversityForecastController\\UniversityMovements.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\UniversityForecastController\\UniversityMovements.razor",
-              "RelativeToolTip": "fl_front\\Pages\\UniversityForecastController\\UniversityMovements.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:18:37.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ReportCompra.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Reports\\ReportCompra.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Reports\\ReportCompra.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Reports\\ReportCompra.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Reports\\ReportCompra.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:10:43.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ReportForecast.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Reports\\ReportForecast.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Reports\\ReportForecast.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Reports\\ReportForecast.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Reports\\ReportForecast.razor",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:10:05.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "MovimientoResumenDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\UniversityForecast\\MovimientoResumenDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\UniversityForecast\\MovimientoResumenDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\UniversityForecast\\MovimientoResumenDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\UniversityForecast\\MovimientoResumenDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "CareerController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_students_api\\Controllers\\CareerController.cs",
+              "RelativeDocumentMoniker": "fl_students_api\\Controllers\\CareerController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_students_api\\Controllers\\CareerController.cs",
+              "RelativeToolTip": "fl_students_api\\Controllers\\CareerController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:40:05.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T18:44:29.484Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "MovimientoDetalleDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\UniversityForecast\\MovimientoDetalleDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\UniversityForecast\\MovimientoDetalleDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\UniversityForecast\\MovimientoDetalleDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\UniversityForecast\\MovimientoDetalleDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "LabGuideVerificationService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Guides\\LabGuideVerificationService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\Guides\\LabGuideVerificationService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Guides\\LabGuideVerificationService.cs",
+              "RelativeToolTip": "fl_api\\Services\\Guides\\LabGuideVerificationService.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:40:17.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T18:31:15.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LabGuideExtractionService.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Guides\\LabGuideExtractionService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\Guides\\LabGuideExtractionService.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Services\\Guides\\LabGuideExtractionService.cs",
+              "RelativeToolTip": "fl_api\\Services\\Guides\\LabGuideExtractionService.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T18:31:11.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LabGuideController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\LabGuideController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\LabGuideController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\LabGuideController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\LabGuideController.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAmwHkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T18:24:02.92Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "IUniversityForecastServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IUniversityForecastServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IUniversityForecastServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IUniversityForecastServiceF.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IUniversityForecastServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Title": "LabsApiController.cs",
+              "DocumentMoniker": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\LabsApiController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\LabsApiController.cs",
+              "ToolTip": "C:\\Repos\\jos\\Forecast 1\\Forecast 1\\Forecast\\fl_api\\Controllers\\LabsApiController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\LabsApiController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:40:32.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ConsumoVsPronosticoDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Reports\\ConsumoVsPronosticoDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Reports\\ConsumoVsPronosticoDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Reports\\ConsumoVsPronosticoDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Reports\\ConsumoVsPronosticoDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:28:32.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DemandSimulation.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\DemandSimulation.cs",
-              "RelativeDocumentMoniker": "fl_front\\Models\\DemandSimulation.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\DemandSimulation.cs",
-              "RelativeToolTip": "fl_front\\Models\\DemandSimulation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:42.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "PlanningController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\PlanningController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\PlanningController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\PlanningController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\PlanningController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:04:49.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UnidadesAComprarDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Reports\\UnidadesAComprarDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Reports\\UnidadesAComprarDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Reports\\UnidadesAComprarDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Reports\\UnidadesAComprarDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:28:46.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ReportFilterDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Reports\\ReportFilterDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Reports\\ReportFilterDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Reports\\ReportFilterDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Reports\\ReportFilterDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:28:57.877Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IReportServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IReportServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IReportServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IReportServiceF.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IReportServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:29:11.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ReportServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Reports\\ReportServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\Reports\\ReportServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Reports\\ReportServiceF.cs",
-              "RelativeToolTip": "fl_front\\Services\\Reports\\ReportServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:29:36.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "ForecastHistoricoDto.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastHistoricoDto.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastHistoricoDto.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastHistoricoDto.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastHistoricoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:34.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ChartDataPoint.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\ChartDataPoint.cs",
-              "RelativeDocumentMoniker": "fl_front\\Models\\ChartDataPoint.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\ChartDataPoint.cs",
-              "RelativeToolTip": "fl_front\\Models\\ChartDataPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:41.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ForecastSemestre.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\ForecastSemestre.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\ForecastSemestre.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\ForecastSemestre.razor",
-              "RelativeToolTip": "fl_front\\Pages\\ForecastSemestre.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T07:23:26.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "EventoCompraDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Planification\\EventoCompraDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Planification\\EventoCompraDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Planification\\EventoCompraDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Planification\\EventoCompraDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:18:52.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ReportsController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\ReportsController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\ReportsController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\ReportsController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\ReportsController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAkwJQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:06:23.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "HealthCheckItem.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\HealthCheckItem.cs",
-              "RelativeDocumentMoniker": "fl_front\\Models\\HealthCheckItem.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\HealthCheckItem.cs",
-              "RelativeToolTip": "fl_front\\Models\\HealthCheckItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:44.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "MaterialItem.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\MaterialItem.cs",
-              "RelativeDocumentMoniker": "fl_front\\Models\\MaterialItem.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\MaterialItem.cs",
-              "RelativeToolTip": "fl_front\\Models\\MaterialItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:45.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ReportItem.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\ReportItem.cs",
-              "RelativeDocumentMoniker": "fl_front\\Models\\ReportItem.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\ReportItem.cs",
-              "RelativeToolTip": "fl_front\\Models\\ReportItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:48.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Career.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\Career.cs",
-              "RelativeDocumentMoniker": "fl_front\\Models\\Career.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Models\\Career.cs",
-              "RelativeToolTip": "fl_front\\Models\\Career.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:23:50.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "PlanningServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Planification\\PlanningServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\Planification\\PlanningServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Planification\\PlanningServiceF.cs",
-              "RelativeToolTip": "fl_front\\Services\\Planification\\PlanningServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:19:17.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "PlanCompraDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Planification\\PlanCompraDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\Planification\\PlanCompraDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\Planification\\PlanCompraDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\Planification\\PlanCompraDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:18:41.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "IPlanningServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IPlanningServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IPlanningServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IPlanningServiceF.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IPlanningServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:18:12.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "OrderServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\OrdersF\\OrderServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\OrdersF\\OrderServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\OrdersF\\OrderServiceF.cs",
-              "RelativeToolTip": "fl_front\\Services\\OrdersF\\OrderServiceF.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAxwDIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:56:30.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "NewOrder.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Orders\\NewOrder.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Orders\\NewOrder.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Orders\\NewOrder.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Orders\\NewOrder.razor",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAUwFUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T01:57:36.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "IOrderServiceF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IOrderServiceF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IOrderServiceF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IOrderServiceF.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IOrderServiceF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:55:57.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "OrderDetail.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Orders\\OrderDetail.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Orders\\OrderDetail.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Orders\\OrderDetail.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Orders\\OrderDetail.razor",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAACcAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T01:58:27.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "ForecastController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\ForecastController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\ForecastController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\ForecastController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\ForecastController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAIwCsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:46:17.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "CreateOrderDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\CreateOrderDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\OrdersF\\CreateOrderDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\CreateOrderDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\OrdersF\\CreateOrderDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:55:35.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "PurchaseOrderDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\PurchaseOrderDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\OrdersF\\PurchaseOrderDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\PurchaseOrderDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\OrdersF\\PurchaseOrderDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:55:08.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Planning.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Planification\\Planning.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Planification\\Planning.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Planification\\Planning.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Planification\\Planning.razor",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAkwEgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:05:39.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "PlanningCalendar.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Planification\\PlanningCalendar.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\Planification\\PlanningCalendar.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\Planification\\PlanningCalendar.razor",
-              "RelativeToolTip": "fl_front\\Pages\\Planification\\PlanningCalendar.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:06:03.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "PurchaseOrder.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Models\\Planification\\PurchaseOrder.cs",
-              "RelativeDocumentMoniker": "fl_api\\Models\\Planification\\PurchaseOrder.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Models\\Planification\\PurchaseOrder.cs",
-              "RelativeToolTip": "fl_api\\Models\\Planification\\PurchaseOrder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T05:11:22.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "PurchaseOrderItemDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\PurchaseOrderItemDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\OrdersF\\PurchaseOrderItemDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\PurchaseOrderItemDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\OrdersF\\PurchaseOrderItemDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T07:05:09.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "PurchaseOrderDetailF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\PurchaseOrderDetailF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\OrdersF\\PurchaseOrderDetailF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\PurchaseOrderDetailF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\OrdersF\\PurchaseOrderDetailF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:55:23.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "ItemDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\ItemDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\OrdersF\\ItemDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\OrdersF\\ItemDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\OrdersF\\ItemDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:54:56.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "HistoricoPracticaDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\HistoricoPracticaDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\HistoricoPracticaDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\HistoricoPracticaDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\HistoricoPracticaDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:24:54.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "HistoricoSemestreDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\HistoricoSemestreDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\HistoricoSemestreDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\HistoricoSemestreDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\HistoricoSemestreDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:25:18.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "ForecastService.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Impl\\ForecastService.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\Impl\\ForecastService.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\Impl\\ForecastService.cs",
-              "RelativeToolTip": "fl_front\\Services\\Impl\\ForecastService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:27:47.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "IForecastService.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\IForecastService.cs",
-              "RelativeDocumentMoniker": "fl_front\\Services\\IForecastService.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Services\\IForecastService.cs",
-              "RelativeToolTip": "fl_front\\Services\\IForecastService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:27:42.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "ForecastRequestDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\ForecastRequestDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\ForecastRequestDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\ForecastRequestDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\ForecastRequestDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:36:12.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "IHealthService.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IHealthService.cs",
-              "RelativeDocumentMoniker": "fl_front\\Interfaces\\IHealthService.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Interfaces\\IHealthService.cs",
-              "RelativeToolTip": "fl_front\\Interfaces\\IHealthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T04:27:31.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "HistoricoInsumoDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\HistoricoInsumoDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\HistoricoInsumoDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\HistoricoInsumoDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\HistoricoInsumoDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:24:42.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "RiesgoInsumoDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\RiesgoInsumoDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\RiesgoInsumoDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\RiesgoInsumoDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\RiesgoInsumoDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:24:31.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "PracticaUsoDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\PracticaUsoDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\PracticaUsoDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\PracticaUsoDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\PracticaUsoDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:24:19.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "InsumoPorPracticaDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\InsumoPorPracticaDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\InsumoPorPracticaDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\InsumoPorPracticaDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\InsumoPorPracticaDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:24:06.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "ForecastPointDtoF.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\ForecastPointDtoF.cs",
-              "RelativeDocumentMoniker": "fl_front\\Dtos\\ForecastF\\ForecastPointDtoF.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Dtos\\ForecastF\\ForecastPointDtoF.cs",
-              "RelativeToolTip": "fl_front\\Dtos\\ForecastF\\ForecastPointDtoF.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:23:39.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "UniversityConfigController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\UniversityConfigController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\UniversityConfigController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\UniversityConfigController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\UniversityConfigController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:17:38.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "ForecastVisual.razor",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\ForecastVisual.razor",
-              "RelativeDocumentMoniker": "fl_front\\Pages\\ForecastVisual.razor",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_front\\Pages\\ForecastVisual.razor",
-              "RelativeToolTip": "fl_front\\Pages\\ForecastVisual.razor",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAgwLwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-12T02:31:44.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:50:24.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "ForecastValidationController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\ForecastValidationController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\ForecastValidationController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\ForecastValidationController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\ForecastValidationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:15:14.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "PdfController.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\PdfController.cs",
-              "RelativeDocumentMoniker": "fl_api\\Controllers\\PdfController.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Controllers\\PdfController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\PdfController.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAkwOUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T02:04:47.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "ForecastHistoricoDto.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\ForecastHistoricoDto.cs",
-              "RelativeDocumentMoniker": "fl_api\\Dtos\\Forecast\\ForecastHistoricoDto.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\ForecastHistoricoDto.cs",
-              "RelativeToolTip": "fl_api\\Dtos\\Forecast\\ForecastHistoricoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:22:24.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "ForecastPointDto.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\ForecastPointDto.cs",
-              "RelativeDocumentMoniker": "fl_api\\Dtos\\Forecast\\ForecastPointDto.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\ForecastPointDto.cs",
-              "RelativeToolTip": "fl_api\\Dtos\\Forecast\\ForecastPointDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:20:06.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "ForecastInsumoDto.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\ForecastInsumoDto.cs",
-              "RelativeDocumentMoniker": "fl_api\\Dtos\\Forecast\\ForecastInsumoDto.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\ForecastInsumoDto.cs",
-              "RelativeToolTip": "fl_api\\Dtos\\Forecast\\ForecastInsumoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:19:55.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
-              "Title": "Choice.cs",
-              "DocumentMoniker": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\Choice.cs",
-              "RelativeDocumentMoniker": "fl_api\\Dtos\\Forecast\\Choice.cs",
-              "ToolTip": "C:\\Repos\\pro\\Forecast\\fl_api\\Dtos\\Forecast\\Choice.cs",
-              "RelativeToolTip": "fl_api\\Dtos\\Forecast\\Choice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:19:28.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-23T18:23:56.146Z"
             }
           ]
         }

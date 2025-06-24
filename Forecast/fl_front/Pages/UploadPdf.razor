@@ -6,7 +6,81 @@
 @using Microsoft.AspNetCore.Components.Forms
 @using fl_front.Services
 
-<h3 class="mb-4 text-center">📄 Subir Guía de Laboratorio</h3>
+<style>
+    body {
+        background-color: #1a0010;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h3, h4, h5 {
+        color: #f8f9fa;
+        font-weight: bold;
+    }
+
+    .form-label {
+        color: #f8f9fa;
+        font-weight: 600;
+    }
+
+    .form-select,
+    .form-control {
+        background-color: #2c1a26;
+        border: 1px solid #850038;
+        color: #f8f9fa;
+    }
+
+        .form-select:focus,
+        .form-control:focus {
+            border-color: #ff66aa;
+            box-shadow: 0 0 0 0.25rem rgba(133, 0, 56, 0.25);
+        }
+
+    .btn-primary {
+        background-color: #850038;
+        border: none;
+        font-weight: 600;
+    }
+
+        .btn-primary:hover {
+            background-color: #a00047;
+        }
+
+    .card {
+        background-color: #2b1b2d;
+        border-radius: 0.75rem;
+        border: none;
+        color: #f8f9fa;
+    }
+
+    .card-title {
+        font-weight: bold;
+        color: #ffc107;
+    }
+
+    .card.border-primary {
+        border-left: 5px solid #0d6efd !important;
+    }
+
+    .card.border-success {
+        border-left: 5px solid #198754 !important;
+    }
+
+    .card.border-info {
+        border-left: 5px solid #0dcaf0 !important;
+    }
+
+    .card.border-warning {
+        border-left: 5px solid #ffc107 !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.25) !important;
+    }
+</style>
+
+<h3 class="mb-4 text-center">
+    <i class="bi bi-upload me-2 text-warning"></i> Subir Guía de Laboratorio
+</h3>
 
 @if (isLoading)
 {
@@ -22,7 +96,7 @@ else
     {
         <div class="mb-3">
             <label class="form-label">Carrera</label>
-            <select class="form-select" @onchange="OnCareerChanged">
+            <select class="form-select shadow-sm" @onchange="OnCareerChanged">
                 <option value="">Seleccione una carrera</option>
                 @foreach (var career in careers)
                 {
@@ -35,7 +109,7 @@ else
         {
             <div class="mb-3">
                 <label class="form-label">Materia</label>
-                <select class="form-select" @bind="selectedSubjectId">
+                <select class="form-select shadow-sm" @bind="selectedSubjectId">
                     <option value="">Seleccione una materia</option>
                     @foreach (var subject in subjects)
                     {
@@ -47,20 +121,18 @@ else
 
         <div class="mb-3">
             <label class="form-label">Archivo PDF</label>
-            <InputFile class="form-control" OnChange="OnFileSelected" />
+            <InputFile class="form-control shadow-sm" OnChange="OnFileSelected" />
         </div>
 
-        <button class="btn btn-primary" @onclick="UploadFile" disabled="@(!CanUpload)">
-            <span>Subir PDF</span>
+        <button class="btn btn-primary px-4 py-2 shadow-sm" @onclick="UploadFile" disabled="@(!CanUpload)">
+            <i class="bi bi-cloud-arrow-up-fill me-2"></i> Subir PDF
         </button>
     }
 
     @if (isUploading || isAnalyzing)
     {
         <div class="d-flex justify-content-center my-5">
-            <div class="spinner-border text-info me-2" role="status">
-                <span class="visually-hidden">Procesando...</span>
-            </div>
+            <div class="spinner-border text-info me-2" role="status"></div>
             <span class="fs-5">Procesando análisis con OpenAI...</span>
         </div>
     }
@@ -68,20 +140,20 @@ else
     @if (analysisResult is not null && !isAnalyzing)
     {
         <div class="mt-5">
-            <h4>📊 Resultado del Análisis</h4>
+            <h4><i class="bi bi-bar-chart-fill me-2 text-info"></i> Resultado del Análisis</h4>
 
             <div class="mb-4">
                 <div class="card border-primary shadow-sm mb-3">
                     <div class="card-body">
-                        <h6 class="card-title">📁 Archivo</h6>
-                        <p class="card-text"><strong>@analysisResult.FileName</strong></p>
-                        <p class="card-text"><small>ID: @analysisResult.DocumentId</small></p>
+                        <h6 class="card-title"><i class="bi bi-file-earmark-text me-2"></i> Archivo</h6>
+                        <p><strong>@analysisResult.FileName</strong></p>
+                        <p><small>ID: @analysisResult.DocumentId</small></p>
                     </div>
                 </div>
 
                 <div class="card border-success shadow-sm mb-3">
                     <div class="card-body">
-                        <h6 class="card-title">📌 Información del documento</h6>
+                        <h6 class="card-title"><i class="bi bi-info-circle me-2"></i> Información del documento</h6>
                         <p><strong>Título:</strong> @analysisResult.Title</p>
                         <p><strong>Código:</strong> @analysisResult.Code</p>
                         <p><strong>Versión:</strong> @analysisResult.Version</p>
@@ -92,7 +164,7 @@ else
 
                 <div class="card border-info shadow-sm mb-3">
                     <div class="card-body">
-                        <h6 class="card-title">🧠 Modelo utilizado</h6>
+                        <h6 class="card-title"><i class="bi bi-cpu me-2"></i> Modelo utilizado</h6>
                         <p><strong>@analysisResult.ModelUsed</strong></p>
                         <p><strong>Analizado el:</strong> @analysisResult.AnalyzedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm:ss")</p>
                     </div>
@@ -102,74 +174,53 @@ else
                 {
                     <div class="card border-warning shadow-sm mb-3">
                         <div class="card-body">
-                            <h6 class="card-title">🎯 Satisfacción</h6>
+                            <h6 class="card-title"><i class="bi bi-bullseye me-2"></i> Satisfacción</h6>
                             <p>@analysisResult.SatisfactionPercentage %</p>
                         </div>
                     </div>
                 }
             </div>
 
-            <h5 class="mt-4">🧪 Equipos</h5>
             @if (analysisResult.AnalysisResult.Materials.Equipment.Any())
             {
+                <h5 class="mt-4"><i class="bi bi-pc-display me-2 text-success"></i> Equipos</h5>
                 @foreach (var item in analysisResult.AnalysisResult.Materials.Equipment)
                 {
                     <div class="card shadow-sm mb-3">
                         <div class="card-body">
                             <h6 class="card-title">@item.Description</h6>
-                            <p class="card-text">
-                                Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />
-                                Unidad: <strong>@item.Unit</strong>
-                            </p>
+                            <p>Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />Unidad: <strong>@item.Unit</strong></p>
                         </div>
                     </div>
                 }
             }
-            else
-            {
-                <p class="text-muted">No se encontraron equipos.</p>
-            }
 
-            <h5 class="mt-4">📦 Insumos</h5>
             @if (analysisResult.AnalysisResult.Materials.Supplies.Any())
             {
+                <h5 class="mt-4"><i class="bi bi-box-seam me-2 text-primary"></i> Insumos</h5>
                 @foreach (var item in analysisResult.AnalysisResult.Materials.Supplies)
                 {
                     <div class="card shadow-sm mb-3">
                         <div class="card-body">
                             <h6 class="card-title">@item.Description</h6>
-                            <p class="card-text">
-                                Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />
-                                Unidad: <strong>@item.Unit</strong>
-                            </p>
+                            <p>Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />Unidad: <strong>@item.Unit</strong></p>
                         </div>
                     </div>
                 }
             }
-            else
-            {
-                <p class="text-muted">No se encontraron insumos.</p>
-            }
 
-            <h5 class="mt-4">🧫 Reactivos</h5>
             @if (analysisResult.AnalysisResult.Materials.Reactives.Any())
             {
+                <h5 class="mt-4"><i class="bi bi-beaker me-2 text-danger"></i> Reactivos</h5>
                 @foreach (var item in analysisResult.AnalysisResult.Materials.Reactives)
                 {
                     <div class="card shadow-sm mb-3">
                         <div class="card-body">
                             <h6 class="card-title">@item.Description</h6>
-                            <p class="card-text">
-                                Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />
-                                Unidad: <strong>@item.Unit</strong>
-                            </p>
+                            <p>Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />Unidad: <strong>@item.Unit</strong></p>
                         </div>
                     </div>
                 }
-            }
-            else
-            {
-                <p class="text-muted">No se encontraron reactivos.</p>
             }
         </div>
     }
@@ -178,11 +229,9 @@ else
 @code {
     private List<Career> careers = new();
     private List<Subject> subjects = new();
-
     private int selectedCareerId;
     private int selectedSubjectId;
     private IBrowserFile? selectedFile;
-
     private bool isLoading = true;
     private bool isUploading = false;
     private bool showNextButtons = false;
@@ -194,7 +243,6 @@ else
         try
         {
             careers = await StudentsService.GetCareersAsync();
-
             if (AppState.LastAnalysis is not null)
             {
                 analysisResult = AppState.LastAnalysis;
@@ -222,10 +270,7 @@ else
         }
     }
 
-    private void OnFileSelected(InputFileChangeEventArgs e)
-    {
-        selectedFile = e.File;
-    }
+    private void OnFileSelected(InputFileChangeEventArgs e) => selectedFile = e.File;
 
     private bool CanUpload =>
         selectedFile != null &&
@@ -255,13 +300,11 @@ else
                 AppState.LastAnalysis = analysisResult;
                 isAnalyzing = false;
 
-                // NUEVO: Clasificar después del análisis
                 if (analysisResult is not null)
                 {
                     var subjectName = analysisResult.Subject ?? "Sin nombre";
                     await DocumentService.ClassifyDocumentAsync(analysisResult.DocumentId, subjectName);
                 }
-
             }
         }
         catch (Exception ex)

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_api", "fl_api\fl_api.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_front", "fl_front\fl_front.csproj", "{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_students_api", "fl_students_api\fl_students_api.csproj", "{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_api_test", "fl_api_test\fl_api_test.csproj", "{00BF7C00-27C0-8AB5-C503-410371282ECE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB30DC77-BC0F-BF0E-6ADA-4960215BB98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9391AA8-F410-4E5F-ADE8-9C4731A2465C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BF7C00-27C0-8AB5-C503-410371282ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BF7C00-27C0-8AB5-C503-410371282ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BF7C00-27C0-8AB5-C503-410371282ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BF7C00-27C0-8AB5-C503-410371282ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

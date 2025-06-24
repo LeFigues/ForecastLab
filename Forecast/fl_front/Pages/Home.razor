@@ -2,17 +2,46 @@
 
 @inject NavigationManager Navigation
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Inicio</PageTitle>
 
-<h1>Hello, world!</h1>
-
-<p>Welcome to your new app.</p>
-
-<div class="mt-4">
-    <img src="@QrUrl" alt="QR de esta página" />
-    <p class="mt-2">Escanea este código QR para abrir esta página:</p>
-    <code>@CurrentUrl</code>
+<!-- Título elegante con animación -->
+<div class="text-center mt-5 animate__animated animate__fadeInDown">
+    <h1 class="fw-bold text-white" style="font-size: 2.8rem;">¡Bienvenido al <span style="color: #ffb3da;">Sistema Forecast</span>!</h1>
+    <p class="lead text-light mt-3">Gestiona, predice y controla tus insumos con inteligencia.</p>
 </div>
+
+<!-- Tarjeta con QR -->
+<div class="d-flex justify-content-center mt-5 animate__animated animate__fadeInUp">
+    <div class="card shadow-lg border-0 p-4" style="background-color: #1a0010; color: #f8f9fa; max-width: 400px; border-radius: 1rem;">
+        <h5 class="text-center mb-3 fw-semibold">Accede desde tu móvil</h5>
+        <img src="@QrUrl" alt="Código QR" class="mx-auto d-block rounded shadow-sm" />
+        <p class="text-center mt-3">Escanea este código QR para abrir esta página:</p>
+        <code class="d-block text-center text-muted" style="font-size: 0.9rem;">@CurrentUrl</code>
+    </div>
+</div>
+
+<!-- ESTILOS PERSONALIZADOS -->
+<style>
+    body {
+        background-color: #850038;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1, p, code {
+        color: #f8f9fa;
+    }
+
+    .card {
+        transition: transform 0.3s ease;
+    }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+</style>
+
+<!-- ANIMACIONES (Animate.css CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 @code {
     private string CurrentUrl => Navigation.Uri;

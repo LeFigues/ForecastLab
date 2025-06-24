@@ -25,7 +25,6 @@ namespace fl_api.Services
             return await AnalyzeWithAssistantAsync(text, _settings.AssistantId!);
         }
 
-
         public async Task<bool> CanConnectAsync()
         {
             try

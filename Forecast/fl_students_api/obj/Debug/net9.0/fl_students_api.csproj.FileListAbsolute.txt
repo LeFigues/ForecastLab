@@ -1,0 +1,88 @@
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\appsettings.Development.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\appsettings.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.staticwebassets.endpoints.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.exe
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.deps.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.runtimeconfig.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\DnsClient.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\SharpCompress.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\Snappier.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\bin\Debug\net9.0\ZstdSharp.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.csproj.AssemblyReference.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.AssemblyInfoInputs.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.AssemblyInfo.cs
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.csproj.CoreCompileInputs.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\scopedcss\bundle\fl_students_api.styles.css
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_students_api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_students_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.build.fl_students_api.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.fl_students_api.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.fl_students_api.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_stude.A009AD81.Up2Date
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\refint\fl_students_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.genruntimeconfig.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_students_api\obj\Debug\net9.0\ref\fl_students_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\appsettings.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.staticwebassets.endpoints.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.exe
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.deps.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.runtimeconfig.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\fl_students_api.pdb
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\DnsClient.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\Snappier.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\scopedcss\bundle\fl_students_api.styles.css
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_students_api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_students_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.build.fl_students_api.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.fl_students_api.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.fl_students_api.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_stude.A009AD81.Up2Date
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\refint\fl_students_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.pdb
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\fl_students_api.genruntimeconfig.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_students_api\obj\Debug\net9.0\ref\fl_students_api.dll

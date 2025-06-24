@@ -22,6 +22,13 @@ using fl_api.Repositories.Forecast;
 using fl_api.Interfaces.IForecast;
 using fl_api.Services.Forecast;
 using fl_api.Repositories.Impl;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using fl_api.Interfaces.Students;
+using fl_api.Repositories.Student;
+using fl_api.Services.Students;
+using fl_api.Interfaces.Purchases;
+using fl_api.Repositories.Purchases;
+using fl_api.Services.Purchases;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -101,6 +108,11 @@ builder.Services.AddScoped<IGuideFileRepository, GuideFileRepository>();
 builder.Services.AddScoped<IGuideAnalysisRepository, GuideAnalysisRepository>();
 builder.Services.AddScoped<IGuideAnalysisService, GuideAnalysisService>();
 builder.Services.AddScoped<IGuideGroupAnalysisService, GuideGroupAnalysisService>();
+builder.Services.AddScoped<ILabGuideExtractionService, LabGuideExtractionService>();
+builder.Services.AddScoped<ILabGuideRepository, LabGuideRepository>();
+builder.Services.AddScoped<ILabGuideVerificationService, LabGuideVerificationService>();
+builder.Services.AddScoped<IGuideUploadService, GuideUploadService>();
+builder.Services.AddScoped<ISemesterGuideAnalysisService, SemesterGuideAnalysisService>();
 
 // UNIVERSITY
 builder.Services.AddScoped<IUniversityApiConfigRepository, UniversityApiConfigRepository>();
@@ -114,10 +126,20 @@ builder.Services.AddScoped<IPrecioEstimadoRepository, PrecioEstimadoRepository>(
 // PLANIFICATION
 builder.Services.AddScoped<IPlanningService, PlanningService>();
 builder.Services.AddScoped<IPurchasePlanRepository, PurchasePlanRepository>();
+builder.Services.AddScoped<ISupplyPurchasePlanService, SupplyPurchasePlanService>();
+builder.Services.AddScoped<ISupplyPurchasePlanRepository, SupplyPurchasePlanRepository>();
 
 // ORDERS
 builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepository>();
+// SEMESTER PURCHASE
+builder.Services.AddScoped<ISemesterPurchaseRepository, SemesterPurchaseRepository>();
+builder.Services.AddScoped<ISemesterPurchaseService, SemesterPurchaseService>();
+
+// STUDENT DEMAND FORECAST
+builder.Services.AddScoped<IStudentDemandForecastService, StudentDemandForecastService>();
+builder.Services.AddScoped<IStudentDemandForecastRepository, StudentDemandForecastRepository>();
+builder.Services.AddScoped<IStudentDemandExportService, StudentDemandExportService>();
 
 
 //FORECAST
@@ -129,6 +151,13 @@ builder.Services.AddScoped<IForecastHistoricoRepository, ForecastHistoricoReposi
 builder.Services.AddScoped<IForecastPracticaRepository, ForecastPracticaRepository>();
 builder.Services.AddScoped<IForecastRiesgoRepository, ForecastRiesgoRepository>();
 builder.Services.AddScoped<IDemandReportService, DemandReportService>();
+
+
+// SYNCRONIZATION
+// Normalization
+builder.Services.AddScoped<INormalizedSupplyRepository, NormalizedSupplyRepository>();
+builder.Services.AddScoped<ISupplyNormalizationService, SupplyNormalizationService>();
+builder.Services.AddScoped<ISupplyUpdateService, SupplyUpdateService>();
 
 
 // 9. MVC + Swagger
@@ -149,9 +178,17 @@ builder.Services.AddCors(options =>
     });
 });
 
-
 var app = builder.Build();
 app.UseCors("AllowAll");
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+    context.Response.Headers.Add("X-Frame-Options", "DENY");
+    context.Response.Headers.Add("Referrer-Policy", "no-referrer");
+    context.Response.Headers.Add("Content-Security-Policy", "default-src 'self'");
+    await next();
+});
+app.UseExceptionHandler("/error"); // Y crea el endpoint /error
 
 // 11. Middlewares
 app.UseHttpsRedirection();

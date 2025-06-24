@@ -98,3 +98,403 @@ C:\Repos\pro\Forecast\fl_api\bin\Debug\net9.0\SixLabors.Fonts.dll
 C:\Repos\pro\Forecast\fl_api\bin\Debug\net9.0\System.IO.Packaging.dll
 C:\Repos\pro\Forecast\fl_api\bin\Debug\net9.0\prompts.json
 C:\Repos\pro\Forecast\fl_api\bin\Debug\net9.0\purchaseSettings.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\appsettings.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\prompts.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\purchaseSettings.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Resources\Prompts\prompts.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.staticwebassets.endpoints.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.exe
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.deps.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.runtimeconfig.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.pdb
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\DnsClient.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\EPPlus.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\EPPlus.Interfaces.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.Web.Cors.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.Polly.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Core.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Fonts.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Package.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokenization.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokens.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Polly.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Polly.Extensions.Http.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\RBush.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Snappier.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Xml.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\University.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\University.pdb
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\scopedcss\bundle\fl_api.styles.css
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.build.fl_api.props
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.fl_api.props
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.fl_api.props
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.Up2Date
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\refint\fl_api.dll
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.pdb
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.genruntimeconfig.cache
+C:\Users\ASUS\Downloads\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\ref\fl_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\appsettings.Development.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\appsettings.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\prompts.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\purchaseSettings.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Resources\Prompts\prompts.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.staticwebassets.endpoints.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.exe
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.deps.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.runtimeconfig.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\fl_api.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\DnsClient.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\EPPlus.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\EPPlus.Interfaces.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.Web.Cors.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.Polly.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Core.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Fonts.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Package.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokenization.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokens.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Polly.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Polly.Extensions.Http.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\RBush.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\SharpCompress.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\Snappier.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Xml.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\ZstdSharp.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\University.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\bin\Debug\net9.0\University.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.AssemblyReference.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfoInputs.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfo.cs
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.CoreCompileInputs.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\scopedcss\bundle\fl_api.styles.css
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.build.fl_api.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.fl_api.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.fl_api.props
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.Up2Date
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\refint\fl_api.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\fl_api.genruntimeconfig.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\fl_api\obj\Debug\net9.0\ref\fl_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\appsettings.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\prompts.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\purchaseSettings.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Resources\Prompts\prompts.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.staticwebassets.endpoints.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.exe
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.deps.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.runtimeconfig.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.pdb
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\DnsClient.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\EPPlus.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\EPPlus.Interfaces.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.Web.Cors.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.Polly.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Core.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Fonts.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Package.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokenization.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokens.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Polly.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Polly.Extensions.Http.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\RBush.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\SharpCompress.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Snappier.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Xml.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ZstdSharp.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\University.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\University.pdb
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.AssemblyReference.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfoInputs.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfo.cs
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\scopedcss\bundle\fl_api.styles.css
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.build.fl_api.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.fl_api.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.fl_api.props
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.Up2Date
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\refint\fl_api.dll
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.pdb
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.genruntimeconfig.cache
+C:\Users\ASUS\Downloads\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\ref\fl_api.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\appsettings.Development.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\appsettings.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\prompts.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\purchaseSettings.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Resources\Prompts\prompts.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.staticwebassets.endpoints.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.exe
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.deps.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.runtimeconfig.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\fl_api.pdb
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ClosedXML.Parser.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\DnsClient.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\EPPlus.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\EPPlus.Interfaces.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ExcelNumberFormat.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.Web.Cors.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Http.Polly.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Bson.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\MongoDB.Driver.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Core.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.DocumentLayoutAnalysis.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Fonts.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Package.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokenization.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.Tokens.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\UglyToad.PdfPig.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Polly.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Polly.Extensions.Http.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\RBush.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\SharpCompress.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\SixLabors.Fonts.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\Snappier.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.IO.Packaging.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\System.Security.Cryptography.Xml.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\ZstdSharp.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\University.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\bin\Debug\net9.0\University.pdb
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.AssemblyReference.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfoInputs.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.AssemblyInfo.cs
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.CoreCompileInputs.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cs
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.MvcApplicationPartsAssemblyInfo.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\scopedcss\bundle\fl_api.styles.css
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.development.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.fl_api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.build.fl_api.props
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.fl_api.props
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.fl_api.props
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.csproj.Up2Date
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\refint\fl_api.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.pdb
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\fl_api.genruntimeconfig.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\fl_api\obj\Debug\net9.0\ref\fl_api.dll

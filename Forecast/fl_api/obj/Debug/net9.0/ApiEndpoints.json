@@ -83,6 +83,37 @@
   },
   {
     "ContainingType": "fl_api.Controllers.ForecastController",
+    "Method": "GetInsumosPorExpirar",
+    "RelativePath": "api/Forecast/insumos-por-expirar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soloConStockBajo",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "mesesAntes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.Object, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.ForecastController",
     "Method": "GetForecast",
     "RelativePath": "api/Forecast/insumos-por-practica",
     "HttpMethod": "GET",
@@ -236,6 +267,136 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "GetAll",
+    "RelativePath": "api/LabGuide",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "AnalyzeAllInCycle",
+    "RelativePath": "api/LabGuide/analyze-all",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciclo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "facultad",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "Analyze",
+    "RelativePath": "api/LabGuide/analyze/{fileId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fileId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "GetAllAnalyzed",
+    "RelativePath": "api/LabGuide/analyzed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "GetAnalyzedById",
+    "RelativePath": "api/LabGuide/analyzed/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "UploadBatch",
+    "RelativePath": "api/LabGuide/upload-batch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciclo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "facultad",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "carreras",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "materias",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.LabGuideController",
+    "Method": "VerifyGuideMaterials",
+    "RelativePath": "api/LabGuide/verify/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "fl_api.Controllers.LabsApiController",
@@ -752,6 +913,150 @@
     ]
   },
   {
+    "ContainingType": "fl_api.Controllers.NormalizedSuppliesController",
+    "Method": "GetAll",
+    "RelativePath": "api/NormalizedSupplies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.University.NormalizedSupply, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.NormalizedSuppliesController",
+    "Method": "GetById",
+    "RelativePath": "api/NormalizedSupplies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "fl_api.Models.University.NormalizedSupply",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.NormalizedSuppliesController",
+    "Method": "ActualizarSeleccionados",
+    "RelativePath": "api/NormalizedSupplies/actualizar-seleccionados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.University.NormalizedSupply, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.NormalizedSuppliesController",
+    "Method": "ActualizarTodo",
+    "RelativePath": "api/NormalizedSupplies/actualizar-todo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.University.NormalizedSupply, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.NormalizedSuppliesController",
+    "Method": "ActualizarUno",
+    "RelativePath": "api/NormalizedSupplies/actualizar/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "fl_api.Models.University.NormalizedSupply",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.NormalizedSuppliesController",
+    "Method": "BuscarPorNombre",
+    "RelativePath": "api/NormalizedSupplies/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.University.NormalizedSupply, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "fl_api.Controllers.OrdersController",
     "Method": "Create",
     "RelativePath": "api/Orders",
@@ -1099,6 +1404,412 @@
     ]
   },
   {
+    "ContainingType": "fl_api.Controllers.SemesterPurchaseController",
+    "Method": "GetAll",
+    "RelativePath": "api/SemesterPurchase",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SemesterPurchaseController",
+    "Method": "GetById",
+    "RelativePath": "api/SemesterPurchase/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SemesterPurchaseController",
+    "Method": "ExportToCsv",
+    "RelativePath": "api/SemesterPurchase/{id}/csv",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SemesterPurchaseController",
+    "Method": "ExportToExcel",
+    "RelativePath": "api/SemesterPurchase/{id}/excel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SemesterPurchaseController",
+    "Method": "GeneratePlan",
+    "RelativePath": "api/SemesterPurchase/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciclo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "facultad",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentDemandForecastController",
+    "Method": "GetAll",
+    "RelativePath": "api/StudentDemandForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentDemandForecastController",
+    "Method": "GetById",
+    "RelativePath": "api/StudentDemandForecast/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentDemandForecastController",
+    "Method": "ExportCsv",
+    "RelativePath": "api/StudentDemandForecast/{id}/export/csv",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentDemandForecastController",
+    "Method": "ExportExcel",
+    "RelativePath": "api/StudentDemandForecast/{id}/export/excel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentDemandForecastController",
+    "Method": "Generate",
+    "RelativePath": "api/StudentDemandForecast/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciclo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "facultad",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentsController",
+    "Method": "GetCareersByFaculty",
+    "RelativePath": "api/Students/careers/{facultyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "facultyId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentsController",
+    "Method": "GetCycles",
+    "RelativePath": "api/Students/cycles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentsController",
+    "Method": "GetFaculties",
+    "RelativePath": "api/Students/faculties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentsController",
+    "Method": "GetFullGroups",
+    "RelativePath": "api/Students/groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentsController",
+    "Method": "CheckConnection",
+    "RelativePath": "api/Students/health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.StudentsController",
+    "Method": "GetSubjectsByCareer",
+    "RelativePath": "api/Students/subjects/{careerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "careerId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyPurchasePlanController",
+    "Method": "GetAll",
+    "RelativePath": "api/SupplyPurchasePlan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.Planification.SupplyPurchasePlan, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyPurchasePlanController",
+    "Method": "GetById",
+    "RelativePath": "api/SupplyPurchasePlan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "fl_api.Models.Planification.SupplyPurchasePlan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyPurchasePlanController",
+    "Method": "ExportCsv",
+    "RelativePath": "api/SupplyPurchasePlan/{id}/export/csv",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyPurchasePlanController",
+    "Method": "ExportExcel",
+    "RelativePath": "api/SupplyPurchasePlan/{id}/export/excel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyPurchasePlanController",
+    "Method": "Generate",
+    "RelativePath": "api/SupplyPurchasePlan/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reportId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "fl_api.Models.Planification.SupplyPurchasePlan",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SynchronizationController",
+    "Method": "NeedsNormalization",
+    "RelativePath": "api/Synchronization/needs-normalization/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SynchronizationController",
+    "Method": "NormalizeAll",
+    "RelativePath": "api/Synchronization/normalize",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.University.NormalizedSupply, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SynchronizationController",
+    "Method": "NormalizeById",
+    "RelativePath": "api/Synchronization/normalize/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "fl_api.Models.University.NormalizedSupply",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "fl_api.Controllers.UniversityConfigController",
     "Method": "Get",
     "RelativePath": "api/UniversityConfig",
@@ -1195,5 +1906,15 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.ErrorController",
+    "Method": "HandleError",
+    "RelativePath": "error",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

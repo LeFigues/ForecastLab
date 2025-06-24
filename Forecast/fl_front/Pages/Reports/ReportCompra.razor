@@ -2,66 +2,91 @@
 @using fl_front.Dtos.Reports
 @using fl_front.Interfaces
 @inject IReportServiceF ReportService
+@inject IJSRuntime JS
 
-<h3>Reporte: Unidades a Comprar</h3>
+<!-- Recursos -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<div class="row mb-3">
-    <div class="col">
-        <label class="form-label">Desde</label>
-        <input type="date" class="form-control" @bind="from" />
-    </div>
-    <div class="col">
-        <label class="form-label">Hasta</label>
-        <input type="date" class="form-control" @bind="to" />
-    </div>
-    <div class="col">
-        <label class="form-label">Laboratorio</label>
-        <input class="form-control" @bind="labId" />
-    </div>
-    <div class="col">
-        <label class="form-label">Categoría</label>
-        <input class="form-control" @bind="categoria" />
-    </div>
-    <div class="col-auto align-self-end">
-        <button class="btn btn-primary" @onclick="CargarReporte">Generar Reporte</button>
+<h3 class="text-center text-success fw-bold mb-4 animate__animated animate__fadeInDown">
+    <i class="bi bi-cash-coin me-2 fs-3"></i> Reporte: Unidades a Comprar
+</h3>
+
+<!-- Filtros -->
+<div class="card shadow-sm border-0 mb-4 animate__animated animate__fadeIn">
+    <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Desde</label>
+                <input type="date" class="form-control" @bind="from" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Hasta</label>
+                <input type="date" class="form-control" @bind="to" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Laboratorio</label>
+                <input class="form-control" placeholder="Ej. Lab01" @bind="labId" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Categoría</label>
+                <input class="form-control" placeholder="Ej. Biología" @bind="categoria" />
+            </div>
+        </div>
+        <div class="text-end mt-3">
+            <button class="btn btn-outline-success px-4 shadow-sm" @onclick="CargarReporte">
+                <i class="bi bi-clipboard-data-fill me-1"></i> Generar Reporte
+            </button>
+        </div>
     </div>
 </div>
 
 @if (datos == null)
 {
-    <p>Esperando datos...</p>
+    <div class="text-center text-muted animate__animated animate__fadeIn">
+        <div class="spinner-border text-success" role="status"></div>
+        <p class="mt-2">Esperando datos...</p>
+    </div>
 }
 else if (datos.Count == 0)
 {
-    <p>No se encontraron resultados.</p>
+    <div class="alert alert-warning text-center animate__animated animate__fadeIn">
+        No se encontraron resultados para los filtros seleccionados.
+    </div>
 }
 else
 {
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Insumo</th>
-                <th>Stock actual</th>
-                <th>Demanda pronosticada</th>
-                <th>Unidades a comprar</th>
-                <th>Costo unitario</th>
-                <th>Costo total</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var d in datos)
-            {
+    <!-- Tabla -->
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-hover table-striped shadow-sm text-center align-middle">
+            <thead class="table-dark">
                 <tr>
-                    <td>@d.SupplyName</td>
-                    <td>@d.CurrentStock</td>
-                    <td>@d.ForecastedDemand</td>
-                    <td>@d.UnitsToBuy</td>
-                    <td>@(d.UnitCost?.ToString("C") ?? "-")</td>
-                    <td>@(d.TotalCost?.ToString("C") ?? "-")</td>
+                    <th>Insumo</th>
+                    <th>Stock Actual</th>
+                    <th>Demanda Pronosticada</th>
+                    <th>Unidades a Comprar</th>
+                    <th>Costo Unitario (Bs.)</th>
+                    <th>Costo Total (Bs.)</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var d in datos)
+                {
+                    <tr>
+                        <td>@d.SupplyName</td>
+                        <td>@d.CurrentStock</td>
+                        <td>@d.ForecastedDemand</td>
+                        <td class="fw-bold text-primary">@d.UnitsToBuy</td>
+                        <td>@FormatearBs(d.UnitCost)</td>
+                        <td class="fw-semibold text-success">@FormatearBs(d.TotalCost)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+  
 }
 
 @code {
@@ -69,8 +94,8 @@ else
     private DateTime to = DateTime.Today;
     private string? labId;
     private string? categoria;
-
     private List<UnidadesAComprarDtoF>? datos;
+    private const decimal TipoCambio = 6.90m;
 
     private async Task CargarReporte()
     {
@@ -84,4 +109,26 @@ else
 
         datos = await ReportService.GetUnidadesAComprarAsync(filter);
     }
+
+    private string FormatearBs(decimal? valor)
+    {
+        if (valor == null) return "-";
+        decimal enBs = valor.Value * TipoCambio;
+        return enBs.ToString("C", new System.Globalization.CultureInfo("es-BO")).Replace("$", "Bs.");
+    }
+
+    private async Task MostrarDona()
+    {
+        var labels = datos.Select(d => d.SupplyName).ToList();
+        var valores = datos.Select(d => d.UnitsToBuy).ToList();
+        await JS.InvokeVoidAsync("renderDonutChart", labels, valores);
+    }
+
+    private async Task MostrarLineas()
+    {
+        var insumos = datos.Select(d => d.SupplyName).ToList();
+        var valores = datos.Select(d => d.TotalCost.HasValue && d.TotalCost.Value > 0 ? d.TotalCost.Value : 0.01m).ToList();
+        await JS.InvokeVoidAsync("renderLineChartCompra", insumos, valores);
+    }
 }
+

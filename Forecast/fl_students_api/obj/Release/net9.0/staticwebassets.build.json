@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "8qSiAIyt4IGpYE2YfxaoLaBARqz76ygEfq34EdvGOgM=",
+  "Source": "fl_students_api",
+  "BasePath": "_content/fl_students_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

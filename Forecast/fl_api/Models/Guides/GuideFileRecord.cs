@@ -16,5 +16,6 @@ namespace fl_api.Models.Guides
         public string? Faculty { get; set; }
         public string? Career { get; set; }
         public string? Subject { get; set; }
+        public string? Cycle { get; set; } // ej: "2025-2"
     }
 }

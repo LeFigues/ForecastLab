@@ -9,3 +9,25 @@ C:\Repos\pro\Forecast\University\obj\Release\net9.0\University.dll
 C:\Repos\pro\Forecast\University\obj\Release\net9.0\refint\University.dll
 C:\Repos\pro\Forecast\University\obj\Release\net9.0\University.pdb
 C:\Repos\pro\Forecast\University\obj\Release\net9.0\ref\University.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\bin\Release\net9.0\University.deps.json
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\bin\Release\net9.0\University.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\bin\Release\net9.0\University.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\University.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\University.AssemblyInfoInputs.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\University.AssemblyInfo.cs
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\University.csproj.CoreCompileInputs.cache
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\University.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\refint\University.dll
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\University.pdb
+C:\Repos\Nueva carpeta\Nueva carpeta\ForecastLab-main 1\ForecastLab-main\ForecastLab-main\Forecast\University\obj\Release\net9.0\ref\University.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\bin\Release\net9.0\University.deps.json
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\bin\Release\net9.0\University.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\bin\Release\net9.0\University.pdb
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\University.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\University.AssemblyInfoInputs.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\University.AssemblyInfo.cs
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\University.csproj.CoreCompileInputs.cache
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\University.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\refint\University.dll
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\University.pdb
+C:\Repos\jos\Forecast 1\Forecast 1\Forecast\University\obj\Release\net9.0\ref\University.dll

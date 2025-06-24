@@ -2,64 +2,101 @@
 @using fl_front.Dtos.Reports
 @using fl_front.Interfaces
 @inject IReportServiceF ReportService
+@inject IJSRuntime JS
 
-<h3>Reporte: Consumo Real vs Pronóstico</h3>
+<!-- Animate.css & Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<div class="row mb-3">
-    <div class="col">
-        <label class="form-label">Desde</label>
-        <input type="date" class="form-control" @bind="from" />
-    </div>
-    <div class="col">
-        <label class="form-label">Hasta</label>
-        <input type="date" class="form-control" @bind="to" />
-    </div>
-    <div class="col">
-        <label class="form-label">Laboratorio</label>
-        <input class="form-control" @bind="labId" />
-    </div>
-    <div class="col">
-        <label class="form-label">Categoría</label>
-        <input class="form-control" @bind="categoria" />
-    </div>
-    <div class="col-auto align-self-end">
-        <button class="btn btn-primary" @onclick="CargarReporte">Generar Reporte</button>
+<h3 class="text-center text-primary fw-bold mb-4 animate__animated animate__fadeInDown">
+    <i class="bi bi-bar-chart-line-fill me-2 fs-3"></i> Reporte: Consumo Real vs Pronóstico
+</h3>
+
+<div class="card shadow-sm border-0 mb-4 animate__animated animate__fadeIn">
+    <div class="card-body">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Desde</label>
+                <input type="date" class="form-control" @bind="from" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Hasta</label>
+                <input type="date" class="form-control" @bind="to" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Laboratorio</label>
+                <input class="form-control" placeholder="Ej. Lab01" @bind="labId" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label fw-semibold">Categoría</label>
+                <input class="form-control" placeholder="Ej. Química" @bind="categoria" />
+            </div>
+        </div>
+        <div class="text-end mt-3">
+            <button class="btn btn-outline-primary px-4 shadow-sm" @onclick="CargarReporte">
+                <i class="bi bi-file-earmark-bar-graph me-1"></i> Generar Reporte
+            </button>
+        </div>
     </div>
 </div>
 
 @if (datos == null)
 {
-    <p>Esperando datos...</p>
+    <div class="text-center text-muted animate__animated animate__fadeIn">
+        <div class="spinner-border text-primary" role="status"></div>
+        <p class="mt-2">Esperando datos...</p>
+    </div>
 }
 else if (datos.Count == 0)
 {
-    <p>No se encontraron resultados.</p>
+    <div class="alert alert-warning text-center animate__animated animate__fadeIn">
+        No se encontraron resultados con los filtros seleccionados.
+    </div>
 }
 else
 {
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Mes</th>
-                <th>Insumo</th>
-                <th>Consumo real</th>
-                <th>Pronóstico</th>
-                <th>Diferencia</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var d in datos)
-            {
+    <div class="table-responsive animate__animated animate__fadeInUp">
+        <table class="table table-hover table-striped shadow-sm text-center align-middle">
+            <thead class="table-dark">
                 <tr>
-                    <td>@d.Month</td>
-                    <td>@d.SupplyName</td>
-                    <td>@d.RealConsumption</td>
-                    <td>@d.Forecasted</td>
-                    <td>@d.Difference</td>
+                    <th>Mes</th>
+                    <th>Insumo</th>
+                    <th>Consumo Real</th>
+                    <th>Pronóstico</th>
+                    <th>Diferencia</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var d in datos)
+                {
+                    <tr>
+                        <td>@d.Month</td>
+                        <td>@d.SupplyName</td>
+                        <td>@d.RealConsumption</td>
+                        <td>@d.Forecasted</td>
+                        <td class="@ObtenerClaseDiferencia(d.Difference)">
+                            @((d.Difference > 0 ? "+" : "") + d.Difference)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-5 animate__animated animate__fadeIn">
+        <h5 class="text-center text-secondary fw-bold mb-3">
+            <i class="bi bi-bar-chart-fill"></i> Gráfica de Barras: Consumo vs Pronóstico
+        </h5>
+        <canvas id="barChart" height="100"></canvas>
+    </div>
+
+    <div class="mt-5 animate__animated animate__fadeIn">
+        <h5 class="text-center text-secondary fw-bold mb-3">
+            <i class="bi bi-graph-up"></i> Evolución Mensual: Consumo vs Pronóstico
+        </h5>
+        <canvas id="lineChart" height="100"></canvas>
+    </div>
 }
 
 @code {
@@ -67,7 +104,6 @@ else
     private DateTime to = DateTime.Today;
     private string? labId;
     private string? categoria;
-
     private List<ConsumoVsPronosticoDtoF>? datos;
 
     private async Task CargarReporte()
@@ -81,5 +117,99 @@ else
             };
 
         datos = await ReportService.GetConsumoVsPronosticoAsync(filter);
+
+        if (datos != null && datos.Count > 0)
+        {
+            var grouped = datos.GroupBy(d => d.SupplyName).Select(g => new
+            {
+                Name = g.Key,
+                Real = g.Sum(x => x.RealConsumption),
+                Forecast = g.Sum(x => x.Forecasted)
+            }).ToList();
+
+            var labels = grouped.Select(g => g.Name).ToList();
+            var reales = grouped.Select(g => g.Real).ToList();
+            var pronos = grouped.Select(g => g.Forecast).ToList();
+
+            var meses = datos.Select(d => d.Month).Distinct().OrderBy(m => m).ToList();
+            var realPorMes = meses.Select(m => datos.Where(d => d.Month == m).Sum(x => x.RealConsumption)).ToList();
+            var pronoPorMes = meses.Select(m => datos.Where(d => d.Month == m).Sum(x => x.Forecasted)).ToList();
+
+            await InvokeAsync(StateHasChanged);
+            await Task.Delay(100); // Esperar a que los canvas estén en el DOM
+
+            await JS.InvokeVoidAsync("renderBarChartReport", labels, reales, pronos);
+            await JS.InvokeVoidAsync("renderLineChartReport", meses, realPorMes, pronoPorMes);
+        }
     }
+
+    private string ObtenerClaseDiferencia(double diferencia) => diferencia switch
+    {
+        > 0 => "text-danger fw-bold",
+        < 0 => "text-success fw-bold",
+        _ => "text-muted"
+    };
 }
+<!-- Scripts JS al final del archivo Razor -->
+<script>
+    let barChartInstance;
+    let lineChartInstance;
+
+    window.renderBarChartReport = (labels, reales, pronos) => {
+        const canvas = document.getElementById('barChart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        // Destruir si ya existe
+        if (barChartInstance) {
+            barChartInstance.destroy();
+        }
+
+        barChartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: 'Consumo Real', data: reales, backgroundColor: '#198754' },
+                    { label: 'Pronóstico', data: pronos, backgroundColor: '#0d6efd' }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { position: 'top' } },
+                scales: { x: { stacked: false }, y: { beginAtZero: true } }
+            }
+        });
+    };
+
+    window.renderLineChartReport = (labels, reales, pronos) => {
+        const canvas = document.getElementById('lineChart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        // Destruir si ya existe
+        if (lineChartInstance) {
+            lineChartInstance.destroy();
+        }
+
+        lineChartInstance = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    { label: 'Consumo Real', data: reales, borderColor: '#198754', fill: false, tension: 0.4 },
+                    { label: 'Pronóstico', data: pronos, borderColor: '#0d6efd', fill: false, tension: 0.4 }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { position: 'top' } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    };
+</script>

@@ -38,74 +38,20 @@
 </div>
 
 <!-- RESPUESTA IA -->
+<!-- RESPUESTA IA EN JSON -->
 @if (respuestaIA is not null)
 {
     <div class="container mb-4 animate__animated animate__fadeInUp">
         <div class="ia-card">
-            <h5 class="ia-title mb-3"><i class="bi bi-file-earmark-text-fill me-2"></i>Resumen de Inteligencia Artificial:</h5>
+            <h5 class="ia-title mb-3"><i class="bi bi-file-earmark-text me-2"></i>Respuesta de IA en formato JSON:</h5>
 
-            @if (string.IsNullOrWhiteSpace(respuestaIA))
-            {
-                <div class="text-warning">⚠️ La IA no devolvió información útil.</div>
-            }
-            else
-            {
-                <div class="table-responsive">
-                    <table class="table table-bordered table-hover text-light">
-                        <thead class="table-dark text-center">
-                            <tr>
-                                <th style="width: 20%">Tipo</th>
-                                <th style="width: 40%">Insumo</th>
-                                <th style="width: 40%">Detalle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @{
-                                var lineas = respuestaIA.Split('\n', StringSplitOptions.RemoveEmptyEntries);
-                                foreach (var linea in lineas)
-                                {
-                                    var texto = linea.Trim();
-
-                                    // Encabezados o comentarios generales
-                                    if (texto.StartsWith("Para predecir", StringComparison.OrdinalIgnoreCase) ||
-                                    texto.StartsWith("Basándonos", StringComparison.OrdinalIgnoreCase) ||
-                                    texto.StartsWith("En resumen", StringComparison.OrdinalIgnoreCase))
-                                    {
-                                        <tr>
-                                            <td class="text-center fw-semibold">Comentario</td>
-                                            <td></td>
-                                            <td>@texto</td>
-                                        </tr>
-                                    }
-                                    else
-                                    {
-                                        var partes = texto.Split(':', 2);
-                                        if (partes.Length == 2)
-                                        {
-                                            <tr>
-                                                <td class="text-center">Diagnóstico</td>
-                                                <td class="fw-bold">@partes[0].Trim()</td>
-                                                <td>@partes[1].Trim()</td>
-                                            </tr>
-                                        }
-                                        else
-                                        {
-                                            <tr>
-                                                <td class="text-center">Comentario</td>
-                                                <td></td>
-                                                <td>@texto</td>
-                                            </tr>
-                                        }
-                                    }
-                                }
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            }
+            <pre style="white-space: pre-wrap; background-color: #001f2b; padding: 1rem; border-radius: 10px; color: #00f7ff;">
+                @respuestaIA
+                </pre>
         </div>
     </div>
 }
+
 
 <!-- BOTONES -->
 <div class="mb-4 d-flex justify-content-center gap-3 animate__animated animate__fadeIn">
